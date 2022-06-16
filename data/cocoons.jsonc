@@ -1,0 +1,341 @@
+[
+	// Aelio
+	{
+		"id": "first_step",
+		"region": "aelio",
+		"lat": -1306,
+		"lng": 681.75,
+		"max_players": 1,
+		"enemy_level": 1,
+		"recommended_power": 800,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 300],
+			["time_lt", 600],
+			["cubes", 10],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["time", 1800]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "enhanced_enemy",
+		"region": "aelio",
+		"lat": -1488,
+		"lng": 432.25,
+		"max_players": 4,
+		"enemy_level": 5,
+		"recommended_power": 894,
+		"main_missions": [
+			["defeat", "pettas_sword"]
+		],
+		"side_missions": [
+			["time_lt", 55],
+			["incapacitated_lt", 5],
+			["damage_lt", 10],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "swift_jump",
+		"region": "aelio",
+		"lat": -1121.5,
+		"lng": 406.5,
+		"max_players": 4,
+		"enemy_level": 6,
+		"recommended_power": 916,
+		"main_missions": [
+			["finish_goal"]
+		],
+		"side_missions": [
+			["time_lt", 85],
+			["fallen_lt", 5],
+			["glide_lt", 5],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["fall", 99]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "wild_rush",
+		"region": "aelio",
+		"lat": -1882.25,
+		"lng": 826.25,
+		"max_players": 4,
+		"enemy_level": 5,
+		"recommended_power": 894,
+		"main_missions": [
+			["defeat_many", 42]
+		],
+		"side_missions": [
+			["time_lt", 105],
+			["incapacitated_lt", 5],
+			["cubes", 5],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["time", 3600]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "test_flight",
+		"region": "aelio",
+		"lat": -1173.25,
+		"lng": 33,
+		"max_players": 4,
+		"enemy_level": 3,
+		"recommended_power": 835,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 75],
+			["fallen_lt", 5],
+			["cubes", 5],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["fall", 99]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "roaring_rush",
+		"region": "aelio",
+		"lat": -1894.5,
+		"lng": 387.5,
+		"max_players": 4,
+		"enemy_level": 15,
+		"recommended_power": 1184,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 420],
+			["incapacitated_lt", 2],
+			["damage_lt", 15],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "fleeting_fight",
+		"region": "aelio",
+		"lat": -1219.25,
+		"lng": 976.75,
+		"max_players": 4,
+		"enemy_level": 15,
+		"recommended_power": 1184,
+		"main_missions": [
+			["defeat", "bujin"]
+		],
+		"side_missions": [
+			["time_lt", 300],
+			["incapacitated_lt", 5],
+			["damage_lt", 20],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "runway",
+		"region": "aelio",
+		"lat": -1723.875,
+		"lng": 877.125,
+		"max_players": 4,
+		"enemy_level": 10,
+		"recommended_power": 1009,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 115],
+			["time_lt", 155],
+			["cubes", 5],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["time", 3600]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+
+	// Retem
+	{
+		"id": "vanishing_path",
+		"region": "retem",
+		"lat": -1192.375,
+		"lng": 1288.375,
+		"max_players": 4,
+		"enemy_level": 25,
+		"recommended_power": 1562,
+		"main_missions": [
+			["defeat", "fortos_laser"]
+		],
+		"side_missions": [
+			["time_lt", 480],
+			["cubes", 5],
+			["fallen_lt", 3],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["time", 3600]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "narrow_cage",
+		"region": "retem",
+		"lat": -1223,
+		"lng": 1674.125,
+		"max_players": 4,
+		"enemy_level": 21,
+		"recommended_power": 1396,
+		"main_missions": [
+			["defeat_all"]
+		],
+		"side_missions": [
+			["damage_lt", 20],
+			["incapacitated", 3],
+			["time_lt", 360],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "buddy_attack",
+		"region": "retem",
+		"lat": -1219,
+		"lng": 1871.375,
+		"max_players": 4,
+		"enemy_level": 21,
+		"recommended_power": 1396,
+		"main_missions": [
+			["defeat_all"]
+		],
+		"side_missions": [
+			["drome_gte", 3],
+			["incapacitated_lt", 3],
+			["damage_lt", 20],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "dyna_assault",
+		"region": "retem",
+		"lat": -1501.25,
+		"lng": 1527.375,
+		"max_players": 4,
+		"enemy_level": 17,
+		"recommended_power": 1223,
+		"main_missions": [
+			["defeat_all"]
+		],
+		"side_missions": [
+			["time_lt", 155],
+			["incapacitated_lt", 5],
+			["damage_lt", 10],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "parkour_master",
+		"region": "retem",
+		"lat": -1969,
+		"lng": 1127,
+		"max_players": 4,
+		"enemy_level": 17,
+		"recommended_power": 1223,
+		"main_missions": [
+			["defeat_all"]
+		],
+		"side_missions": [
+			["glide_lt", 6],
+			["cubes", 10],
+			["time_lt", 140],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["fall", 99]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "runway_2",
+		"region": "retem",
+		"lat": -1759.25,
+		"lng": 1787.5,
+		"max_players": 4,
+		"enemy_level": 17,
+		"recommended_power": 1223,
+		"main_missions": [
+			["defeat_all"]
+		],
+		"side_missions": [
+			["time_lt", 275],
+			["time_lt", 315],
+			["cubes", 4],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["time", 3600]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	}
+]

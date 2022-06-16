@@ -1,0 +1,10 @@
+node_modules/
+/dist/_assets/
+/dist/_data/
+
+.pnpm-*.log
+.npm-*.log
+.yarn-*.log
+pnpm-*.log
+npm-*.log
+yarn-*.log

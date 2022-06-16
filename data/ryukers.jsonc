@@ -1,0 +1,235 @@
+[
+	// Aelio
+	{
+		"id": "central_city",
+		"region": "aelio",
+		"lat": -1485,
+		"lng": 583
+	},
+	{
+		"id": "halphana_plains_west",
+		"region": "aelio",
+		"lat": -1535,
+		"lng": 448
+	},
+	{
+		"id": "halphana_plains_east",
+		"region": "aelio",
+		"lat": -1368,
+		"lng": 751
+	},
+	{
+		"id": "halphia_lake",
+		"region": "aelio",
+		"lat": -1139,
+		"lng": 952
+	},
+	{
+		"id": "resol_forest",
+		"region": "aelio",
+		"lat": -1166,
+		"lng": 646
+	},
+	{
+		"id": "altolani_plateau",
+		"region": "aelio",
+		"lat": -1133,
+		"lng": 247
+	},
+	{
+		"id": "cryano_cliffs",
+		"region": "aelio",
+		"lat": -1247,
+		"lng": 133
+	},
+	{
+		"id": "lakau_coast",
+		"region": "aelio",
+		"lat": -1607,
+		"lng": 133
+	},
+	{
+		"id": "aelio_town_ruins",
+		"region": "aelio",
+		"lat": -1753,
+		"lng": 314
+	},
+	{
+		"id": "balflow_falls",
+		"region": "aelio",
+		"lat": -1791,
+		"lng": 681
+	},
+	{
+		"id": "mt_piccolt",
+		"region": "aelio",
+		"lat": -1948,
+		"lng": 886
+	},
+	{
+		"id": "halphana_wetlands",
+		"region": "aelio",
+		"lat": -1332,
+		"lng": 376
+	},
+	{
+		"id": "mt_magnus",
+		"region": "aelio",
+		"lat": -1624,
+		"lng": 693
+	},
+	{
+		"id": "vanford_laboratory_ruins",
+		"region": "aelio",
+		"lat": -1355,
+		"lng": 1011
+	},
+
+	// Aelio
+	{
+		"id": "retem_city",
+		"region": "retem",
+		"lat": -1619,
+		"lng": 1564
+	},
+	{
+		"id": "sagan_mountain_road_west",
+		"region": "retem",
+		"lat": -1211,
+		"lng": 1193
+	},
+	{
+		"id": "sagan_mountain_road_east",
+		"region": "retem",
+		"lat": -1066,
+		"lng": 1420
+	},
+	{
+		"id": "stechkin_lowlands",
+		"region": "retem",
+		"lat": -1397,
+		"lng": 1276
+	},
+	{
+		"id": "oasis",
+		"region": "retem",
+		"lat": -1440,
+		"lng": 1406
+	},
+	{
+		"id": "trinites",
+		"region": "retem",
+		"lat": -1302,
+		"lng": 1609
+	},
+	{
+		"id": "murabba_canyon",
+		"region": "retem",
+		"lat": -1160,
+		"lng": 1612
+	},
+	{
+		"id": "cape_keenland",
+		"region": "retem",
+		"lat": -1108,
+		"lng": 1758
+	},
+	{
+		"id": "retem_alnothe",
+		"region": "retem",
+		"lat": -1626,
+		"lng": 1289
+	},
+	{
+		"id": "garneru_coast_west",
+		"region": "retem",
+		"lat": -1872,
+		"lng": 1325
+	},
+	{
+		"id": "garneru_coast_east",
+		"region": "retem",
+		"lat": -1814,
+		"lng": 1618
+	},
+	{
+		"id": "rwh_maqead",
+		"region": "retem",
+		"lat": -1750,
+		"lng": 1869
+	},
+	{
+		"id": "lower_maqead",
+		"region": "retem",
+		"lat": -1888,
+		"lng": 1922
+	},
+
+	// Kvaris
+	{
+		"id": "kvaris_camp",
+		"region": "kvaris",
+		"lat": -631,
+		"lng": 736
+	},
+	{
+		"id": "belugana_ruins_north",
+		"region": "kvaris",
+		"lat": -300,
+		"lng": 874
+	},
+	{
+		"id": "belugana_ruins_south",
+		"region": "kvaris",
+		"lat": -532,
+		"lng": 962
+	},
+	{
+		"id": "rayjord_george",
+		"region": "kvaris",
+		"lat": -647,
+		"lng": 846
+	},
+	{
+		"id": "danann_snow_field",
+		"region": "kvaris",
+		"lat": -770,
+		"lng": 796
+	},
+	{
+		"id": "quill_mountain_load",
+		"region": "kvaris",
+		"lat": -959,
+		"lng": 541
+	},
+	{
+		"id": "mt_ihana_east",
+		"region": "kvaris",
+		"lat": -791,
+		"lng": 424
+	},
+	{
+		"id": "mt_ihana_west",
+		"region": "kvaris",
+		"lat": -789,
+		"lng": 224
+	},
+	{
+		"id": "lost_central",
+		"region": "kvaris",
+		"lat": -537,
+		"lng": 381
+	},
+	{
+		"id": "mt_latva",
+		"region": "kvaris",
+		"lat": -418,
+		"lng": 268
+	},
+	{
+		"id": "mistra_woods",
+		"region": "kvaris",
+		"lat": -250,
+		"lng": 534
+	}
+]

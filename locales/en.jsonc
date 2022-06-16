@@ -1,0 +1,157 @@
+{
+	"ui": {
+		"landmarks": "Landmarks",
+		"minerals": "Minerals",
+		"vegetables": "Vegetable",
+		"fruits": "Fruits",
+		"seafoods": "Seafoods"
+	},
+	"markers": {
+		"cocoons": "Cocoons",
+		"mags": "Mags",
+		"ryukers": "Ryuker Devices",
+		"trinitas": "Trinitas",
+		"urgents": "Urgent Quests"
+	},
+	"missions": {
+		"finish_point": "Reach the finish point",
+		"finish_goal": "Reach the goal",
+		"defeat": "Defeat the {1}",
+		"defeat_many": "Defeat {1} Enemies",
+		"defeat_all": "Defeat all enemies",
+		"all_side": "Complete all Side Missions and clear",
+		"cubes": "Obtain {1} Point Cubes",
+		"time_lt": "Clear before {1, duration}",
+		"incapacitated_lt": "Clear without being incapacitated {1} times",
+		"damage_lt": "Clear having taken damage fewer than {1} times",
+		"fallen_lt": "Clear without falling {1} times",
+		"glide_lt": "Clear while having used Glide fewer than {1} times",
+		"drome_gte": "Maintain your hacked Drome's level to {1} to clear",
+		"suppressed_lt": "Clear having suppressed under {1} of the enemies"
+	},
+	"failures": {
+		"time": "Time exceeds {1, duration}",
+		"incapacitated": "Incapacitated {1} times",
+		"fall": "Fall {1} times"
+	},
+	"rewards": {
+		"exp": "EXP",
+		"meseta": "N-Meseta",
+		"seasonal": "Seasonal Point",
+		"skill": "Skill Point"
+	},
+	"items": {
+		"ams_soul_iii": "C/Ams Soul III",
+		"crocys_soul_iii": "C/Crocys Soul III",
+		"fashion_items": "Fashion items",
+		"gold_primm_armor": "Gold Primm Armor",
+		"gold_primm_sword": "Gold Primm Sword",
+		"kuku_series_weapon": "Kuku Series Weapon",
+		"photon_scale": "Photon Scales",
+		"relik_series_weapon": "Relik Series Weapon",
+		"silver_primm_armor": "Silver Primm Armor",
+		"silver_primm_sword": "Silver Primm Sword",
+		"special_scratch_ticket": "Special Scratch Ticket"
+	},
+	"enemies": {
+		"bujin": "Bujin",
+		"chiacurio": "Chiacurio",
+		"daityl_sword": "Daityl Sword",
+		"destragras": "Destragras",
+		"fortos_laser": "Fortos Laser",
+		"pettas_sword": "Pettas Sword"
+	},
+	"cocoons": {
+		// Aelio
+		"first_step": {
+			"name": "First Step",
+			"description": "This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action."
+		},
+		"enhanced_enemy": {
+			"name": "Enhanced Enemy",
+			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the enhanced Pettas Sword using your battle skills."
+		},
+		"swift_jump": {
+			"name": "Swift Jump",
+			"description": "This is Trainia, where ARKS defenders can test their abilities. Reach the goal using \"Jump\" and \"Double Jump\"."
+		},
+		"wild_rush": {
+			"name": "Wild Rush",
+			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat all enemies using your battle skills."
+		},
+		"test_flight": {
+			"name": "Test Flight",
+			"description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination."
+		},
+		"roaring_rush": {
+			"name": "Roaring Rush",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gororox."
+		},
+		"fleeting_fight": {
+			"name": "Fleeting Fight",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Bujin."
+		},
+		"runway": {
+			"name": "Runway",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+		},
+
+		// Retem
+		"vanishing_path": {
+			"name": "Vanishing Path",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies while keeping an eye on Vanishing Blocks."
+		},
+		"narrow_cage": {
+			"name": "Narrow Cage",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat all of the enemies."
+		},
+		"buddy_attack": {
+			"name": "Buddy Attack",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies with support from Dromes."
+		},
+		"dyna_assault": {
+			"name": "Dyna Assault",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat the Lizentos."
+		},
+		"parkour_master": {
+			"name": "Parkour Master",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Reach the goal using Jumps, Double Jumps, and Wall Kicks."
+		},
+		"runway_2": {
+			"name": "Runway II",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+		}
+	},
+	"towers": {
+		// Aelio
+		"alters_rush": {
+			"name": "ALTERS Rush",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Avoid combat with enemies whenever possible and make use of your battle skills to defeat the Chiacurio in the final area."
+		},
+		"great_wall": {
+			"name": "Great Wall",
+			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills."
+		},
+		"aero_runner": {
+			"name": "Aero Runner",
+			"description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination."
+		},
+
+		// Retem
+		"dolls_burrow": {
+			"name": "DOLLS Burrow",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Defeat the Destragras in the final area using your battle skills."
+		}
+	},
+	"urgents": {
+		// Kvaris
+		"crocodylis_vera": {
+			"name": "Crocodylis Vera Suppression Op",
+			"description": "A powerful space-time flux has been detected in the northern part of Danann Snow Field. Based on past data, we expect Crocodylis Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+		},
+		"ams_vera": {
+			"name": "Ams Vera Suppression Op",
+			"description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+		}
+	}
+}

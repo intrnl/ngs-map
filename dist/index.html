@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>PSO2 NGS Map</title>
+		<link rel='stylesheet' href='/_assets/app.css' />
+		<script type='module' src='/_assets/app.js'></script>
+	</head>
+	<body>
+		<x-app>
+			<div class='x-map-container'>
+				<div x-target='x-app.mapContainer'></div>
+				<div class='x-zoom-controls'>
+					<button class='button' title='Zoom in' x-target='x-app.zoomInButton' x-action='click:x-app#handleZoomIn'>+</button>
+					<button class='button' title='Zoom out' x-target='x-app.zoomOutButton' x-action='click:x-app#handleZoomOut'>-</button>
+				</div>
+				<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
+			</div>
+		</x-app>
+	</body>
+</html>

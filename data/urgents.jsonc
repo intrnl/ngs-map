@@ -1,0 +1,214 @@
+
+[
+	{
+		"id": "pettas_vera",
+		"lat": -1057,
+		"lng": 296.75,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 17,
+				"recommended_power": 1184,
+				"rewards": [
+					["rewards.meseta", 10000]
+				]
+			},
+			{
+				"enemy_level": 40,
+				"recommended_power": 1898,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "nex_vera",
+		"lat": -1171,
+		"lng": 533,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 17,
+				"recommended_power": 1184,
+				"rewards": [
+					["rewards.meseta", 10000]
+				]
+			},
+			{
+				"enemy_level": 40,
+				"recommended_power": 1898,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "mining_rig_aelio",
+		"lat": -1327,
+		"lng": 830,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 20,
+				"recommended_power": 1243,
+				"rewards": [
+					["rewards.meseta", 10000]
+				]
+			},
+			{
+				"enemy_level": 40,
+				"recommended_power": 1898,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "dark_falz",
+		"lat": -1296.5,
+		"lng": 806.5,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 10000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 40,
+				"recommended_power": 1898,
+				"rewards": [
+					["rewards.meseta", 20000],
+					["items.photon_scale", 12]
+				]
+			}
+		]
+	},
+
+	// Retem
+	{
+		"id": "renus_vera",
+		"lat": -1389.75,
+		"lng": 1438.25,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 32,
+				"recommended_power": 1682,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			},
+			{
+				"enemy_level": 45,
+				"recommended_power": 2049,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "dustyl_vera",
+		"lat": -1301.5,
+		"lng": 1518.5,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 32,
+				"recommended_power": 1682,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			},
+			{
+				"enemy_level": 45,
+				"recommended_power": 2049,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "mining_rig_retem",
+		"lat": -1683.7,
+		"lng": 1346,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 5000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 45,
+				"recommended_power": 2049,
+				"rewards": [
+					["rewards.meseta", 10000]
+				]
+			}
+		]
+	},
+
+	// Kvaris
+	{
+		"id": "crocodylis_vera",
+		"lat": -765.6,
+		"lng": 846,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 10000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 57,
+				"recommended_power": 2506,
+				"rewards": [
+					["items.crocys_soul_iii", 3],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	},
+	{
+		"id": "ams_vera",
+		"lat": -331.9,
+		"lng": 485,
+		"players": 8,
+		"initial_rewards": [
+			["rewards.meseta", 10000]
+		],
+		"ranks": [
+			{
+				"enemy_level": 57,
+				"recommended_power": 2506,
+				"rewards": [
+					["items.ams_soul_iii", 3],
+					["items.photon_scale", 8]
+				]
+			}
+		]
+	}
+]
