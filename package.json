@@ -3,8 +3,10 @@
 	"name": "ngs-world-map",
 	"scripts": {
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
-		"build": "NODE_ENV=production node ./scripts/build.js && node ./scripts/process-map.js",
-		"process-map": "node ./scripts/process-map.js"
+		"build": "pnpm run build:app && pnpm run process:map && pnpm run process:locale",
+		"build:app": "NODE_ENV=production node ./scripts/build.js",
+		"process:map": "node ./scripts/process-map.js",
+		"process:locale": "node ./scripts/process-locale.js"
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
