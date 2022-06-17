@@ -3,7 +3,8 @@ class TreeController extends HTMLElement {
 		const target = ev.currentTarget;
 		const parent = target.parentElement;
 
-		parent.setAttribute('aria-expanded', parent.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+		const expanded = parent.getAttribute('aria-expanded') === 'true';
+		parent.setAttribute('aria-expanded', expanded ? 'false' : 'true');
 	}
 }
 
