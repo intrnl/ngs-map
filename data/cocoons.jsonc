@@ -33,7 +33,7 @@
 		"enemy_level": 5,
 		"recommended_power": 894,
 		"main_missions": [
-			["defeat", "pettas_sword"]
+			["defeat", "t:enemies.pettas_sword"]
 		],
 		"side_missions": [
 			["time_lt", 55],
@@ -153,7 +153,7 @@
 		"enemy_level": 15,
 		"recommended_power": 1184,
 		"main_missions": [
-			["defeat", "bujin"]
+			["defeat", "t:enemies.bujin"]
 		],
 		"side_missions": [
 			["time_lt", 300],
@@ -203,7 +203,7 @@
 		"enemy_level": 25,
 		"recommended_power": 1562,
 		"main_missions": [
-			["defeat", "fortos_laser"]
+			["defeat", "t:enemies.fortos_laser"]
 		],
 		"side_missions": [
 			["time_lt", 480],
