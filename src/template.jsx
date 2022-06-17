@@ -64,58 +64,12 @@ function h (type, props, ...children) {
 		for (let key in props) {
 			const value = props[key];
 
-			if (key === 'style') {
-				if (typeof value === 'string') {
-					node.style.cssText = value;
+			if (typeof value !== 'function') {
+				if (value != null && (value !== false || key.startsWith('aria-'))) {
+					node.setAttribute(key, value);
 				}
 				else {
-					for (const style in value) {
-						const styleValue = value[style];
-
-						if (style.includes('-')) {
-							node.style.setProperty(style, styleValue);
-						}
-						else if (styleValue == null) {
-							node.style[style] = '';
-						}
-						else {
-							node.style[style] = styleValue;
-						}
-					}
-				}
-			}
-			else if (key.startsWith('on')) {
-				let isCapture = false;
-
-				if (key.endsWith('Capture')) {
-					isCapture = true;
-					key = key.slice(0, -7);
-				}
-
-				let lowercase = key.toLowerCase();
-
-				if (lowercase in node) {
-					key = lowercase;
-				}
-
-				key = key.slice(2);
-				node.addEventListener(key, value, isCapture);
-			}
-			else {
-				if (key in node) {
-					try {
-						node[key] = value;
-						continue;
-					} catch {}
-				}
-
-				if (typeof value !== 'function') {
-					if (value != null && (value !== false || key.startsWith('aria-'))) {
-						node.setAttribute(key, value);
-					}
-					else {
-						node.removeAttribute(key);
-					}
+					node.removeAttribute(key);
 				}
 			}
 		}
