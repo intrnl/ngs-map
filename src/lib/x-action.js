@@ -100,8 +100,6 @@ function bindActions (node) {
 			continue;
 		}
 
-		console.log({ node, event, tag, method })
-
 		// there's a possibility that the controller hasn't been defined yet, if
 		// that's the case we'll store a string and resolve it later.
 		const _target = customElements.get(tag) ? target : tag;
