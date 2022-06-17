@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'pfdintextstd-medium';
-	src: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/fonts/pfdintextstd-medium.woff') format('woff');
+	src: url('/assets/fonts/pfdintextstd-medium.woff') format('woff');
 	ascent-override: 100%;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .titlebar-icon-close {
-	content: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/close.png');
+	content: url('/assets/ui/close.png');
 	height: 14px;
 	width: 14px;
 }
@@ -188,14 +188,14 @@ body {
 }
 .tree li[role='treeitem'] > .button::before {
 	content: '';
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/tree_expand.png');
+	background-image: url('/assets/ui/tree_expand.png');
 	background-size: contain;
 	display: inline-block;
 	height: 12px;
 	width: 12px;
 }
 .tree li[role='treeitem'][aria-expanded='true'] > .button::before {
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/tree_collapse.png');
+	background-image: url('/assets/ui/tree_collapse.png');
 }
 .tree li[role='treeitem'][aria-expanded='false'] > ul {
 	display: none;
@@ -295,7 +295,7 @@ body {
 	color: inherit;
 	background: var(--base-color);
 	background:
-		url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/dropdown_arrow.png') right 8px center/14px no-repeat,
+		url('/assets/ui/dropdown_arrow.png') right 8px center/14px no-repeat,
 		linear-gradient(270deg, var(--border-color) 0, var(--border-color) 32px, var(--base-color) 32px);
 	padding: 4px 6px;
 	border: 1px solid var(--border-color);
@@ -396,16 +396,19 @@ body {
 	outline: none;
 }
 .radio-control input {
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/radio_empty.png');
+	background-image: url('/assets/ui/radio_empty.png');
 }
 .radio-control input:checked {
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/radio_filled.png');
+	background-image: url('/assets/ui/radio_filled.png');
 }
 .checkbox-control input {
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/checkbox_empty.png');
+	background-image: url('/assets/ui/checkbox_empty.png');
 }
 .checkbox-control input:checked {
-	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/checkbox_checked.png');
+	background-image: url('/assets/ui/checkbox_checked.png');
+}
+.checkbox-control input:indeterminate {
+	background-image: url('/assets/ui/checkbox_indeterminate.png');
 }
 
 .progress {
