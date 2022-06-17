@@ -196,6 +196,9 @@ body {
 .tree li[role='treeitem'][aria-expanded='true'] > .button::before {
 	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/tree_collapse.png');
 }
+.tree li[role='treeitem'][aria-expanded='false'] > ul {
+	display: none;
+}
 
 .control {
 	display: grid;

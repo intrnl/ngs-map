@@ -6,36 +6,41 @@ import { t } from './locale.js';
 
 export function renderMapLegend (data, enabled) {
 	return (
-		<ul className='tree' role='tree'>
-			{Object.keys(data).map((key) => {
-				const values = data[key];
+		<x-tree>
+			<ul class='tree' role='tree'>
+				{Object.keys(data).map((key) => {
+					const values = data[key];
 
-				return (
-					<li role='treeitem' aria-expanded='false'>
-						<button className='button is-item fullwidth'>
-							{t(`ui.${key}`)}
-						</button>
-						<ul>
-							{values.map((value) => (
-								<li>
-									<label class='checkbox-control'>
-										<input
-											type='checkbox'
-											name='landmarks'
-											value={value}
-											checked={enabled.includes(value)}
-											x-action='input:x-app#handleLandmarkChange'
-										/>
-										<span>{t(`markers.${value}`)}</span>
-									</label>
-								</li>
-							))}
-						</ul>
-					</li>
-				);
-			})}
-		</ul>
-	)
+					return (
+						<li role='treeitem' aria-expanded='false'>
+							<button
+								class='button is-item fullwidth'
+								x-action='click:x-tree#handleMenuExpand'
+							>
+								{t(`ui.${key}`)}
+							</button>
+							<ul>
+								{values.map((value) => (
+									<li>
+										<label class='checkbox-control'>
+											<input
+												type='checkbox'
+												name='landmarks'
+												value={value}
+												checked={enabled.includes(value)}
+												x-action='input:x-app#handleLandmarkChange'
+											/>
+											<span>{t(`markers.${value}`)}</span>
+										</label>
+									</li>
+								))}
+							</ul>
+						</li>
+					);
+				})}
+			</ul>
+		</x-tree>
+	);
 }
 
 function h (type, props, ...children) {

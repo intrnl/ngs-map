@@ -28,8 +28,12 @@
 .window {
 	z-index: 2;
 }
+
 x-window {
 	position: absolute;
+}
+x-tree {
+	display: contents;
 }
 
 .x-latlng-window {

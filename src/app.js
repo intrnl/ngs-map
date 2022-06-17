@@ -9,6 +9,7 @@ import './styles/base.css';
 import './styles/app.css';
 import 'leaflet/dist/leaflet.css';
 
+import './tree.js';
 import WindowController from './window.js';
 import { loadLocale, t } from './locale.js';
 import { renderMapLegend } from './template.jsx';
