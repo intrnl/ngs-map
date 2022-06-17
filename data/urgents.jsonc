@@ -155,8 +155,8 @@
 	},
 	{
 		"id": "mining_rig_retem",
-		"lat": -1683.7,
-		"lng": 1346,
+		"lat": -1681,
+		"lng": 1341,
 		"max_players": 8,
 		"initial_rewards": [
 			["rewards.meseta", 5000]
