@@ -37,6 +37,7 @@ x-tree {
 }
 
 .x-latlng-window {
+	user-select: none;
 	position: absolute;
 	bottom: 12px;
 	right: 12px;
