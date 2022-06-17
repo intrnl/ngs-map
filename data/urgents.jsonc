@@ -175,8 +175,8 @@
 	// Kvaris
 	{
 		"id": "crocodylis_vera",
-		"lat": -765.6,
-		"lng": 846,
+		"lat": -752.9,
+		"lng": 864,
 		"max_players": 8,
 		"initial_rewards": [
 			["rewards.meseta", 10000]
