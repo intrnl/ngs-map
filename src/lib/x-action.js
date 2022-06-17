@@ -1,4 +1,5 @@
 const ATTR = 'x-action';
+const SELECTOR = `[${ATTR}]`;
 
 const observer = new MutationObserver((mutations) => {
 	for (const mutation of mutations) {
@@ -9,15 +10,11 @@ const observer = new MutationObserver((mutations) => {
 
 		if (mutation.type === 'childList') {
 			for (const node of mutation.removedNodes) {
-				if (node.$binds) {
-					node.$binds = null;
-				}
+				removeBind(node);
 			}
 
 			for (const node of mutation.addedNodes) {
-				if (node.nodeType === Node.ELEMENT_NODE) {
-					bindActions(node);
-				}
+				addBind(node);
 			}
 
 			continue;
@@ -41,16 +38,36 @@ function initialize () {
 		attributeFilter: [ATTR],
 	});
 
-	for (const node of root.querySelectorAll(`[${ATTR}]`)) {
+	addBind(root);
+}
+
+function addBind (node) {
+	if (node.nodeType !== Node.ELEMENT_NODE) {
+		return;
+	}
+
+	if (node.hasAttribute(ATTR)) {
 		bindActions(node);
+	}
+
+	for (const child of node.querySelectorAll(SELECTOR)) {
+		bindActions(child);
+	}
+}
+
+function removeBind (node) {
+	if (node.$binds) {
+		node.$binds = null;
+	}
+
+	for (const child of node.childNodes) {
+		if (child.nodeType === Node.ELEMENT_NODE) {
+			removeBind(child);
+		}
 	}
 }
 
 function bindActions (node) {
-	if (!node.hasAttribute(ATTR)) {
-		return;
-	}
-
 	const actions = node.getAttribute(ATTR).split(/\s+/);
 	const binds = node.$binds = {};
 
