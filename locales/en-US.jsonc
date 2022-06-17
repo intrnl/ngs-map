@@ -8,11 +8,12 @@
 		"seafoods": "Seafoods"
 	},
 	"markers": {
-		"cocoons": "Cocoons",
-		"mags": "Mags",
-		"ryukers": "Ryuker Devices",
+		"battledias": "Battledia",
+		"cocoons": "Cocoon",
+		"mags": "Region Mag",
+		"ryukers": "Ryuker Device",
 		"trinitas": "Trinitas",
-		"urgents": "Urgent Quests"
+		"urgents": "Urgent Quest"
 	},
 	"missions": {
 		"finish_point": "Reach the finish point",
