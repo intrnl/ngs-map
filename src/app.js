@@ -19,8 +19,10 @@ const MAP_SOUTH = -2048;
 const MAP_WEST = 0;
 const MAP_EAST = 2048;
 
-const LOCALE = 'en-US';
-const ENABLED_MARKERS = ['cocoons', 'mags', 'ryukers', 'trinitas', 'urgents'];
+const CONFIG = JSON.parse(localStorage.getItem('config') || '{}');
+
+const LOCALE = CONFIG.locale || 'en-US';
+const ENABLED_MARKERS = CONFIG.markers || ['cocoons', 'mags', 'ryukers', 'trinitas', 'urgents'];
 
 await loadLocale(LOCALE);
 
@@ -153,10 +155,21 @@ class AppController extends HTMLElement {
 				ENABLED_MARKERS.splice(idx, 1);
 			}
 		}
+
+		this._saveConfig();
 	}
 
 	openLegendWindow () {
 		this.targets.legendWindow.toggleWindow();
+	}
+
+	_saveConfig () {
+		const config = {
+			locale: LOCALE,
+			markers: ENABLED_MARKERS,
+		};
+
+		localStorage.setItem('config', JSON.stringify(config));
 	}
 }
 
