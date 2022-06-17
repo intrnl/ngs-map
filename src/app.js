@@ -94,6 +94,7 @@ class AppController extends HTMLElement {
 		}
 
 		this.map = map;
+		this.handleCanZoom();
 
 		// Initialize map layers
 		const legendWindowTitle = this.targets.legendWindowTitle;
