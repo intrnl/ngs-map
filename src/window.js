@@ -73,6 +73,10 @@ class WindowController extends HTMLElement {
 	}
 
 	handlePointerDown (ev) {
+		if (ev.target.closest('button')) {
+			return;
+		}
+
 		ev.preventDefault();
 
 		this.prevX = ev.clientX;
@@ -100,6 +104,23 @@ class WindowController extends HTMLElement {
 	handleDocumentPointerUp () {
 		document.removeEventListener('pointermove', this);
 		document.removeEventListener('pointerup', this);
+
+		// prevent clipping
+		const { top, left } = this.getBoundingClientRect();
+
+		if (top < 0) {
+			this.style.top = '0px';
+		}
+		else if (top + this.offsetHeight > window.innerHeight) {
+			this.style.top = `${window.innerHeight - this.offsetHeight}px`;
+		}
+
+		if (left < 0) {
+			this.style.left = '0px';
+		}
+		else if (left + this.offsetWidth > window.innerWidth) {
+			this.style.left = `${window.innerWidth - this.offsetWidth}px`;
+		}
 	}
 }
 
