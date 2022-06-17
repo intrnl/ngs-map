@@ -1,6 +1,7 @@
 node_modules/
 /dist/_assets/
 /dist/_data/
+/dist/_locale/
 
 .pnpm-*.log
 .npm-*.log

@@ -11,12 +11,27 @@
 		<x-app>
 			<div class='x-map-container'>
 				<div x-target='x-app.mapContainer'></div>
-				<div class='x-zoom-controls'>
-					<button class='button' title='Zoom in' x-target='x-app.zoomInButton' x-action='click:x-app#handleZoomIn'>+</button>
-					<button class='button' title='Zoom out' x-target='x-app.zoomOutButton' x-action='click:x-app#handleZoomOut'>-</button>
-				</div>
-				<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
 			</div>
+
+			<div class='x-zoom-controls'>
+				<button class='button' title='Zoom in' x-target='x-app.zoomInButton' x-action='click:x-app#handleZoomIn'>+</button>
+				<button class='button' title='Zoom out' x-target='x-app.zoomOutButton' x-action='click:x-app#handleZoomOut'>-</button>
+				<button class='button' title='Show map legend' x-action='click:x-app#openLegendWindow'>M</button>
+			</div>
+
+			<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
+
+			<x-window class='window' style='width: 320px; display: none' x-target='x-app.legendWindow'>
+				<div class='window-titlebar' x-target='x-window.title'>
+					<span x-target='x-app.legendWindowTitle'></span>
+					<div class='titlebar-actions'>
+						<button class='titlebar-button is-close' title='Close window' x-action='click:x-window#closeWindow'>
+							<img class='icon is-outlined titlebar-icon-close' />
+						</button>
+					</div>
+				</div>
+				<div class='window-content' x-target='x-app.legendWindowContent'></div>
+			</x-window>
 		</x-app>
 	</body>
 </html>

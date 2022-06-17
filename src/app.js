@@ -3,17 +3,26 @@ import { query } from './lib/x-controller';
 
 import * as L from 'leaflet';
 
-import { markers } from './markers.js';
+import { markers, groups } from './markers.js';
 
 import './styles/base.css';
 import './styles/app.css';
 import 'leaflet/dist/leaflet.css';
+
+import WindowController from './window.js';
+import { loadLocale, t } from './locale.js';
+import { renderMapLegend } from './template.jsx';
 
 
 const MAP_NORTH = 0;
 const MAP_SOUTH = -2048;
 const MAP_WEST = 0;
 const MAP_EAST = 2048;
+
+const LOCALE = 'en-US';
+const ENABLED_MARKERS = ['cocoons', 'mags', 'ryukers', 'trinitas', 'urgents'];
+
+await loadLocale(LOCALE);
 
 class AppController extends HTMLElement {
 	targets = {
@@ -27,13 +36,22 @@ class AppController extends HTMLElement {
 
 		/** @type {HTMLDivElement} */
 		latlngWindow: query(this, 'latlngWindow'),
+
+		/** @type {WindowController} */
+		legendWindow: query(this, 'legendWindow'),
+		/** @type {HTMLSpanElement} */
+		legendWindowTitle: query(this, 'legendWindowTitle'),
+		/** @type {HTMLDivElement} */
+		legendWindowContent: query(this, 'legendWindowContent'),
 	};
 
 	/** @type {?L.Map} */
 	map = null;
-	layersInitialized = false;
 
-	connectedCallback () {
+	constructor () {
+		super();
+
+		// Initialize map
 		const map = L.map(this.targets.mapContainer, {
 			zoom: 0,
 			minZoom: 0,
@@ -67,25 +85,27 @@ class AppController extends HTMLElement {
 		});
 
 		for (const key in markers) {
-			const group = markers[key];
-			group.addTo(map);
+			if (ENABLED_MARKERS.includes(key)) {
+				const group = markers[key];
+				group.addTo(map);
+			}
 		}
 
 		this.map = map;
 
-		// make sure the map knows about its container size
-		requestAnimationFrame(() => {
-			this.map?.invalidateSize();
-		});
+		// Initialize map layers
+		const legendWindowTitle = this.targets.legendWindowTitle;
+		const legendWindowContent = this.targets.legendWindowContent;
+
+		legendWindowTitle.textContent = t('ui.map_legend');
+		legendWindowContent.appendChild(renderMapLegend(groups, ENABLED_MARKERS));
 	}
 
-	disconnectedCallback () {
-		const map = this.map;
-
-		if (map) {
-			map.remove();
-			this.map = null;
-		}
+	connectedCallback () {
+		// make sure the map knows about its container size
+		requestAnimationFrame(() => {
+			this.map.invalidateSize();
+		});
 	}
 
 	handleCanZoom () {
@@ -101,11 +121,42 @@ class AppController extends HTMLElement {
 	}
 
 	handleZoomIn () {
-		this.map?.zoomIn();
+		this.map.zoomIn();
 	}
 
 	handleZoomOut () {
-		this.map?.zoomOut();
+		this.map.zoomOut();
+	}
+
+	handleLandmarkChange (ev) {
+		const target = ev.target;
+		const value = target.value;
+		const checked = target.checked;
+
+		const map = this.map;
+		const group = markers[value];
+
+		if (!group || !map) {
+			return;
+		}
+
+		if (checked) {
+			group.addTo(map);
+
+			ENABLED_MARKERS.push(value);
+		}
+		else {
+			group.removeFrom(map);
+
+			const idx = ENABLED_MARKERS.indexOf(value);
+			if (idx !== -1) {
+				ENABLED_MARKERS.splice(idx, 1);
+			}
+		}
+	}
+
+	openLegendWindow () {
+		this.targets.legendWindow.toggleWindow();
 	}
 }
 

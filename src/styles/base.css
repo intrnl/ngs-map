@@ -97,6 +97,12 @@ body {
 	border-color: #ff1414;
 }
 
+.titlebar-icon-close {
+	content: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/close.png');
+	height: 14px;
+	width: 14px;
+}
+
 .window-content {
 	background-color: rgb(22 28 37); /* hsl(216deg 25% 12%) */
 	background-color: hsl(217deg 24% 17% / 85%);
@@ -174,12 +180,16 @@ body {
 	margin-top: 4px;
 	margin-left: 20px;
 }
+.tree li[role='treeitem'] > .button {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
 .tree li[role='treeitem'] > .button::before {
 	content: '';
 	background-image: url('https://cdn.statically.io/gh/intrnl/ngs-assets/trunk/icons/tree_expand.png');
 	background-size: contain;
 	display: inline-block;
-	vertical-align: -2px;
 	height: 12px;
 	width: 12px;
 }
@@ -369,7 +379,7 @@ body {
 .checkbox-control {
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	gap: 8px;
 }
 .radio-control input,
 .checkbox-control input {
@@ -377,7 +387,7 @@ body {
 	background-size: contain;
 	height: 16px;
 	width: 16px;
-	margin: 0 4px 0 0;
+	margin: 0;
 	outline: none;
 }
 .radio-control input {

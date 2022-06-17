@@ -3,16 +3,17 @@
 	"name": "ngs-world-map",
 	"scripts": {
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
-		"build": "NODE_ENV=production node ./scripts/build.js && node ./scripts/process.js",
-		"process": "node ./scripts/process.js"
+		"build": "NODE_ENV=production node ./scripts/build.js && node ./scripts/process-map.js",
+		"process-map": "node ./scripts/process-map.js"
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
+		"@messageformat/core": "^3.0.1",
 		"esbuild": "^0.14.43",
 		"json5": "^2.2.1"
 	},
 	"dependencies": {
-		"compress-json": "^2.0.1",
+		"@messageformat/runtime": "^3.0.1",
 		"leaflet": "^1.8.0"
 	}
 }

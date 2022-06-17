@@ -1,5 +1,6 @@
 {
 	"ui": {
+		"map_legend": "Map Legend",
 		"landmarks": "Landmarks",
 		"minerals": "Minerals",
 		"vegetables": "Vegetable",
