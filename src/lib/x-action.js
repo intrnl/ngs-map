@@ -3,12 +3,17 @@ const SELECTOR = `[${ATTR}]`;
 
 const observer = new MutationObserver((mutations) => {
 	for (const mutation of mutations) {
-		if (mutation.type === 'attribute') {
-			bindActions(mutation.target);
-			continue;
-		}
+		if (mutation.type === 'attributes') {
+			const target = mutation.target;
 
-		if (mutation.type === 'childList') {
+			if (target.hasAttribute(ATTR)) {
+				bindActions(target);
+			}
+			else if (target.$binds) {
+				node.$binds = null;
+			}
+		}
+		else if (mutation.type === 'childList') {
 			for (const node of mutation.removedNodes) {
 				removeBind(node);
 			}
@@ -16,8 +21,6 @@ const observer = new MutationObserver((mutations) => {
 			for (const node of mutation.addedNodes) {
 				addBind(node);
 			}
-
-			continue;
 		}
 	}
 });
@@ -96,6 +99,8 @@ function bindActions (node) {
 
 			continue;
 		}
+
+		console.log({ node, event, tag, method })
 
 		// there's a possibility that the controller hasn't been defined yet, if
 		// that's the case we'll store a string and resolve it later.
