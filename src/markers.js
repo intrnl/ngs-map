@@ -13,15 +13,7 @@ export const markers = {
 };
 
 export const groups = {
-	landmarks: [
-		'ryukers',
-		'mags',
-		'battledias',
-		'cocoons',
-		'towers',
-		'trinitas',
-		'urgents',
-	],
+	landmarks: ['ryukers', 'mags', 'battledias', 'cocoons', 'towers', 'trinitas', 'urgents'],
 };
 
 function createMarker (name, url, icon) {

@@ -22,7 +22,7 @@ const MAP_EAST = 2048;
 const CONFIG = JSON.parse(localStorage.getItem('config') || '{}');
 
 const LOCALE = CONFIG.locale || 'en-US';
-const ENABLED_MARKERS = CONFIG.markers || ['battledias', 'cocoons', 'mags', 'ryukers', 'trinitas', 'urgents'];
+const ENABLED_MARKERS = CONFIG.markers || groups.landmarks.slice();
 
 await loadLocale(LOCALE);
 
