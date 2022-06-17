@@ -13,6 +13,7 @@ export const markers = {
 
 export const groups = {
 	landmarks: [
+		'battledias',
 		'cocoons',
 		'mags',
 		'ryukers',
