@@ -5,8 +5,22 @@ export async function loadLocale (locale) {
 	currentLocale = mod.default;
 }
 
-export function t (path, obj) {
+export function t (path, obj = null) {
 	const value = getPath(currentLocale, path);
+	let mutated = false;
+
+	for (const key in obj) {
+		const value = obj[key];
+
+		if (typeof value === 'string' && value.startsWith('t:')) {
+			if (!mutated) {
+				obj = { ...obj };
+				mutated = true;
+			}
+
+			obj[key] = getPath(currentLocale, value.slice(2));
+		}
+	}
 
 	if (typeof value === 'function') {
 		return value(obj);
