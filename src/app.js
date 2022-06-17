@@ -87,11 +87,9 @@ class AppController extends HTMLElement {
 			this.targets.latlngWindow.innerText = `${lat.toFixed(2)}, ${lng.toFixed(2)}`;
 		});
 
-		for (const key in markers) {
-			if (ENABLED_MARKERS.includes(key)) {
-				const group = markers[key];
-				group.addTo(map);
-			}
+		for (const key of ENABLED_MARKERS) {
+			const group = markers[key];
+			group.addTo(map);
 		}
 
 		this.map = map;
