@@ -3,7 +3,7 @@
 	"name": "ngs-world-map",
 	"scripts": {
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
-		"build": "NODE_ENV=production node ./scripts/build.js; node ./scripts/process.js",
+		"build": "NODE_ENV=production node ./scripts/build.js && node ./scripts/process.js",
 		"process": "node ./scripts/process.js"
 	},
 	"devDependencies": {
