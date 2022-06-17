@@ -38,9 +38,7 @@ class WindowController extends HTMLElement {
 		const title = this.targets.title;
 		title.addEventListener('pointerdown', this);
 
-		this.style.position = 'absolute';
-		this.style.top = '12px';
-		this.style.left = '12px';
+		this.style.display = 'none';
 	}
 
 	openWindow () {
@@ -99,6 +97,8 @@ class WindowController extends HTMLElement {
 
 		this.style.top = `${this.offsetTop - this.currY}px`;
 		this.style.left = `${this.offsetLeft - this.currX}px`;
+		this.style.bottom = '';
+		this.style.right = '';
 	}
 
 	handleDocumentPointerUp () {

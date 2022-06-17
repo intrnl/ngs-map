@@ -28,6 +28,9 @@
 .window {
 	z-index: 2;
 }
+x-window {
+	position: absolute;
+}
 
 .x-latlng-window {
 	position: absolute;
@@ -37,4 +40,8 @@
 }
 .x-latlng-window:empty {
 	display: none;
+}
+
+.x-legend-window {
+	width: 320px;
 }
