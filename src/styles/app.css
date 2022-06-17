@@ -25,6 +25,10 @@
 	padding: 4px 8px;
 }
 
+.window {
+	z-index: 2;
+}
+
 .x-latlng-window {
 	position: absolute;
 	bottom: 12px;
