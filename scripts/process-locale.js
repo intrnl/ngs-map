@@ -25,6 +25,7 @@ await esbuild.build({
 	format: 'esm',
 	bundle: true,
 	minify: true,
+	sourcemap: true,
 	plugins: [
 		{
 			name: 'messageformat',
