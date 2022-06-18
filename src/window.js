@@ -26,7 +26,7 @@ document.addEventListener('focusin', handleWindowFocus);
 
 class WindowController extends HTMLElement {
 	targets = {
-		title: query(this, 'title'),
+		draggable: query(this, 'draggable'),
 	};
 
 	prevX = 0;
@@ -35,8 +35,8 @@ class WindowController extends HTMLElement {
 	currY = 0;
 
 	connectedCallback () {
-		const title = this.targets.title;
-		title.addEventListener('pointerdown', this);
+		const draggable = this.targets.draggable;
+		draggable.addEventListener('pointerdown', this);
 
 		this.style.display = 'none';
 	}

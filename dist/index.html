@@ -22,15 +22,15 @@
 			<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
 
 			<x-window class='window x-legend-window' style='right: 48px; top: 12px;' x-target='x-app.legendWindow'>
-				<div class='window-titlebar' x-target='x-window.title'>
-					<span x-target='x-app.legendWindowTitle'></span>
+				<div class='window-titlebar' x-target='x-window.draggable'>
+					<span x-target='x-window.title'></span>
 					<div class='titlebar-actions'>
 						<button class='titlebar-button is-close' title='Close window' x-action='click:x-window#closeWindow'>
 							<img class='icon is-outlined titlebar-icon-close' />
 						</button>
 					</div>
 				</div>
-				<div class='window-content' x-target='x-app.legendWindowContent'></div>
+				<div class='window-content' x-target='x-window.content'></div>
 			</x-window>
 		</x-app>
 	</body>

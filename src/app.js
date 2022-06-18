@@ -42,10 +42,6 @@ class AppController extends HTMLElement {
 
 		/** @type {WindowController} */
 		legendWindow: query(this, 'legendWindow'),
-		/** @type {HTMLSpanElement} */
-		legendWindowTitle: query(this, 'legendWindowTitle'),
-		/** @type {HTMLDivElement} */
-		legendWindowContent: query(this, 'legendWindowContent'),
 	};
 
 	/** @type {?L.Map} */
@@ -96,8 +92,9 @@ class AppController extends HTMLElement {
 		this.handleCanZoom();
 
 		// Initialize map layers
-		const legendWindowTitle = this.targets.legendWindowTitle;
-		const legendWindowContent = this.targets.legendWindowContent;
+		const legendWindow = this.targets.legendWindow;
+		const legendWindowTitle = query(legendWindow, 'title');
+		const legendWindowContent = query(legendWindow, 'content');
 
 		legendWindowTitle.textContent = t('ui.map_legend');
 		legendWindowContent.appendChild(renderMapLegend(groups, ENABLED_MARKERS));
@@ -130,7 +127,7 @@ class AppController extends HTMLElement {
 		this.map.zoomOut();
 	}
 
-	handleLandmarkChange (ev) {
+	handleLegendChange (ev) {
 		const target = ev.target;
 		const value = target.value;
 		const checked = target.checked;

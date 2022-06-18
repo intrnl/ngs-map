@@ -28,7 +28,7 @@ export function renderMapLegend (data, enabled) {
 												name='landmarks'
 												value={value}
 												checked={enabled.includes(value)}
-												x-action='input:x-app#handleLandmarkChange'
+												x-action='input:x-app#handleLegendChange'
 											/>
 											<span>{t(`markers.${value}`)}</span>
 										</label>
