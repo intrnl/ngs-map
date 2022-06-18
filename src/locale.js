@@ -7,26 +7,31 @@ export async function loadLocale (locale) {
 
 export function t (path, obj = null) {
 	const value = getPath(currentLocale, path);
+	const type = typeof value;
+
 	let mutated = false;
 
-	for (const key in obj) {
-		const value = obj[key];
+	if (type === 'function') {
+		for (const key in obj) {
+			const val = obj[key];
 
-		if (typeof value === 'string' && value.startsWith('t:')) {
-			if (!mutated) {
-				obj = { ...obj };
-				mutated = true;
+			if (typeof val === 'string' && val.startsWith('t:')) {
+				if (!mutated) {
+					obj = { ...obj };
+					mutated = true;
+				}
+
+				obj[key] = getPath(currentLocale, val.slice(2));
 			}
-
-			obj[key] = getPath(currentLocale, value.slice(2));
 		}
-	}
 
-	if (typeof value === 'function') {
 		return value(obj);
 	}
-	else {
+	else if (type === 'string') {
 		return value;
+	}
+	else {
+		return missingPath(path);
 	}
 }
 
@@ -34,7 +39,7 @@ function getPath (obj, path) {
 	let current = obj;
 
 	if (current == null) {
-		return missingPath(path);
+		return;
 	}
 
 	const paths = path.split('.');
@@ -44,7 +49,7 @@ function getPath (obj, path) {
 		const next = current[key];
 
 		if (next == null) {
-			return missingPath(path);
+			return;
 		}
 
 		current = next;
