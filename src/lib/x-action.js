@@ -82,7 +82,9 @@ function bindActions (node) {
 		const tag = action.slice(eventSep + 1, methodSep);
 		const method = action.slice(methodSep + 1) || 'handleEvent';
 
-		if (!tag.includes('-')) {
+		const isSelf = tag === 'this';
+
+		if (!tag.includes('-') && !isSelf) {
 			if (DEV) {
 				console.warn(`cannot bind ${event} event to ${tag} because it is not a custom element`);
 			}
@@ -90,7 +92,7 @@ function bindActions (node) {
 			continue;
 		}
 
-		const target = node.closest(tag);
+		const target = isSelf ? node : node.parentElement.closest(tag);
 
 		if (!target) {
 			if (DEV) {
