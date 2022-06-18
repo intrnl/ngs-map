@@ -1,3 +1,18 @@
+x-app {
+	display: block;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+x-window {
+	position: absolute;
+	z-index: 2;
+}
+x-tree {
+	display: contents;
+}
+
 .x-map-container {
 	background-color: #223f5e;
 	height: 100vh;
@@ -25,17 +40,6 @@
 	padding: 4px 8px;
 }
 
-.window {
-	z-index: 2;
-}
-
-x-window {
-	position: absolute;
-}
-x-tree {
-	display: contents;
-}
-
 .x-latlng-window {
 	user-select: none;
 	position: absolute;
@@ -48,5 +52,6 @@ x-tree {
 }
 
 .x-legend-window {
+	max-height: calc(100vh - 12px - 12px - 36px - 8px);
 	width: 320px;
 }
