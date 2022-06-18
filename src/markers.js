@@ -34,15 +34,16 @@ function createMarker (name, url, icon) {
 			const lat = item.lat;
 			const lng = item.lng;
 
+			/** @type {import('leaflet').Marker} */
 			const marker = L.marker([lat, lng], { icon });
-
-			if (name === 'mags') {
-				marker.bindPopup(`<strong>${item.type}</strong>`);
-			} else {
-				marker.bindPopup(`<strong>${item.id}</strong>`)
-			}
-
 			marker.addTo(group);
+
+			const node = marker.getElement();
+
+			node.setAttribute('x-action', 'click:x-app#handleMarkerClick');
+
+			node.$type = name;
+			node.$data = item;
 		}
 	});
 

@@ -32,6 +32,26 @@
 				</div>
 				<div class='window-content' x-target='x-legend-window.content'></div>
 			</x-legend-window>
+
+			<x-quest-info-window class='window' style='left: 12px; top: 12px;' x-target='x-app.questInfoWindow'>
+				<div class='window-titlebar' x-action='pointerdown:x-quest-info-window'>
+					<span x-target='x-quest-info-window.title'></span>
+					<div class='titlebar-actions'>
+						<button class='titlebar-button is-close' title='Close window' x-action='click:x-quest-info-window#closeWindow'>
+							<img class='icon is-outlined titlebar-icon-close' />
+						</button>
+					</div>
+				</div>
+				<div class='window-content'>
+					<p class='text is-large x--quest-name'>
+						<img class='icon' height='14' width='24' x-target='x-quest-info-window.maxPlayersIcon' />
+						<span x-target='x-quest-info-window.questName'></span>
+					</p>
+					<div class='box fullwidth'>
+						<p class='text is-paragrah' x-target='x-quest-info-window.questDescription'></p>
+					</div>
+				</div>
+			</x-quest-info-window>
 		</x-app>
 	</body>
 </html>

@@ -1,5 +1,9 @@
 {
 	"ui": {
+		"quest_info": {
+			"title": "Quest Info",
+			"max_players_info": "This quest can be played with up to {value, plural, one {# player} other {# players}}"
+		},
 		"map_legend": "Map Legend",
 		"landmarks": "Landmarks",
 		"minerals": "Minerals",

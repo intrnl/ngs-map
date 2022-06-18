@@ -10,9 +10,10 @@ import './styles/app.css';
 import 'leaflet/dist/leaflet.css';
 
 import './tree.js';
+import WindowController from './window.js';
 import LegendWindowController from './window-legend.js';
-import { loadLocale, t } from './locale.js';
-import { renderMapLegend } from './template.jsx';
+import QuestInfoWindowController from './window-quest-info.js';
+import { loadLocale } from './locale.js';
 
 
 const MAP_NORTH = 0;
@@ -40,9 +41,14 @@ class AppController extends HTMLElement {
 	get latlngWindow () { return query(this, 'latlngWindow'); }
 	/** @type {LegendWindowController} */
 	get legendWindow () { return query(this, 'legendWindow'); }
+	/** @type {QuestInfoWindowController} */
+	get questInfoWindow () { return query(this, 'questInfoWindow'); }
 
 	/** @type {?L.Map} */
 	map = null;
+
+	/** @type {WindowController} */
+	activeInfoWindow = null;
 
 	constructor () {
 		super();
@@ -88,11 +94,9 @@ class AppController extends HTMLElement {
 		this.map = map;
 		this.updateCanZoom();
 
-		// Initialize legend window
-		const legendWindow = this.legendWindow;
-
-		legendWindow.title.textContent = t('ui.map_legend');
-		legendWindow.content.appendChild(renderMapLegend(groups, ENABLED_MARKERS));
+		// Initialize windows
+		this.legendWindow.initialize(groups, ENABLED_MARKERS);
+		this.questInfoWindow.initialize();
 	}
 
 	connectedCallback () {
@@ -152,6 +156,36 @@ class AppController extends HTMLElement {
 
 	openLegendWindow () {
 		this.legendWindow.toggleWindow();
+	}
+
+	handleMarkerClick (ev) {
+		const target = ev.target;
+
+		const type = target.$type;
+		const data = target.$data;
+
+		const prev = this.activeInfoWindow;
+		let controller;
+
+		switch (type) {
+			case 'battledias':
+			case 'cocoons':
+			case 'urgents':
+			case 'towers':
+				controller = this.questInfoWindow;
+				break;
+			default:
+				throw new Error(`Unknown marker type: ${type}`);
+		}
+
+		if (prev && prev !== controller) {
+			prev.closeWindow();
+		}
+
+		controller.update(data, type);
+		controller.openWindow();
+
+		this.activeInfoWindow = controller;
 	}
 
 	_saveConfig () {

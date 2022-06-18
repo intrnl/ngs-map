@@ -5,7 +5,7 @@ x-app {
 	overflow: hidden;
 }
 
-x-window, x-legend-window {
+x-window, x-legend-window, x-quest-info-window {
 	position: absolute;
 	z-index: 2;
 }
@@ -54,4 +54,14 @@ x-tree {
 x-legend-window {
 	max-height: calc(100vh - 12px - 12px - 36px - 8px);
 	width: 320px;
+}
+
+x-quest-info-window {
+	width: 448px;
+}
+x-quest-info-window .x--quest-name {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
 }
