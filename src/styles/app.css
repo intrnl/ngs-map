@@ -5,7 +5,7 @@ x-app {
 	overflow: hidden;
 }
 
-x-window {
+x-window, x-legend-window {
 	position: absolute;
 	z-index: 2;
 }
@@ -51,7 +51,7 @@ x-tree {
 	display: none;
 }
 
-.x-legend-window {
+x-legend-window {
 	max-height: calc(100vh - 12px - 12px - 36px - 8px);
 	width: 320px;
 }

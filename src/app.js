@@ -10,7 +10,7 @@ import './styles/app.css';
 import 'leaflet/dist/leaflet.css';
 
 import './tree.js';
-import WindowController from './window.js';
+import LegendWindowController from './window-legend.js';
 import { loadLocale, t } from './locale.js';
 import { renderMapLegend } from './template.jsx';
 
@@ -28,21 +28,18 @@ const ENABLED_MARKERS = CONFIG.markers || groups.landmarks.slice();
 await loadLocale(LOCALE);
 
 class AppController extends HTMLElement {
-	targets = {
-		/** @type {HTMLDivElement} */
-		mapContainer: query(this, 'mapContainer'),
+	/** @type {HTMLDivElement} */
+	get mapContainer () { return query(this, 'mapContainer'); }
 
-		/** @type {HTMLButtonElement} */
-		zoomInButton: query(this, 'zoomInButton'),
-		/** @type {HTMLButtonElement} */
-		zoomOutButton: query(this, 'zoomOutButton'),
+	/** @type {HTMLButtonElement} */
+	get zoomInButton () { return query(this, 'zoomInButton'); }
+	/** @type {HTMLButtonElement} */
+	get zoomOutButton () { return query(this, 'zoomOutButton'); }
 
-		/** @type {HTMLDivElement} */
-		latlngWindow: query(this, 'latlngWindow'),
-
-		/** @type {WindowController} */
-		legendWindow: query(this, 'legendWindow'),
-	};
+	/** @type {HTMLDivElement} */
+	get latlngWindow () { return query(this, 'latlngWindow'); }
+	/** @type {LegendWindowController} */
+	get legendWindow () { return query(this, 'legendWindow'); }
 
 	/** @type {?L.Map} */
 	map = null;
@@ -51,7 +48,7 @@ class AppController extends HTMLElement {
 		super();
 
 		// Initialize map
-		const map = L.map(this.targets.mapContainer, {
+		const map = L.map(this.mapContainer, {
 			zoom: 0,
 			minZoom: 0,
 			maxZoom: 2,
@@ -75,12 +72,12 @@ class AppController extends HTMLElement {
 		}).addTo(map);
 
 		map.addEventListener('zoomend', () => {
-			this.handleCanZoom();
+			this.updateCanZoom();
 		});
 
 		map.addEventListener('mousemove', (ev) => {
 			const { lat, lng } = ev.latlng;
-			this.targets.latlngWindow.innerText = `${lat.toFixed(2)}, ${lng.toFixed(2)}`;
+			this.latlngWindow.innerText = `${lat.toFixed(2)}, ${lng.toFixed(2)}`;
 		});
 
 		for (const key of ENABLED_MARKERS) {
@@ -89,15 +86,13 @@ class AppController extends HTMLElement {
 		}
 
 		this.map = map;
-		this.handleCanZoom();
+		this.updateCanZoom();
 
-		// Initialize map layers
-		const legendWindow = this.targets.legendWindow;
-		const legendWindowTitle = query(legendWindow, 'title');
-		const legendWindowContent = query(legendWindow, 'content');
+		// Initialize legend window
+		const legendWindow = this.legendWindow;
 
-		legendWindowTitle.textContent = t('ui.map_legend');
-		legendWindowContent.appendChild(renderMapLegend(groups, ENABLED_MARKERS));
+		legendWindow.title.textContent = t('ui.map_legend');
+		legendWindow.content.appendChild(renderMapLegend(groups, ENABLED_MARKERS));
 	}
 
 	connectedCallback () {
@@ -107,23 +102,22 @@ class AppController extends HTMLElement {
 		});
 	}
 
-	handleCanZoom () {
+	updateCanZoom () {
 		const map = this.map;
-		const { zoomInButton, zoomOutButton } = this.targets;
 
 		const zoom = map.getZoom();
 		const maxZoom = map.getMaxZoom();
 		const minZoom = map.getMinZoom();
 
-		zoomInButton.disabled =	zoom >= maxZoom;
-		zoomOutButton.disabled = zoom <= minZoom;
+		this.zoomInButton.disabled = zoom >= maxZoom;
+		this.zoomOutButton.disabled = zoom <= minZoom;
 	}
 
-	handleZoomIn () {
+	zoomIn () {
 		this.map.zoomIn();
 	}
 
-	handleZoomOut () {
+	zoomOut () {
 		this.map.zoomOut();
 	}
 
@@ -157,7 +151,7 @@ class AppController extends HTMLElement {
 	}
 
 	openLegendWindow () {
-		this.targets.legendWindow.toggleWindow();
+		this.legendWindow.toggleWindow();
 	}
 
 	_saveConfig () {
