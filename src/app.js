@@ -1,7 +1,7 @@
 import './lib/x-action.js';
 import { query } from './lib/x-controller';
 
-import * as L from 'leaflet';
+import * as L from 'leaflet/dist/leaflet-src.esm';
 
 import { markers, groups } from './markers.js';
 
