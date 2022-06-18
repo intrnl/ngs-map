@@ -63,8 +63,11 @@ class WindowController extends HTMLElement {
 		}
 	}
 
+	/**
+	 * @param {PointerEvent} ev
+	 */
 	handlePointerDown (ev) {
-		if (ev.target.closest('button')) {
+		if (ev.button !== 0 || ev.target.closest('button')) {
 			return;
 		}
 
@@ -77,6 +80,9 @@ class WindowController extends HTMLElement {
 		document.addEventListener('pointerup', this);
 	}
 
+	/**
+	 * @param {PointerEvent} ev
+	 */
 	handleDocumentPointerMove (ev) {
 		ev.preventDefault();
 
