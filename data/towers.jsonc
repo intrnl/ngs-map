@@ -101,10 +101,27 @@
 
 	// Kvaris
 	{
-		// TODO(intrnl): incomplete
 		"id": "deepwell",
 		"region": "kvaris",
 		"lat": -710,
-		"lng": 368
+		"lng": 368,
+		"max_players": 4,
+		"enemy_level": 55,
+		"recommended_power": 2506,
+		"main_missions": [
+			["defeat_many_target", 3, "t:enemies.ams_krone"]
+		],
+		"side_missions": [
+			["time_lt", 170],
+			["damage_lt", 30],
+			["cubes", 5],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 5]
+		],
+		"rewards": [
+			["rewards.skill", 4]
+		]
 	}
 ]

@@ -21,6 +21,7 @@
 		"finish_goal": "Reach the goal",
 		"defeat": "Defeat the {1}",
 		"defeat_many": "Defeat {1} Enemies",
+		"defeat_many_target": "Defeat {1} target enemies ({2})",
 		"defeat_all": "Defeat all enemies",
 		"all_side": "Complete all Side Missions and clear",
 		"cubes": "Obtain {1} Point Cubes",
@@ -96,6 +97,7 @@
 		"special_scratch_ticket": "Special Scratch Ticket"
 	},
 	"enemies": {
+		"ams_krone": "Ams Krone",
 		"bujin": "Bujin",
 		"chiacurio": "Chiacurio",
 		"daityl_sword": "Daityl Sword",
@@ -183,6 +185,12 @@
 		"dolls_burrow": {
 			"name": "DOLLS Burrow",
 			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Defeat the Destragras in the final area using your battle skills."
+		},
+
+		// Kvaris
+		"deepwell": {
+			"name": "Deepwell",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Ams Krone in the final area."
 		}
 	},
 	"urgents": {
