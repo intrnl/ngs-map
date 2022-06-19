@@ -59,6 +59,9 @@ x-legend-window {
 x-quest-info-window {
 	width: 448px;
 }
+x-quest-info-window .x--rank-select {
+	margin-bottom: 8px;
+}
 x-quest-info-window .x--quest-name {
 	display: flex;
 	align-items: center;

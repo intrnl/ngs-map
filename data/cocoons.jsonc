@@ -6,8 +6,6 @@
 		"lat": -1306,
 		"lng": 681.75,
 		"max_players": 1,
-		"enemy_level": 1,
-		"recommended_power": 800,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -22,6 +20,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 1,
+				"recommended_power": 800
+			}
 		]
 	},
 	{
@@ -30,8 +34,6 @@
 		"lat": -1488,
 		"lng": 432.25,
 		"max_players": 4,
-		"enemy_level": 5,
-		"recommended_power": 894,
 		"main_missions": [
 			["defeat", "t:enemies.pettas_sword"]
 		],
@@ -46,6 +48,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 5,
+				"recommended_power": 894
+			}
 		]
 	},
 	{
@@ -54,8 +62,6 @@
 		"lat": -1121.5,
 		"lng": 406.5,
 		"max_players": 4,
-		"enemy_level": 6,
-		"recommended_power": 916,
 		"main_missions": [
 			["finish_goal"]
 		],
@@ -70,6 +76,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 6,
+				"recommended_power": 916
+			}
 		]
 	},
 	{
@@ -78,8 +90,6 @@
 		"lat": -1882.25,
 		"lng": 826.25,
 		"max_players": 4,
-		"enemy_level": 5,
-		"recommended_power": 894,
 		"main_missions": [
 			["defeat_many", 42]
 		],
@@ -94,6 +104,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 5,
+				"recommended_power": 894
+			}
 		]
 	},
 	{
@@ -102,8 +118,6 @@
 		"lat": -1173.25,
 		"lng": 33,
 		"max_players": 4,
-		"enemy_level": 3,
-		"recommended_power": 835,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -118,6 +132,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 3,
+				"recommended_power": 835
+			}
 		]
 	},
 	{
@@ -126,8 +146,6 @@
 		"lat": -1894.5,
 		"lng": 387.5,
 		"max_players": 4,
-		"enemy_level": 15,
-		"recommended_power": 1184,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -142,6 +160,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 15,
+				"recommended_power": 1184
+			}
 		]
 	},
 	{
@@ -150,8 +174,6 @@
 		"lat": -1219.25,
 		"lng": 976.75,
 		"max_players": 4,
-		"enemy_level": 15,
-		"recommended_power": 1184,
 		"main_missions": [
 			["defeat", "t:enemies.bujin"]
 		],
@@ -166,6 +188,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 15,
+				"recommended_power": 1184
+			}
 		]
 	},
 	{
@@ -174,8 +202,6 @@
 		"lat": -1723.875,
 		"lng": 877.125,
 		"max_players": 4,
-		"enemy_level": 10,
-		"recommended_power": 1009,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -190,6 +216,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 10,
+				"recommended_power": 1009
+			}
 		]
 	},
 
@@ -200,8 +232,6 @@
 		"lat": -1192.375,
 		"lng": 1288.375,
 		"max_players": 4,
-		"enemy_level": 25,
-		"recommended_power": 1562,
 		"main_missions": [
 			["defeat", "t:enemies.fortos_laser"]
 		],
@@ -216,6 +246,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 25,
+				"recommended_power": 1562
+			}
 		]
 	},
 	{
@@ -224,8 +260,6 @@
 		"lat": -1223,
 		"lng": 1674.125,
 		"max_players": 4,
-		"enemy_level": 21,
-		"recommended_power": 1396,
 		"main_missions": [
 			["defeat_all"]
 		],
@@ -240,6 +274,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 21,
+				"recommended_power": 1396
+			}
 		]
 	},
 	{
@@ -248,8 +288,6 @@
 		"lat": -1219,
 		"lng": 1871.375,
 		"max_players": 4,
-		"enemy_level": 21,
-		"recommended_power": 1396,
 		"main_missions": [
 			["defeat_all"]
 		],
@@ -264,6 +302,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 21,
+				"recommended_power": 1396
+			}
 		]
 	},
 	{
@@ -272,8 +316,6 @@
 		"lat": -1501.25,
 		"lng": 1527.375,
 		"max_players": 4,
-		"enemy_level": 17,
-		"recommended_power": 1223,
 		"main_missions": [
 			["defeat_all"]
 		],
@@ -288,6 +330,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 17,
+				"recommended_power": 1223
+			}
 		]
 	},
 	{
@@ -296,8 +344,6 @@
 		"lat": -1969,
 		"lng": 1127,
 		"max_players": 4,
-		"enemy_level": 17,
-		"recommended_power": 1223,
 		"main_missions": [
 			["defeat_all"]
 		],
@@ -312,6 +358,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 17,
+				"recommended_power": 1223
+			}
 		]
 	},
 	{
@@ -320,8 +372,6 @@
 		"lat": -1759.25,
 		"lng": 1787.5,
 		"max_players": 4,
-		"enemy_level": 17,
-		"recommended_power": 1223,
 		"main_missions": [
 			["defeat_all"]
 		],
@@ -336,6 +386,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 17,
+				"recommended_power": 1223
+			}
 		]
 	},
 
@@ -347,8 +403,6 @@
 		"lat": -860.4,
 		"lng": 834,
 		"max_players": 4,
-		"enemy_level": 42,
-		"recommended_power": 2018,
 		"main_missions": [
 			["defeat", "t:enemies.pangolan"]
 		],
@@ -363,6 +417,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 42,
+				"recommended_power": 2018
+			}
 		]
 	},
 	{
@@ -371,8 +431,6 @@
 		"lat": -698,
 		"lng": 629.5,
 		"max_players": 4,
-		"enemy_level": 42,
-		"recommended_power": 2018,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -387,6 +445,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 42,
+				"recommended_power": 2018
+			}
 		]
 	},
 	/// West Kvaris
@@ -397,8 +461,6 @@
 		"lat": -554.5,
 		"lng": 352,
 		"max_players": 4,
-		"enemy_level": -1,
-		"recommended_power": 2082,
 		"main_missions": [
 			["defeat", "t:enemies.malachroid"]
 		],
@@ -413,6 +475,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": -1,
+				"recommended_power": 2082
+			}
 		]
 	},
 	{
@@ -421,8 +489,6 @@
 		"lat": -717.1,
 		"lng": 80,
 		"max_players": 4,
-		"enemy_level": -1,
-		"recommended_power": 2082,
 		"main_missions": [
 			["defeat_many", 29]
 		],
@@ -437,6 +503,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": -1,
+				"recommended_power": 2082
+			}
 		]
 	}
 ]

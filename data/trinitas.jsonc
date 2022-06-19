@@ -5,17 +5,21 @@
 		"lat": -1394.5,
 		"lng": 1699.25,
 		"max_players": 4,
-		"enemy_level": 30,
-		"recommended_power": 1681,
-		"rewards": [
-			["items.gold_prim_sword"],
-			["items.gold_prim_armor"],
-			["items.silver_prim_sword"],
-			["items.silver_prim_armor"],
-			["items.relik_series_weapon"],
-			["items.kuku_series_weapon"],
-			["items.tria_augments"],
-			["items.fashion_items"]
+		"ranks": [
+			{
+				"enemy_level": 30,
+				"recommended_power": 1681,
+				"rewards": [
+					["items.gold_prim_sword"],
+					["items.gold_prim_armor"],
+					["items.silver_prim_sword"],
+					["items.silver_prim_armor"],
+					["items.relik_series_weapon"],
+					["items.kuku_series_weapon"],
+					["items.tria_augments"],
+					["items.fashion_items"]
+				]
+			}
 		]
 	}
 ]

@@ -15,7 +15,8 @@
 			"side_missions": "Side Missions",
 			"fail_conditions": "Fail Conditions",
 			"first_clear_rewards": "First Clear Rewards",
-			"rewards": "Rewards"
+			"rewards": "Rewards",
+			"rank_select_option": "Rank {rank} (Enemy Lv. {level})"
 		},
 		"map_legend": "Map Legend",
 		"landmarks": "Landmarks",

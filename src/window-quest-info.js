@@ -8,6 +8,9 @@ class QuestInfoWindowController extends WindowController {
 	/** @type {HTMLSpanElement} */
 	get #title () { return query(this, 'title'); }
 
+	/** @type {HTMLSelectElement} */
+	get #rankSelect () { return query(this, 'rankSelect'); }
+
 	/** @type {HTMLImageElement} */
 	get #maxPlayersIcon () { return query(this, 'maxPlayersIcon'); }
 	/** @type {HTMLSpanElement} */
@@ -64,7 +67,7 @@ class QuestInfoWindowController extends WindowController {
 	/** @type {HTMLTableCellElement} */
 	get #rewardsContent () { return query(this, 'rewardsContent'); }
 
-	currentData = null;
+	#currentData = null;
 
 	initialize () {
 		this.#title.textContent = t(`ui.quest_info.title`);
@@ -88,18 +91,80 @@ class QuestInfoWindowController extends WindowController {
 		this.closeWindow();
 	}
 
-	update (data, type) {
-		if (!type || !data || data === this.currentData) {
+	updateRank () {
+		const value = parseInt(this.#rankSelect.value);
+		const data = this.#currentData;
+
+		const rank = data.ranks[value];
+
+		if (!rank) {
+			this.#enemyLevel.style.display = 'none';
+			this.#recommendedPower.style.display = 'none';
+			this.#rewards.style.display = 'none';
 			return;
 		}
+
+		this.#enemyLevelContent.textContent = t(`ui.quest_info.enemy_level.content`, { level: rank.enemy_level });
+		this.#recommendedPowerContent.textContent = t(`ui.quest_info.recommended_power.content`, { power: rank.recommended_power });
+
+		if (rank.rewards) {
+			let rewards = '';
+
+			for (let reward of rank.rewards) {
+				rewards && (rewards += '\n');
+				rewards += `${t(reward[0])} x${reward[1]}`;
+			}
+
+			this.#rewards.style.display = '';
+			this.#rewardsContent.textContent = rewards;
+		}
+		else {
+			this.#rewards.style.display = 'none';
+		}
+	}
+
+	update (data, type) {
+		if (!type || !data || data === this.#currentData) {
+			return;
+		}
+
+		this.#currentData = data;
 
 		this.#maxPlayersIcon.src = `/assets/ui/players_${data.max_players}.png`;
 		this.#maxPlayersIcon.title = t(`ui.quest_info.max_players_info`, { value: data.max_players });
 		this.#questName.textContent = t(`${type}.${data.id}.name`);
 		this.#questDescription.textContent = t(`${type}.${data.id}.description`);
 
-		this.#enemyLevelContent.textContent = t(`ui.quest_info.enemy_level.content`, { level: data.enemy_level });
-		this.#recommendedPowerContent.textContent = t(`ui.quest_info.recommended_power.content`, { power: data.recommended_power });
+
+		if (data.ranks) {
+			const select = this.#rankSelect;
+			const nodes = [...select.childNodes];
+			const ranks = data.ranks;
+
+			let idx = 0;
+
+			for (; idx < ranks.length; idx++) {
+				const rank = ranks[idx];
+				let node = nodes[idx];
+
+				if (!node) {
+					node = document.createElement('option');
+					select.appendChild(node);
+				}
+
+				node.textContent = t(`ui.quest_info.rank_select_option`, { rank: idx + 1, level: rank.enemy_level });
+				node.value = idx;
+			}
+
+			select.style.display = idx < 2 ? 'none' : '';
+
+			for (; idx < nodes.length; idx++) {
+				const node = nodes[idx];
+				node.remove();
+			}
+
+			this.updateRank();
+		}
 
 		if (data.main_missions) {
 			let mainMission = '';
@@ -160,23 +225,6 @@ class QuestInfoWindowController extends WindowController {
 		else {
 			this.#firstClearRewards.style.display = 'none';
 		}
-
-		if (data.rewards) {
-			let rewards = '';
-
-			for (let reward of data.initial_rewards) {
-				rewards && (rewards += '\n');
-				rewards += `${t(reward[0])} x${reward[1]}`;
-			}
-
-			this.#rewards.style.display = '';
-			this.#rewardsContent.textContent = rewards;
-		}
-		else {
-			this.#rewards.style.display = 'none';
-		}
-
-		this.currentData = data;
 	}
 }
 

@@ -6,8 +6,6 @@
 		"lat": -1084.5,
 		"lng": 171.5,
 		"max_players": 4,
-		"enemy_level": 15,
-		"recommended_power": 1184,
 		"main_missions": [
 			["defeat", "t:enemies.chiacurio"]
 		],
@@ -22,6 +20,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 4]
+		],
+		"ranks": [
+			{
+				"enemy_level": 15,
+				"recommended_power": 1184
+			}
 		]
 	},
 	{
@@ -30,8 +34,6 @@
 		"lat": -1389,
 		"lng": 885,
 		"max_players": 4,
-		"enemy_level": 15,
-		"recommended_power": 1184,
 		"main_missions": [
 			["defeat", "t:enemies.daityl_sword"]
 		],
@@ -46,6 +48,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 4]
+		],
+		"ranks": [
+			{
+				"enemy_level": 15,
+				"recommended_power": 1184
+			}
 		]
 	},
 	{
@@ -54,8 +62,6 @@
 		"lat": -1911.7,
 		"lng": 919.7,
 		"max_players": 4,
-		"enemy_level": 15,
-		"recommended_power": 1184,
 		"main_missions": [
 			["finish_point"]
 		],
@@ -70,6 +76,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 4]
+		],
+		"ranks": [
+			{
+				"enemy_level": 15,
+				"recommended_power": 1184
+			}
 		]
 	},
 
@@ -80,8 +92,6 @@
 		"lat": -957.5,
 		"lng": 1965,
 		"max_players": 4,
-		"enemy_level": 30,
-		"recommended_power": 1592,
 		"main_missions": [
 			["defeat", "t:enemies.destragras"]
 		],
@@ -96,6 +106,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 4]
+		],
+		"ranks": [
+			{
+				"enemy_level": 30,
+				"recommended_power": 1592
+			}
 		]
 	},
 
@@ -106,8 +122,6 @@
 		"lat": -710,
 		"lng": 368,
 		"max_players": 4,
-		"enemy_level": 55,
-		"recommended_power": 2506,
 		"main_missions": [
 			["defeat_many_target", 3, "t:enemies.ams_krone"]
 		],
@@ -122,6 +136,12 @@
 		],
 		"initial_rewards": [
 			["rewards.skill", 4]
+		],
+		"ranks": [
+			{
+				"enemy_level": 55,
+				"recommended_power": 2506
+			}
 		]
 	}
 ]
