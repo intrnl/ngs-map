@@ -20,7 +20,7 @@
 		"fail_conditions": [
 			["time", 1800]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -44,7 +44,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -68,7 +68,7 @@
 		"fail_conditions": [
 			["fall", 99]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -92,7 +92,7 @@
 		"fail_conditions": [
 			["time", 3600]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -116,7 +116,7 @@
 		"fail_conditions": [
 			["fall", 99]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -140,7 +140,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -164,7 +164,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -188,7 +188,7 @@
 		"fail_conditions": [
 			["time", 3600]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -214,7 +214,7 @@
 		"fail_conditions": [
 			["time", 3600]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -231,14 +231,14 @@
 		],
 		"side_missions": [
 			["damage_lt", 20],
-			["incapacitated", 3],
+			["incapacitated_lt", 3],
 			["time_lt", 360],
 			["all_side"]
 		],
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -262,7 +262,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -286,7 +286,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -310,7 +310,7 @@
 		"fail_conditions": [
 			["fall", 99]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -334,7 +334,7 @@
 		"fail_conditions": [
 			["time", 3600]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -361,7 +361,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -385,7 +385,7 @@
 		"fail_conditions": [
 			["fall", 10]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -411,7 +411,7 @@
 		"fail_conditions": [
 			["incapacitated", 30]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	},
@@ -435,7 +435,7 @@
 		"fail_conditions": [
 			["incapacitated", 5]
 		],
-		"rewards": [
+		"initial_rewards": [
 			["rewards.skill", 1]
 		]
 	}

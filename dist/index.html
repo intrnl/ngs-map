@@ -47,9 +47,37 @@
 						<img class='icon' height='14' width='24' x-target='x-quest-info-window.maxPlayersIcon' />
 						<span x-target='x-quest-info-window.questName'></span>
 					</p>
-					<div class='box fullwidth'>
-						<p class='text is-paragrah' x-target='x-quest-info-window.questDescription'></p>
-					</div>
+					<p class='text x--quest-description' x-target='x-quest-info-window.questDescription'></p>
+					<table class='table fullwidth x--quest-info'>
+						<tr x-target='x-quest-info-window.enemyLevel'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.enemyLevelTitle'></th>
+							<td x-target='x-quest-info-window.enemyLevelContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.recommendedPower'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.recommendedPowerTitle'></th>
+							<td x-target='x-quest-info-window.recommendedPowerContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.mainMission'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.mainMissionTitle'></th>
+							<td x-target='x-quest-info-window.mainMissionContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.sideMissions'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.sideMissionsTitle'></th>
+							<td x-target='x-quest-info-window.sideMissionsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.failConditions'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.failConditionsTitle'></th>
+							<td x-target='x-quest-info-window.failConditionsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.firstClearRewards'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.firstClearRewardsTitle'></th>
+							<td x-target='x-quest-info-window.firstClearRewardsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.rewards'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.rewardsTitle'></th>
+							<td x-target='x-quest-info-window.rewardsContent'></td>
+						</tr>
+					</table>
 				</div>
 			</x-quest-info-window>
 		</x-app>

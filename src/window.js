@@ -57,16 +57,16 @@ class WindowController extends HTMLElement {
 		const type = ev.type;
 
 		switch (type) {
-			case 'pointerdown': return this.handlePointerDown(ev);
-			case 'pointermove': return this.handleDocumentPointerMove(ev);
-			case 'pointerup': return this.handleDocumentPointerUp(ev);
+			case 'pointerdown': return this.#handlePointerDown(ev);
+			case 'pointermove': return this.#handleDocumentPointerMove(ev);
+			case 'pointerup': return this.#handleDocumentPointerUp(ev);
 		}
 	}
 
 	/**
 	 * @param {PointerEvent} ev
 	 */
-	handlePointerDown (ev) {
+	#handlePointerDown (ev) {
 		if (ev.button !== 0 || ev.target.closest('button')) {
 			return;
 		}
@@ -83,7 +83,7 @@ class WindowController extends HTMLElement {
 	/**
 	 * @param {PointerEvent} ev
 	 */
-	handleDocumentPointerMove (ev) {
+	#handleDocumentPointerMove (ev) {
 		ev.preventDefault();
 
 		const x = ev.clientX;
@@ -100,7 +100,7 @@ class WindowController extends HTMLElement {
 		this.style.right = '';
 	}
 
-	handleDocumentPointerUp () {
+	#handleDocumentPointerUp () {
 		document.removeEventListener('pointermove', this);
 		document.removeEventListener('pointerup', this);
 

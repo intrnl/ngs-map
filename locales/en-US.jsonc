@@ -2,7 +2,20 @@
 	"ui": {
 		"quest_info": {
 			"title": "Quest Info",
-			"max_players_info": "This quest can be played with up to {value, plural, one {# player} other {# players}}"
+			"max_players_info": "This quest can be played with up to {value, plural, one {# player} other {# players}}",
+			"enemy_level": {
+				"title": "Enemy Level",
+				"content": "Lv. {level}"
+			},
+			"recommended_power": {
+				"title": "Recommended Stats",
+				"content": "{power} Battle Power or above"
+			},
+			"main_mission": "Main Mission",
+			"side_missions": "Side Missions",
+			"fail_conditions": "Fail Conditions",
+			"first_clear_rewards": "First Clear Rewards",
+			"rewards": "Rewards"
 		},
 		"map_legend": "Map Legend",
 		"landmarks": "Landmarks",

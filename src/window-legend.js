@@ -7,14 +7,14 @@ import { renderMapLegend } from './template.jsx';
 
 class LegendWindowController extends WindowController {
 	/** @type {HTMLSpanElement} */
-	get title () { return query(this, 'title'); }
+	get #title () { return query(this, 'title'); }
 	/** @type {HTMLDivElement} */
-	get content () { return query(this, 'content'); }
+	get #content () { return query(this, 'content'); }
 
 
 	initialize (data, enabled) {
-		this.title.textContent = t(`ui.map_legend`);
-		this.content.appendChild(renderMapLegend(data, enabled));
+		this.#title.textContent = t(`ui.map_legend`);
+		this.#content.appendChild(renderMapLegend(data, enabled));
 	}
 }
 

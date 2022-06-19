@@ -21,7 +21,7 @@ export function t (path, obj = null) {
 					mutated = true;
 				}
 
-				obj[key] = getPath(currentLocale, val.slice(2));
+				obj[key] = t(val.slice(2));
 			}
 		}
 

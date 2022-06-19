@@ -444,6 +444,8 @@ body {
 	min-height: 1.25em;
 	font: inherit;
 	text-align: start;
+	vertical-align: top;
+	white-space: pre-wrap;
 	padding: 0 4px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }

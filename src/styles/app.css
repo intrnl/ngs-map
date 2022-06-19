@@ -65,3 +65,13 @@ x-quest-info-window .x--quest-name {
 	gap: 8px;
 	margin-bottom: 8px;
 }
+x-quest-info-window .x--quest-description {
+	margin-bottom: 8px;
+}
+x-quest-info-window .x--quest-info {
+	table-layout: var(--table-layout);
+}
+x-quest-info-window .x--quest-info th {
+	width: var(--header-width);
+	white-space: nowrap;
+}
