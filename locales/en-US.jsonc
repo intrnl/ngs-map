@@ -24,7 +24,7 @@
 		"finish_point": "Reach the finish point",
 		"finish_goal": "Reach the goal",
 		"defeat": "Defeat the {1}",
-		"defeat_many": "Defeat {1} Enemies",
+		"defeat_many": "Defeat {1} enemies",
 		"defeat_many_target": "Defeat {1} target enemies ({2})",
 		"defeat_all": "Defeat all enemies",
 		"all_side": "Complete all Side Missions and clear",
@@ -108,6 +108,7 @@
 		"daityl_sword": "Daityl Sword",
 		"destragras": "Destragras",
 		"fortos_laser": "Fortos Laser",
+		"malachroid": "Malachroid",
 		"pangolan": "Pangolan",
 		"pettas_sword": "Pettas Sword"
 	},

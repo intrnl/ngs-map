@@ -388,5 +388,55 @@
 		"rewards": [
 			["rewards.skill", 1]
 		]
+	},
+	/// West Kvaris
+	/// TODO(intrnl): incomplete enemy level
+	{
+		"id": "clockwork_prison",
+		"region": "kvaris",
+		"lat": -554.5,
+		"lng": 352,
+		"max_players": 4,
+		"enemy_level": -1,
+		"recommended_power": 2082,
+		"main_missions": [
+			["defeat", "t:enemies.malachroid"]
+		],
+		"side_missions": [
+			["time_lt", 180],
+			["incapacitated_lt", 1],
+			["damage_lt", 10],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "horrible_flapping",
+		"region": "kvaris",
+		"lat": -717.1,
+		"lng": 80,
+		"max_players": 4,
+		"enemy_level": -1,
+		"recommended_power": 2082,
+		"main_missions": [
+			["defeat_many", 29]
+		],
+		"side_missions": [
+			["time_lt", 300],
+			["incapacitated_lt", 1],
+			["damage_lt", 12],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 5]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
 	}
 ]
