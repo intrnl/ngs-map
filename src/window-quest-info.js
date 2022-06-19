@@ -177,6 +177,7 @@ class QuestInfoWindowController extends WindowController {
 				node.remove();
 			}
 
+			select.value = '0';
 			this.updateRank();
 		}
 
