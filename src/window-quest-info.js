@@ -4,6 +4,25 @@ import { query } from './lib/x-controller.js';
 import { t } from './locale.js';
 
 
+function formatRomanNumeral (num) {
+	if (num < 1) {
+		return '';
+	}
+
+	if (num >= 9) {
+		return 'IX' + formatRomanNumeral(num - 9);
+	}
+  if (num >= 5) {
+		return 'V' + formatRomanNumeral(num - 5);
+	}
+  if (num >= 4) {
+		return 'IV' + formatRomanNumeral(num - 4);
+	}
+
+	// num >= 1
+	return 'I' + formatRomanNumeral(num - 1);
+}
+
 class QuestInfoWindowController extends WindowController {
 	/** @type {HTMLSpanElement} */
 	get #title () { return query(this, 'title'); }
@@ -108,12 +127,7 @@ class QuestInfoWindowController extends WindowController {
 		this.#recommendedPowerContent.textContent = t(`ui.quest_info.recommended_power.content`, { power: rank.recommended_power });
 
 		if (rank.rewards) {
-			let rewards = '';
-
-			for (let reward of rank.rewards) {
-				rewards && (rewards += '\n');
-				rewards += `${t(reward[0])} x${reward[1]}`;
-			}
+			const rewards = this.#buildRewards(rank.rewards);
 
 			this.#rewards.style.display = '';
 			this.#rewardsContent.textContent = rewards;
@@ -212,12 +226,7 @@ class QuestInfoWindowController extends WindowController {
 		}
 
 		if (data.initial_rewards) {
-			let rewards = '';
-
-			for (let reward of data.initial_rewards) {
-				rewards && (rewards += '\n');
-				rewards += `${t(reward[0])} x${reward[1]}`;
-			}
+			const rewards = this.#buildRewards(data.initial_rewards);
 
 			this.#firstClearRewards.style.display = '';
 			this.#firstClearRewardsContent.textContent = rewards;
@@ -225,6 +234,33 @@ class QuestInfoWindowController extends WindowController {
 		else {
 			this.#firstClearRewards.style.display = 'none';
 		}
+	}
+
+	#buildRewards (array) {
+		let text = '';
+
+		for (const [item, amount, enhStart, enhEnd] of array) {
+			const isAugment = item.startsWith('items.augment_');
+
+			if (text) {
+				text += '\n';
+			}
+
+			text += t(item);
+
+			if (enhStart) {
+				text += ` ${isAugment ? formatRomanNumeral(enhStart) : `+${enhStart}`}`;
+			}
+			if (enhEnd) {
+				text += `-${isAugment ? formatRomanNumeral(enhEnd) : enhEnd}`;
+			}
+
+			if (amount) {
+				text += ` x${amount}`;
+			}
+		}
+
+		return text;
 	}
 }
 
