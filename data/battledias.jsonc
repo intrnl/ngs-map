@@ -13,10 +13,10 @@
 				"recommended_power": 1081,
 				"rewards": [
 					["rewards.exp", 39845],
-					["items.weapon_gold_primm", null, 20],
-					["items.armor_gold_primm", null, 20],
-					["items.weapon_silver_primm", null, 20],
-					["items.armor_silver_primm", null, 20]
+					["items.weapon_primm_gold", null, 20],
+					["items.armor_primm_gold", null, 20],
+					["items.weapon_primm_silver", null, 20],
+					["items.armor_primm_silver", null, 20]
 				]
 			},
 			{
@@ -24,8 +24,8 @@
 				"recommended_power": 1363,
 				"rewards": [
 					["rewards.exp", 118446],
-					["items.weapon_gold_primm", 1, 30],
-					["items.armor_gold_primm", 1, 30],
+					["items.weapon_primm_gold", null, 30],
+					["items.armor_primm_gold", null, 30],
 					["items.augment_ael_domina", null]
 				]
 			}
@@ -98,8 +98,8 @@
 				"recommended_power": 1474,
 				"rewards": [
 					["rewards.exp", 72829],
-					["items.weapon_gold_primm", null, 20],
-					["items.armor_gold_primm", null, 20],
+					["items.weapon_primm_gold", null, 20],
+					["items.armor_primm_gold", null, 20],
 					["items.augment_mastery", null, 1]
 				]
 			},
@@ -108,8 +108,8 @@
 				"recommended_power": 2049,
 				"rewards": [
 					["rewards.exp", 162243],
-					["items.weapon_gold_primm", null, 30],
-					["items.armor_gold_primm", null, 30],
+					["items.weapon_primm_gold", null, 30],
+					["items.armor_primm_gold", null, 30],
 					["items.augment_ret_domina", null]
 				]
 			}
@@ -180,8 +180,8 @@
 				"enemy_level": 55,
 				"recommended_power": 2416,
 				"rewards": [
-					["items.weapon_gold_primm", null, 20],
-					["items.armor_gold_primm", null, 20],
+					["items.weapon_primm_gold", null, 20],
+					["items.armor_primm_gold", null, 20],
 					["items.augment_decold_standard", null, 1]
 				]
 			}
