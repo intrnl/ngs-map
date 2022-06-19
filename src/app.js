@@ -30,31 +30,31 @@ await loadLocale(LOCALE);
 
 class AppController extends HTMLElement {
 	/** @type {HTMLDivElement} */
-	get mapContainer () { return query(this, 'mapContainer'); }
+	get #mapContainer () { return query(this, 'mapContainer'); }
 
 	/** @type {HTMLButtonElement} */
-	get zoomInButton () { return query(this, 'zoomInButton'); }
+	get #zoomInButton () { return query(this, 'zoomInButton'); }
 	/** @type {HTMLButtonElement} */
-	get zoomOutButton () { return query(this, 'zoomOutButton'); }
+	get #zoomOutButton () { return query(this, 'zoomOutButton'); }
 
 	/** @type {HTMLDivElement} */
-	get latlngWindow () { return query(this, 'latlngWindow'); }
+	get #latlngWindow () { return query(this, 'latlngWindow'); }
 	/** @type {LegendWindowController} */
-	get legendWindow () { return query(this, 'legendWindow'); }
+	get #legendWindow () { return query(this, 'legendWindow'); }
 	/** @type {QuestInfoWindowController} */
-	get questInfoWindow () { return query(this, 'questInfoWindow'); }
+	get #questInfoWindow () { return query(this, 'questInfoWindow'); }
 
 	/** @type {?L.Map} */
-	map = null;
+	#map = null;
 
 	/** @type {WindowController} */
-	activeInfoWindow = null;
+	#activeInfoWindow = null;
 
 	constructor () {
 		super();
 
 		// Initialize map
-		const map = L.map(this.mapContainer, {
+		const map = L.map(this.#mapContainer, {
 			zoom: 0,
 			minZoom: 0,
 			maxZoom: 2,
@@ -83,7 +83,7 @@ class AppController extends HTMLElement {
 
 		map.addEventListener('mousemove', (ev) => {
 			const { lat, lng } = ev.latlng;
-			this.latlngWindow.innerText = `${lat.toFixed(2)}, ${lng.toFixed(2)}`;
+			this.#latlngWindow.innerText = `${lat.toFixed(2)}, ${lng.toFixed(2)}`;
 		});
 
 		for (const key of ENABLED_MARKERS) {
@@ -91,38 +91,38 @@ class AppController extends HTMLElement {
 			group.addTo(map);
 		}
 
-		this.map = map;
+		this.#map = map;
 		this.updateCanZoom();
 
 		// Initialize windows
-		this.legendWindow.initialize(groups, ENABLED_MARKERS);
-		this.questInfoWindow.initialize();
+		this.#legendWindow.initialize(groups, ENABLED_MARKERS);
+		this.#questInfoWindow.initialize();
 	}
 
 	connectedCallback () {
 		// make sure the map knows about its container size
 		requestAnimationFrame(() => {
-			this.map.invalidateSize();
+			this.#map.invalidateSize();
 		});
 	}
 
 	updateCanZoom () {
-		const map = this.map;
+		const map = this.#map;
 
 		const zoom = map.getZoom();
 		const maxZoom = map.getMaxZoom();
 		const minZoom = map.getMinZoom();
 
-		this.zoomInButton.disabled = zoom >= maxZoom;
-		this.zoomOutButton.disabled = zoom <= minZoom;
+		this.#zoomInButton.disabled = zoom >= maxZoom;
+		this.#zoomOutButton.disabled = zoom <= minZoom;
 	}
 
 	zoomIn () {
-		this.map.zoomIn();
+		this.#map.zoomIn();
 	}
 
 	zoomOut () {
-		this.map.zoomOut();
+		this.#map.zoomOut();
 	}
 
 	handleLegendChange (ev) {
@@ -130,7 +130,7 @@ class AppController extends HTMLElement {
 		const value = target.value;
 		const checked = target.checked;
 
-		const map = this.map;
+		const map = this.#map;
 		const group = markers[value];
 
 		if (!group || !map) {
@@ -151,11 +151,11 @@ class AppController extends HTMLElement {
 			}
 		}
 
-		this._saveConfig();
+		this.#saveConfig();
 	}
 
 	openLegendWindow () {
-		this.legendWindow.toggleWindow();
+		this.#legendWindow.toggleWindow();
 	}
 
 	handleMarkerClick (ev) {
@@ -164,7 +164,7 @@ class AppController extends HTMLElement {
 		const type = target.$type;
 		const data = target.$data;
 
-		const prev = this.activeInfoWindow;
+		const prev = this.#activeInfoWindow;
 		let controller;
 
 		switch (type) {
@@ -173,7 +173,7 @@ class AppController extends HTMLElement {
 			case 'urgents':
 			case 'towers':
 			case 'trinitas':
-				controller = this.questInfoWindow;
+				controller = this.#questInfoWindow;
 				break;
 			default:
 				throw new Error(`Unknown marker type: ${type}`);
@@ -186,10 +186,10 @@ class AppController extends HTMLElement {
 		controller.update(data, type);
 		controller.openWindow();
 
-		this.activeInfoWindow = controller;
+		this.#activeInfoWindow = controller;
 	}
 
-	_saveConfig () {
+	#saveConfig () {
 		const config = {
 			locale: LOCALE,
 			markers: ENABLED_MARKERS,
