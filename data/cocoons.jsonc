@@ -509,5 +509,61 @@
 				"recommended_power": 2082
 			}
 		]
+	},
+	// Central Kvaris
+	{
+		"id": "wild_avalanche",
+		"region": "kvaris",
+		"lat": -493,
+		"lng": 634,
+		"max_players": 4,
+		"main_missions": [
+			["defeat_many", 2]
+		],
+		"side_missions": [
+			["time_lt", 180],
+			["damage_lt", 12],
+			["heal_lt", 3],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"initial_rewards": [
+			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 47,
+				"recommended_power": 2181
+			}
+		]
+	},
+	{
+		"id": "vanishing_path_2",
+		"lat": -367,
+		"lng": 504.4,
+		"max_players": 4,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 120],
+			["cubes", 6],
+			["glide_lt", 3],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["fall", 5]
+		],
+		"initial_rewards": [
+			["rewards.skill", 1]
+		],
+		"ranks": [
+			{
+				"enemy_level": 47,
+				"recommended_power": 2181
+			}
+		]
 	}
 ]

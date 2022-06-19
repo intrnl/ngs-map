@@ -46,6 +46,7 @@
 		"time_lt": "Clear before {1, duration}",
 		"incapacitated_lt": "Clear without being incapacitated {1} times",
 		"damage_lt": "Clear having taken damage fewer than {1} times",
+		"heal_lt": "Clear having used Restasigne fewer than {1} times",
 		"inflict_gte": "Inflict over {1} dmg over {2} times",
 		"fallen_lt": "Clear without falling {1} times",
 		"glide_lt": "Clear while having used Glide fewer than {1} times",
@@ -218,6 +219,15 @@
 		"horrible_flapping": {
 			"name": "Horrible Flapping",
 			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat all of the enemies."
+		},
+		/// Central Kvaris
+		"wild_avalanche": {
+			"name": "Wild Avalanche",
+			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Ice Banser."
+		},
+		"vanishing_path_2": {
+			"name": "Vanishing Path II",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
 		}
 	},
 	"towers": {
