@@ -44,12 +44,12 @@ class WindowController extends HTMLElement {
 
 	toggleWindow (force) {
 		const isUndefined = force === undefined;
+		const value = isUndefined ? this.style.display === 'none' : force;
 
-		if (isUndefined) {
-			this.style.display = this.style.display === 'none' ? '' : 'none';
-		}
-		else {
-			this.style.display = force ? '' : 'none';
+		this.style.display = value ? '' : 'none';
+
+		if (value) {
+			handleWindowFocus({ target: this });
 		}
 	}
 
