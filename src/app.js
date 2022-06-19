@@ -172,6 +172,7 @@ class AppController extends HTMLElement {
 			case 'cocoons':
 			case 'urgents':
 			case 'towers':
+			case 'trinitas':
 				controller = this.questInfoWindow;
 				break;
 			default:
