@@ -180,6 +180,9 @@ class QuestInfoWindowController extends WindowController {
 			select.value = '0';
 			this.updateRank();
 		}
+		else {
+			this.#rankSelect.style.display = 'none';
+		}
 
 		if (data.main_missions) {
 			let mainMission = '';
