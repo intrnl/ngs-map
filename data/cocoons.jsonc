@@ -454,7 +454,6 @@
 		]
 	},
 	/// West Kvaris
-	/// TODO(intrnl): incomplete enemy level
 	{
 		"id": "clockwork_prison",
 		"region": "kvaris",
@@ -478,7 +477,7 @@
 		],
 		"ranks": [
 			{
-				"enemy_level": -1,
+				"enemy_level": 44,
 				"recommended_power": 2082
 			}
 		]
@@ -506,7 +505,7 @@
 		],
 		"ranks": [
 			{
-				"enemy_level": -1,
+				"enemy_level": 44,
 				"recommended_power": 2082
 			}
 		]
