@@ -182,6 +182,15 @@
 		"slope_style": {
 			"name": "Slope Style",
 			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use floating boards to reach the target destination."
+		},
+		/// West Kvaris
+		"clockwork_prison": {
+			"name": "Clockwork Prison",
+			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Malachroid."
+		},
+		"horrible_flapping": {
+			"name": "Horrible Flapping",
+			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat all of the enemies."
 		}
 	},
 	"towers": {
