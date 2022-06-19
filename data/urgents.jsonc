@@ -194,8 +194,8 @@
 	},
 	{
 		"id": "ams_vera",
-		"lat": -331.9,
-		"lng": 485,
+		"lat": -311,
+		"lng": 478,
 		"max_players": 8,
 		"initial_rewards": [
 			["rewards.meseta", 10000]
