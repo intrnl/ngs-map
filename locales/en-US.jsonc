@@ -32,6 +32,7 @@
 		"time_lt": "Clear before {1, duration}",
 		"incapacitated_lt": "Clear without being incapacitated {1} times",
 		"damage_lt": "Clear having taken damage fewer than {1} times",
+		"inflict_gte": "Inflict over {1} dmg over {2} times",
 		"fallen_lt": "Clear without falling {1} times",
 		"glide_lt": "Clear while having used Glide fewer than {1} times",
 		"drome_gte": "Maintain your hacked Drome's level to {1} to clear",
@@ -107,6 +108,7 @@
 		"daityl_sword": "Daityl Sword",
 		"destragras": "Destragras",
 		"fortos_laser": "Fortos Laser",
+		"pangolan": "Pangolan",
 		"pettas_sword": "Pettas Sword"
 	},
 	"cocoons": {
@@ -168,6 +170,17 @@
 		"runway_2": {
 			"name": "Runway II",
 			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+		},
+
+		// Kvaris
+		/// South Kvaris
+		"crazy_tail": {
+			"name": "Crazy Tail",
+			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Pangolan."
+		},
+		"slope_style": {
+			"name": "Slope Style",
+			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use floating boards to reach the target destination."
 		}
 	},
 	"towers": {

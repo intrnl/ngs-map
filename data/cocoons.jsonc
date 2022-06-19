@@ -337,5 +337,56 @@
 		"rewards": [
 			["rewards.skill", 1]
 		]
+	},
+
+	// Kvaris
+	/// South Kvaris
+	{
+		"id": "crazy_tail",
+		"region": "kvaris",
+		"lat": -860.4,
+		"lng": 834,
+		"max_players": 4,
+		"enemy_level": 42,
+		"recommended_power": 2018,
+		"main_missions": [
+			["defeat", "t:enemies.pangolan"]
+		],
+		"side_missions": [
+			["time_lt", 180],
+			["inflict_gte", 900, 2],
+			["damage_lt", 7],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["incapacitated", 30]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
+	},
+	{
+		"id": "slope_style",
+		"region": "kvaris",
+		"lat": -698,
+		"lng": 629.5,
+		"max_players": 4,
+		"enemy_level": 42,
+		"recommended_power": 2018,
+		"main_missions": [
+			["finish_point"]
+		],
+		"side_missions": [
+			["time_lt", 140],
+			["glide_lt", 2],
+			["cubes", 40],
+			["all_side"]
+		],
+		"fail_conditions": [
+			["fall", 10]
+		],
+		"rewards": [
+			["rewards.skill", 1]
+		]
 	}
 ]
