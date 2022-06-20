@@ -50,9 +50,7 @@ class AppController extends HTMLElement {
 	/** @type {WindowController} */
 	#activeInfoWindow = null;
 
-	constructor () {
-		super();
-
+	connectedCallback () {
 		// Initialize map
 		const map = L.map(this.#mapContainer, {
 			zoom: 0,
@@ -94,16 +92,14 @@ class AppController extends HTMLElement {
 		this.#map = map;
 		this.updateCanZoom();
 
-		// Initialize windows
-		this.#legendWindow.initialize(groups, ENABLED_MARKERS);
-		this.#questInfoWindow.initialize();
-	}
-
-	connectedCallback () {
 		// make sure the map knows about its container size
 		requestAnimationFrame(() => {
 			this.#map.invalidateSize();
 		});
+
+		// Initialize windows
+		this.#legendWindow.initialize(groups, ENABLED_MARKERS);
+		this.#questInfoWindow.initialize();
 	}
 
 	updateCanZoom () {
