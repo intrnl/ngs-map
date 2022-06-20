@@ -1,6 +1,3 @@
-import { query } from './lib/x-controller.js';
-
-
 let currentWindow = document.querySelector('.window.is-active');
 
 function handleWindowFocus (event) {
@@ -29,10 +26,6 @@ class WindowController extends HTMLElement {
 	prevY = 0;
 	currX = 0;
 	currY = 0;
-
-	connectedCallback () {
-		this.style.display = 'none';
-	}
 
 	openWindow () {
 		return this.toggleWindow(true);
