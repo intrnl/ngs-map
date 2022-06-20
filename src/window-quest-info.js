@@ -98,7 +98,9 @@ class QuestInfoWindowController extends WindowController {
 		this.#firstClearRewardsTitle.textContent = t(`ui.quest_info.first_clear_rewards`);
 		this.#rewardsTitle.textContent = t(`ui.quest_info.rewards`);
 
-		// Attempt to do a fixed table layout
+		// calculate the width necessary for the table header so that we can make
+		// the table layout fixed, it's done here because each locale would take up
+		// different amount of space.
 		this.openWindow();
 		this.#enemyLevelContent.textContent = 'x '.repeat(100);
 
