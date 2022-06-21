@@ -40,12 +40,22 @@ function createMarker (name, url, icon) {
 
 			const node = marker.getElement();
 
-			node.setAttribute('x-action', 'click:x-app#handleMarkerClick');
+			node.setAttribute('x-action', 'leaflet-click:x-app#handleMarkerClick');
 
 			node.$type = name;
 			node.$data = item;
+
+			marker.on('click', handleLeafletClick);
 		}
 	});
 
 	return group;
+}
+
+/** @param {import('leaflet').LeafletMouseEvent} ev */
+function handleLeafletClick (ev) {
+	const originalEvent = ev.originalEvent;
+	const target = originalEvent.target;
+
+	target.dispatchEvent(new CustomEvent('leaflet-click'));
 }
