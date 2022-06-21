@@ -43,6 +43,49 @@ export function renderMapLegend (data, enabled) {
 	);
 }
 
+export function renderDevToolsWindow (data) {
+	return (
+		<x-devtools-window class='window' style='width: 280px; position: absolute; bottom: 12px; left: 12px'>
+			<div class='window-titlebar' x-action='pointerdown:x-devtools-window'>
+				<span>Developer Tools</span>
+			</div>
+			<div class='window-content list'>
+				<x-tree>
+					<ul class='tree' role='tree'>
+						{Object.keys(data).map((key) => {
+							const values = data[key];
+
+							return (
+								<li role='treeitem' aria-expanded='false'>
+									<button
+										class='button is-item fullwidth'
+										x-action='click:x-tree#handleMenuExpand'
+									>
+										{t(`ui.${key}`)}
+									</button>
+									<ul>
+										{values.map((value) => (
+											<li>
+												<button
+													class='button is-item fullwidth'
+													value={value}
+													x-action='click:x-devtools-window#addMarker'
+												>
+													{t(`markers.${value}`)}
+												</button>
+											</li>
+										))}
+									</ul>
+								</li>
+							);
+						})}
+					</ul>
+				</x-tree>
+			</div>
+		</x-devtools-window>
+	)
+}
+
 function h (type, props, ...children) {
 	if (typeof type === 'function') {
 		if (props === null) {

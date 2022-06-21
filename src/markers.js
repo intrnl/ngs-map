@@ -20,6 +20,11 @@ function createMarker (name, url, icon) {
 	const group = L.layerGroup();
 	let init = false;
 
+	if (DEV) {
+		group.$name = name;
+		group.$icon = icon;
+	}
+
 	group.addEventListener('add', async () => {
 		if (init) {
 			return;
