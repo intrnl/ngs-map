@@ -7,7 +7,7 @@ export let config = {
 	outdir: 'dist/_assets',
 	publicPath: '/_assets/',
 
-	external: ['*.png', '*.webp', '*.woff'],
+	external: ['*.png', '*.webp', '*.woff', '*.woff2'],
 
 	sourcemap: true,
 };
