@@ -175,8 +175,8 @@
 	{
 		"id": "belugana_ruins_north",
 		"region": "kvaris",
-		"lat": -300,
-		"lng": 874
+		"lat": -299,
+		"lng": 872.5
 	},
 	{
 		"id": "belugana_ruins_south",
