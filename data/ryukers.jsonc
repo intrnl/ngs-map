@@ -211,8 +211,8 @@
 	{
 		"id": "mt_ihana_west",
 		"region": "kvaris",
-		"lat": -789,
-		"lng": 224
+		"lat": -789.5,
+		"lng": 227
 	},
 	{
 		"id": "lost_central",
