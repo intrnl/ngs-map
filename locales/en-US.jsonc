@@ -140,6 +140,31 @@
 		"pangolan": "Pangolan",
 		"pettas_sword": "Pettas Sword"
 	},
+	"battledias": {
+		// Aelio
+		"aelio_troopers": {
+			"name": "Aelio Troopers"
+		},
+		"aelio_devastators": {
+			"name": "Aelio Devastators"
+		},
+
+		// Retem
+		"retem_troopers": {
+			"name": "Retem Troopers"
+		},
+		"retem_devastators": {
+			"name": "Retem Devastators"
+		},
+
+		// Kvaris
+		"kvaris_troopers": {
+			"name": "Kvaris Troopers"
+		},
+		"kvaris_devastators": {
+			"name": "Kvaris Devastators"
+		}
+	},
 	"cocoons": {
 		// Aelio
 		"first_step": {
