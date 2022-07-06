@@ -6,13 +6,15 @@
 		"build": "pnpm run build:app && pnpm run process:map && pnpm run process:locale",
 		"build:app": "NODE_ENV=production node ./scripts/build.js",
 		"process:map": "node ./scripts/process-map.js",
-		"process:locale": "node ./scripts/process-locale.js"
+		"process:locale": "node ./scripts/process-locale.js",
+		"publish": "wrangler pages publish --branch=main dist/"
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
 		"@messageformat/core": "^3.0.1",
 		"esbuild": "^0.14.46",
-		"json5": "^2.2.1"
+		"json5": "^2.2.1",
+		"wrangler": "^2.0.16"
 	},
 	"dependencies": {
 		"@messageformat/runtime": "^3.0.1",
