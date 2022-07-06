@@ -191,8 +191,8 @@
 		"id": "kvaris_devastators",
 		"type": "purple",
 		"region": "kvaris",
-		"lat": -373,
-		"lng": 298,
+		"lat": -318,
+		"lng": 356.7,
 		"max_players": 4,
 		"ranks": [
 			{
