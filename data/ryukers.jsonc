@@ -227,6 +227,12 @@
 		"lng": 268
 	},
 	{
+		"id": "mt_latva_north",
+		"region": "kvaris",
+		"lat": -373,
+		"lng": 298
+	},
+	{
 		"id": "mistra_woods",
 		"region": "kvaris",
 		"lat": -252,
