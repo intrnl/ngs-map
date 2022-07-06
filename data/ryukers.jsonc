@@ -237,5 +237,11 @@
 		"region": "kvaris",
 		"lat": -252,
 		"lng": 521
+	},
+	{
+		"id": "mistra_woods_north",
+		"region": "kvaris",
+		"lat": -550.3,
+		"lng": 548.5
 	}
 ]
