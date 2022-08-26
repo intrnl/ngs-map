@@ -43,7 +43,35 @@
 			{
 				"enemy_level": 60,
 				"recommended_power": 2467,
-				"rewards": []
+				"rewards": [
+					["items.weapon_primm_gold"],
+					["items.armor_primm_gold"],
+					["items.weapon_primm_silver"],
+					["items.armor_primm_silver"],
+					["items.augment_super_might", 1],
+					["items.augment_super_precision", 1],
+					["items.augment_super_technique", 1],
+					["items.augment_super_spimel", 1],
+					["items.augment_super_spira", 1],
+					["items.augment_super_spitech", 1],
+					["items.augment_super_stamel", 1],
+					["items.augment_super_stara", 1],
+					["items.augment_super_statech", 1],
+					["items.augment_decold_standard", 1, 3],
+					["items.excube_hu"],
+					["items.excube_fi"],
+					["items.excube_ra"],
+					["items.excube_gu"],
+					["items.excube_fo"],
+					["items.excube_te"],
+					["items.excube_br"],
+					["items.excube_bo"],
+					["items.excube_wa"],
+					["items.arms_refiner"],
+					["items.strugment_a"],
+					["items.strugment_b"],
+					["items.strugment_c"]
+				]
 			}
 		]
 	}
