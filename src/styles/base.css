@@ -30,6 +30,7 @@ body {
 	backdrop-filter: blur(5px);
 	display: flex;
 	flex-direction: column;
+	max-height: calc(100vh - calc(12px * 2));
 }
 
 .window.is-active {
