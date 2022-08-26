@@ -3,17 +3,51 @@
 	"name": "ngs-world-map",
 	"scripts": {
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
-		"build": "pnpm run build:app && pnpm run process:map && pnpm run process:locale",
-		"build:app": "NODE_ENV=production node ./scripts/build.js",
-		"process:map": "node ./scripts/process-map.js",
-		"process:locale": "node ./scripts/process-locale.js",
-		"publish": "wrangler pages publish dist/"
+		"build": "wireit",
+		"build:app": "wireit",
+		"process:map": "wireit",
+		"process:locale": "wireit",
+		"publish": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"dependencies": ["build:app", "process:map", "process:locale"]
+		},
+		"build:app": {
+			"command": "NODE_ENV=production node ./scripts/build.js",
+			"clean": "if-file-deleted",
+			"files": ["src/**", "jsconfig.json", "esbuild.config.js"],
+			"output": ["dist/_assets/**"],
+			"packageLocks": ["pnpm-lock.yaml"]
+		},
+		"process:map": {
+			"command": "node ./scripts/process-map.js",
+			"clean": "if-file-deleted",
+			"files": ["data/**/*.jsonc"],
+			"output": ["dist/_data/**"],
+			"packageLocks": ["pnpm-lock.yaml"]
+		},
+		"process:locale": {
+			"command": "node ./scripts/process-locale.js",
+			"clean": "if-file-deleted",
+			"files": ["locales/**/*.jsonc"],
+			"output": ["dist/_locales/**"],
+			"packageLocks": ["pnpm-lock.yaml"]
+		},
+		"publish": {
+			"command": "wrangler pages publish dist/",
+			"dependencies": ["build"],
+			"files": ["dist/**"],
+			"output": [],
+			"packageLocks": ["pnpm-lock.yaml"]
+		}
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
 		"@messageformat/core": "^3.0.1",
 		"esbuild": "^0.14.46",
 		"json5": "^2.2.1",
+		"wireit": "^0.7.1",
 		"wrangler": "^2.0.16"
 	},
 	"dependencies": {

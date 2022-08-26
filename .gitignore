@@ -2,6 +2,7 @@ node_modules/
 /dist/_assets/
 /dist/_data/
 /dist/_locales/
+.wireit/
 
 .pnpm-*.log
 .npm-*.log
