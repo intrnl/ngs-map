@@ -32,5 +32,19 @@
 				]
 			}
 		]
+	},
+	{
+		"id": "cannonball_rumble",
+		"region": "kvaris",
+		"lat": -587.56,
+		"lng": 493,
+		"max_players": 4,
+		"ranks": [
+			{
+				"enemy_level": 60,
+				"recommended_power": 2467,
+				"rewards": []
+			}
+		]
 	}
 ]
