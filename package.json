@@ -11,35 +11,65 @@
 	},
 	"wireit": {
 		"build": {
-			"dependencies": ["build:app", "process:map", "process:locale"]
+			"dependencies": [
+				"build:app",
+				"process:map",
+				"process:locale"
+			]
 		},
 		"build:app": {
 			"command": "NODE_ENV=production node ./scripts/build.js",
 			"clean": "if-file-deleted",
-			"files": ["src/**", "jsconfig.json", "esbuild.config.js"],
-			"output": ["dist/_assets/**"],
-			"packageLocks": ["pnpm-lock.yaml"]
+			"files": [
+				"src/**",
+				"jsconfig.json",
+				"esbuild.config.js"
+			],
+			"output": [
+				"dist/_assets/**"
+			],
+			"packageLocks": [
+				"pnpm-lock.yaml"
+			]
 		},
 		"process:map": {
 			"command": "node ./scripts/process-map.js",
 			"clean": "if-file-deleted",
-			"files": ["data/**/*.jsonc"],
-			"output": ["dist/_data/**"],
-			"packageLocks": ["pnpm-lock.yaml"]
+			"files": [
+				"data/**/*.jsonc"
+			],
+			"output": [
+				"dist/_data/**"
+			],
+			"packageLocks": [
+				"pnpm-lock.yaml"
+			]
 		},
 		"process:locale": {
 			"command": "node ./scripts/process-locale.js",
 			"clean": "if-file-deleted",
-			"files": ["locales/**/*.jsonc"],
-			"output": ["dist/_locales/**"],
-			"packageLocks": ["pnpm-lock.yaml"]
+			"files": [
+				"locales/**/*.jsonc"
+			],
+			"output": [
+				"dist/_locales/**"
+			],
+			"packageLocks": [
+				"pnpm-lock.yaml"
+			]
 		},
 		"publish": {
 			"command": "wrangler pages publish dist/",
-			"dependencies": ["build"],
-			"files": ["dist/**"],
+			"dependencies": [
+				"build"
+			],
+			"files": [
+				"dist/**"
+			],
 			"output": [],
-			"packageLocks": ["pnpm-lock.yaml"]
+			"packageLocks": [
+				"pnpm-lock.yaml"
+			]
 		}
 	},
 	"devDependencies": {
