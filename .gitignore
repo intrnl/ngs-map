@@ -10,3 +10,5 @@ node_modules/
 pnpm-*.log
 npm-*.log
 yarn-*.log
+
+netlifydd.json
