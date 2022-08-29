@@ -74,9 +74,9 @@
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
-		"@intrnl/netlifydd": "^0.1.0",
+		"@intrnl/netlifydd": "^0.1.1",
 		"@messageformat/core": "^3.0.1",
-		"esbuild": "^0.14.46",
+		"esbuild": "^0.15.5",
 		"json5": "^2.2.1",
 		"wireit": "^0.7.1"
 	},
