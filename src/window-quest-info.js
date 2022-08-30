@@ -1,4 +1,4 @@
-import WindowController from './window';
+import WindowController from './window.js';
 import { query } from './lib/x-controller.js';
 
 import { t } from './locale.js';
