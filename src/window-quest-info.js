@@ -168,7 +168,7 @@ class QuestInfoWindowController extends WindowController {
 
 				if (idx >= nodes_len) {
 					node = document.createElement('option');
-					select.appendChild(nodes[idx]);
+					select.appendChild(node);
 				}
 				else {
 					node = nodes[idx];
