@@ -157,13 +157,16 @@ class QuestInfoWindowController extends WindowController {
 			const nodes = [...select.childNodes];
 			const ranks = data.ranks;
 
+			const nodes_len = nodes.length;
+			const ranks_len = ranks.length;
+
 			let idx = 0;
 
-			for (; idx < ranks.length; idx++) {
+			for (; idx < ranks_len; idx++) {
 				const rank = ranks[idx];
 				let node;
 
-				if (idx >= nodes.length) {
+				if (idx >= nodes_len) {
 					node = document.createElement('option');
 					select.appendChild(nodes[idx]);
 				}
@@ -177,7 +180,7 @@ class QuestInfoWindowController extends WindowController {
 
 			select.style.display = idx < 2 ? 'none' : '';
 
-			for (; idx < nodes.length; idx++) {
+			for (; idx < nodes_len; idx++) {
 				const node = nodes[idx];
 				node.remove();
 			}
