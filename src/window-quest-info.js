@@ -161,11 +161,14 @@ class QuestInfoWindowController extends WindowController {
 
 			for (; idx < ranks.length; idx++) {
 				const rank = ranks[idx];
-				let node = nodes[idx];
+				let node;
 
-				if (!node) {
+				if (idx >= nodes.length) {
 					node = document.createElement('option');
-					select.appendChild(node);
+					select.appendChild(nodes[idx]);
+				}
+				else {
+					node = nodes[idx];
 				}
 
 				node.textContent = t(`ui.quest_info.rank_select_option`, { rank: idx + 1, level: rank.enemy_level });
