@@ -7,4 +7,4 @@ if [[ -n $(git status --porcelain) ]]; then
 fi
 
 COMMIT_HASH=$(git rev-parse HEAD)
-pnpm exec netlifydd publish -m "${COMMIT_HASH}" ../dist/
+pnpm exec netlifydd deploy -m "${COMMIT_HASH}" dist/
