@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@intrnl/esbuild-plugin-build-analysis': ^0.1.2
-  '@intrnl/netlifydd': ^0.1.3
+  '@intrnl/netlifydd': ^0.1.4
   '@messageformat/core': ^3.0.1
   '@messageformat/runtime': ^3.0.1
   esbuild: ^0.15.6
@@ -16,7 +16,7 @@ dependencies:
 
 devDependencies:
   '@intrnl/esbuild-plugin-build-analysis': 0.1.2_esbuild@0.15.6
-  '@intrnl/netlifydd': 0.1.3
+  '@intrnl/netlifydd': 0.1.4
   '@messageformat/core': 3.0.1
   esbuild: 0.15.6
   json5: 2.2.1
@@ -33,8 +33,8 @@ packages:
     dev: true
     optional: true
 
-  /@inquirer/core/0.0.24-alpha.0:
-    resolution: {integrity: sha512-0Y2Wz01PdgvOjU7ABsldS7dTeUr/qa+lcXdw2TCj7YCIvHtI1yptLyuAZDNkSgZzwzANDBNVmwgu6Z7eWBJrLA==}
+  /@inquirer/core/0.0.26-alpha.0:
+    resolution: {integrity: sha512-g3mserTS5ekmwluiZnhaJbYOkKiKNTGatRXDH1jVe+bBc57mtmP3HvlvhZiU7yYgEAXM/TIR5Qd8sNu+kAi8rg==}
     dependencies:
       ansi-escapes: 5.0.0
       chalk: 5.0.1
@@ -48,20 +48,20 @@ packages:
       wrap-ansi: 8.0.1
     dev: true
 
-  /@inquirer/input/0.0.24-alpha.0:
-    resolution: {integrity: sha512-f83JLVsQcUvJ4ohVatrSCNOoSG74D9poJ2rkP+sxDNqi+wJ6Dr67lwDFTz2jMs/HOowEsrGP2/DCLCjHZKbdKQ==}
+  /@inquirer/input/0.0.26-alpha.0:
+    resolution: {integrity: sha512-4bSSl4LB62UiHSE0hZQIKK2buOTmGR8E7c34fVMbN4qya6++cqoJyEBZG6GRqBfUxiS4fFXFAyWl10ttlHW+dQ==}
     dependencies:
-      '@inquirer/core': 0.0.24-alpha.0
+      '@inquirer/core': 0.0.26-alpha.0
       chalk: 5.0.1
     dev: true
 
-  /@inquirer/select/0.0.24-alpha.0:
-    resolution: {integrity: sha512-wX2p/V6ezd0qp34G70APBuL7UHm5e4wF2cPP//z0G41aM+J4L+O8FesusoashVTa4De7/gVdBVbFdHuawMgvCQ==}
+  /@inquirer/select/0.0.26-alpha.0:
+    resolution: {integrity: sha512-w2O36d9BL8ahXZ0qjjJnyxogVg1KfnxnPGCCaAsQgIkTWWQ5Rgl1htJoZIQrrFmWRpUkXQYLbrJIfJXx2lqmkw==}
     dependencies:
-      '@inquirer/core': 0.0.24-alpha.0
+      '@inquirer/core': 0.0.26-alpha.0
       ansi-escapes: 5.0.0
       chalk: 5.0.1
-      figures: 4.0.1
+      figures: 5.0.0
     dev: true
 
   /@intrnl/clippy/0.1.6:
@@ -79,13 +79,13 @@ packages:
       esbuild: 0.15.6
     dev: true
 
-  /@intrnl/netlifydd/0.1.3:
-    resolution: {integrity: sha512-/so6UscZCzA5Lqe7CbvtPNuHMCQENuF2dBP3vz81LezW8oUBBDSainxpCdBfZ4keO+erP/oIJP1cHAEmthAU2w==}
+  /@intrnl/netlifydd/0.1.4:
+    resolution: {integrity: sha512-+9Z54KXHCRs2xR1Gc9v0PWNQCD5xPs3pqYOVIpy5/zNQRIJJJ6vjk9Gr6onMxDL+9urLKW4MJvYX7lSu6ilpXw==}
     hasBin: true
     dependencies:
-      '@inquirer/core': 0.0.24-alpha.0
-      '@inquirer/input': 0.0.24-alpha.0
-      '@inquirer/select': 0.0.24-alpha.0
+      '@inquirer/core': 0.0.26-alpha.0
+      '@inquirer/input': 0.0.26-alpha.0
+      '@inquirer/select': 0.0.26-alpha.0
       '@intrnl/clippy': 0.1.6
       ansi-escapes: 5.0.0
       chalk: 5.0.1
@@ -452,9 +452,9 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /figures/4.0.1:
-    resolution: {integrity: sha512-rElJwkA/xS04Vfg+CaZodpso7VqBknOYbzi6I76hI4X80RUjkSxO2oAyPmGbuXUppywjqndOrQDl817hDnI++w==}
-    engines: {node: '>=12'}
+  /figures/5.0.0:
+    resolution: {integrity: sha512-ej8ksPF4x6e5wvK9yevct0UCXh8TTFlWGVLlgjZuoBH1HwjIfKE/IdL5mq89sFA7zELi1VhKpmtDnrs7zWyeyg==}
+    engines: {node: '>=14'}
     dependencies:
       escape-string-regexp: 5.0.0
       is-unicode-supported: 1.2.0
