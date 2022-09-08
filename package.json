@@ -1,6 +1,8 @@
 {
+	"private": true,
 	"type": "module",
 	"name": "ngs-world-map",
+	"packageManager": "pnpm@7.11.0",
 	"scripts": {
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
 		"build": "wireit",
