@@ -355,6 +355,10 @@
 		"cannonball_rumble": {
 			"name": "Cannonball Rumble",
 			"description": "This is Trainia Advance, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to defeat the enemies and destroy the targets."
+		},
+		"cannonball_strike": {
+			"name": "Cannonball Strike",
+			"description": "This is Trainia Advance, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to defeat the enemies and destroy the targets."
 		}
 	}
 }
