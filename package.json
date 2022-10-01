@@ -78,12 +78,12 @@
 		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
 		"@intrnl/netlifydd": "^0.1.5",
 		"@messageformat/core": "^3.0.1",
-		"esbuild": "^0.15.7",
+		"esbuild": "^0.15.10",
 		"json5": "^2.2.1",
-		"wireit": "^0.7.1"
+		"wireit": "^0.7.2"
 	},
 	"dependencies": {
 		"@messageformat/runtime": "^3.0.1",
-		"leaflet": "^1.8.0"
+		"leaflet": "^1.9.1"
 	}
 }
