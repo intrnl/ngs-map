@@ -1,4 +1,4 @@
-import * as L from 'leaflet/dist/leaflet-src.esm.js';
+import * as L from 'leaflet';
 
 const Landmark = L.Icon.extend({ options: { iconSize: [40, 40], iconAnchor: [20, 20] } });
 
