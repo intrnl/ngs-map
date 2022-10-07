@@ -123,6 +123,15 @@
 					["rewards.meseta", 10000],
 					["items.photon_scale", 8]
 				]
+			},
+			{
+				"enemy_level": 65,
+				"recommended_power": 2878,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.photon_scale", 8],
+					["items.augment_technique", 3, 4]
+				]
 			}
 		]
 	},
