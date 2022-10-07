@@ -168,6 +168,14 @@
 				"rewards": [
 					["rewards.meseta", 10000]
 				]
+			},
+			{
+				"enemy_level": 65,
+				"recommended_power": 2878,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["rewards.augment_precision", 4, 3]
+				]
 			}
 		]
 	},
