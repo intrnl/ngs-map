@@ -115,6 +115,7 @@
 		"augment_tria_staromel": "Tria Staromel",
 		"augment_tria_starora": "Tria Starora",
 		"augment_tria_starotech": "Tria Starotech",
+		"augment_vardi_soul": "C/Vardi Soul",
 		"camo_straga_almati": "* Straga Almati",
 		"excube_hu": "N-HU-EX-Cube",
 		"excube_fi": "N-FI-EX-Cube",
@@ -345,6 +346,10 @@
 		"ams_vera": {
 			"name": "Ams Vera Suppression Op",
 			"description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+		},
+		"mining_rig_kvaris": {
+			"name": "Mining Rig Defense: Kvaris",
+			"description": "We've received an emergency support request from our active mining unit on Danann Snow Field. Numerous enemy readings in the area suggests a major assault is likely. We need all ARKS defenders to hurry to the site and defend the mining rigs."
 		}
 	},
 	"trinitas": {
