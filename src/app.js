@@ -214,68 +214,6 @@ if (DEV) {
 			this.#map = map;
 		}
 
-		/**
-		 * @param {MouseEvent} ev
-		 */
-		addMarker (ev) {
-			if (this.#inprogress) {
-				return;
-			}
-
-			this.#inprogress = true;
-
-			const map = this.#map;
-			const container = map.getContainer();
-
-			const value = ev.target.value;
-			const group = markers[value];
-
-			const icon = group.$icon;
-
-			/** @type {import('leaflet').Marker} */
-			const cursor = L.marker([0, 0], { icon, zIndexOffset: 100 });
-			let init = false;
-
-			container.style.cursor = 'crosshair';
-
-			/**
-			 * @param {import('leaflet').LeafletMouseEvent} ev
-			 */
-			const handleMouseMove = (ev) => {
-				const latlng = ev.latlng;
-				cursor.setLatLng(latlng);
-
-				if (!init) {
-					cursor.addTo(map);
-
-					const element = cursor.getElement();
-					element.style.display = '';
-					element.style.cursor = 'inherit';
-					init = true;
-				}
-			};
-
-			/**
-			 * @param {import('leaflet').LeafletMouseEvent} ev
-			 */
-			const handleContextMenu = (ev) => {
-				ev.originalEvent.preventDefault();
-
-				container.style.cursor = '';
-
-				cursor.removeFrom(map);
-
-				map.off('mousemove', handleMouseMove);
-				map.off('contextmenu', handleContextMenu);
-
-				this.#inprogress = false;
-			};
-
-
-			map.on('mousemove', handleMouseMove);
-			map.on('contextmenu', handleContextMenu);
-		}
-
 		addPointer () {
 			if (this.#inprogress) {
 				return;

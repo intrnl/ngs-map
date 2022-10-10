@@ -57,34 +57,6 @@ export function renderDevToolsWindow (data) {
 								Pointer
 							</button>
 						</li>
-
-						{Object.keys(data).map((key) => {
-							const values = data[key];
-
-							return (
-								<li role='treeitem' aria-expanded='false'>
-									<button
-										class='button is-item fullwidth'
-										x-action='click:x-tree#handleMenuExpand'
-									>
-										{t(`ui.${key}`)}
-									</button>
-									<ul>
-										{values.map((value) => (
-											<li>
-												<button
-													class='button is-item fullwidth'
-													value={value}
-													x-action='click:x-devtools-window#addMarker'
-												>
-													{t(`markers.${value}`)}
-												</button>
-											</li>
-										))}
-									</ul>
-								</li>
-							);
-						})}
 					</ul>
 				</x-tree>
 			</div>
