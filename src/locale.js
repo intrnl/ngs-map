@@ -1,7 +1,7 @@
 let currentLocale;
 
 export async function loadLocale (locale) {
-	const mod = await import(`/_locales/${locale}.js`);
+	const mod = await import(`../_locales/${locale}.js`);
 	currentLocale = mod.default;
 }
 

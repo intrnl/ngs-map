@@ -68,7 +68,7 @@ class AppController extends HTMLElement {
 			zoomControl: false,
 		});
 
-		L.tileLayer('/tiles/{z}/{y}-{x}.webp', {
+		L.tileLayer('tiles/{z}/{y}-{x}.webp', {
 			noWrap: true,
 			minNativeZoom: 0,
 			maxNativeZoom: 2,

@@ -64,19 +64,10 @@
 			"command": "scripts/publish.sh",
 			"dependencies": [
 				"build"
-			],
-			"files": [
-				"dist/**"
-			],
-			"output": [],
-			"packageLocks": [
-				"pnpm-lock.yaml"
 			]
 		}
 	},
 	"devDependencies": {
-		"@intrnl/esbuild-plugin-build-analysis": "^0.1.2",
-		"@intrnl/netlifydd": "^0.1.5",
 		"@messageformat/core": "^3.0.1",
 		"esbuild": "^0.15.10",
 		"json5": "^2.2.1",

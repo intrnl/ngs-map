@@ -3,13 +3,13 @@ import * as L from 'leaflet';
 const Landmark = L.Icon.extend({ options: { iconSize: [40, 40], iconAnchor: [20, 20] } });
 
 export const markers = {
-	ryukers: createMarker('ryukers', '/_data/ryukers.json', new Landmark({ iconUrl: '/assets/landmarks/ryuker.webp' })),
-	mags: createMarker('mags', '/_data/mags.json', new Landmark({ iconUrl: '/assets/landmarks/mag.webp' })),
-	battledias: createMarker('battledias', '/_data/battledias.json', new Landmark({ iconUrl: '/assets/landmarks/battledia.webp' })),
-	cocoons: createMarker('cocoons', '/_data/cocoons.json', new Landmark({ iconUrl: '/assets/landmarks/cocoon.webp' })),
-	towers: createMarker('towers', '/_data/towers.json', new Landmark({ iconUrl: '/assets/landmarks/tower.webp' })),
-	trinitas: createMarker('trinitas', '/_data/trinitas.json', new Landmark({ iconUrl: '/assets/landmarks/trinitas.webp' })),
-	urgents: createMarker('urgents', '/_data/urgents.json', new Landmark({ iconUrl: '/assets/landmarks/urgent.webp' })),
+	ryukers: createMarker('ryukers', '_data/ryukers.json', new Landmark({ iconUrl: 'assets/landmarks/ryuker.webp' })),
+	mags: createMarker('mags', '_data/mags.json', new Landmark({ iconUrl: 'assets/landmarks/mag.webp' })),
+	battledias: createMarker('battledias', '_data/battledias.json', new Landmark({ iconUrl: 'assets/landmarks/battledia.webp' })),
+	cocoons: createMarker('cocoons', '_data/cocoons.json', new Landmark({ iconUrl: 'assets/landmarks/cocoon.webp' })),
+	towers: createMarker('towers', '_data/towers.json', new Landmark({ iconUrl: 'assets/landmarks/tower.webp' })),
+	trinitas: createMarker('trinitas', '_data/trinitas.json', new Landmark({ iconUrl: 'assets/landmarks/trinitas.webp' })),
+	urgents: createMarker('urgents', '_data/urgents.json', new Landmark({ iconUrl: 'assets/landmarks/urgent.webp' })),
 };
 
 export const groups = {

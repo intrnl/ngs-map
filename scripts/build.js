@@ -1,5 +1,4 @@
 import * as esbuild from 'esbuild';
-import buildAnalysis from '@intrnl/esbuild-plugin-build-analysis';
 
 import { config } from '../esbuild.config.js';
 
@@ -16,6 +15,5 @@ await esbuild.build({
 	},
 	plugins: [
 		...config.plugins || [],
-		buildAnalysis(),
 	],
 });

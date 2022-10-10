@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'pfdintextstd-medium';
-	src: url('/assets/fonts/PFDinTextStd-Medium.woff2') format('woff2');
+	src: url('../assets/fonts/PFDinTextStd-Medium.woff2') format('woff2');
 	ascent-override: 100%;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .titlebar-icon-close {
-	content: url('/assets/ui/close.webp');
+	content: url('../assets/ui/close.webp');
 	height: 14px;
 	width: 14px;
 }
@@ -195,14 +195,14 @@ body {
 }
 .tree li[role='treeitem'] > .button::before {
 	content: '';
-	background-image: url('/assets/ui/tree_expand.webp');
+	background-image: url('../assets/ui/tree_expand.webp');
 	background-size: contain;
 	display: inline-block;
 	height: 12px;
 	width: 12px;
 }
 .tree li[role='treeitem'][aria-expanded='true'] > .button::before {
-	background-image: url('/assets/ui/tree_collapse.webp');
+	background-image: url('../assets/ui/tree_collapse.webp');
 }
 .tree li[role='treeitem'][aria-expanded='false'] > ul {
 	display: none;
@@ -302,7 +302,7 @@ body {
 	color: inherit;
 	background: var(--base-color);
 	background:
-		url('/assets/ui/dropdown_arrow.webp') right 8px center/14px no-repeat,
+		url('../assets/ui/dropdown_arrow.webp') right 8px center/14px no-repeat,
 		linear-gradient(270deg, var(--border-color) 0, var(--border-color) 32px, var(--base-color) 32px);
 	padding: 4px 6px;
 	border: 1px solid var(--border-color);
@@ -403,19 +403,19 @@ body {
 	outline: none;
 }
 .radio-control input {
-	background-image: url('/assets/ui/radio_empty.webp');
+	background-image: url('../assets/ui/radio_empty.webp');
 }
 .radio-control input:checked {
-	background-image: url('/assets/ui/radio_filled.webp');
+	background-image: url('../assets/ui/radio_filled.webp');
 }
 .checkbox-control input {
-	background-image: url('/assets/ui/checkbox_empty.webp');
+	background-image: url('../assets/ui/checkbox_empty.webp');
 }
 .checkbox-control input:checked {
-	background-image: url('/assets/ui/checkbox_checked.webp');
+	background-image: url('../assets/ui/checkbox_checked.webp');
 }
 .checkbox-control input:indeterminate {
-	background-image: url('/assets/ui/checkbox_indeterminate.webp');
+	background-image: url('../assets/ui/checkbox_indeterminate.webp');
 }
 
 .progress {
