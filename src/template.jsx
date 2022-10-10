@@ -52,6 +52,12 @@ export function renderDevToolsWindow (data) {
 			<div class='window-content list'>
 				<x-tree>
 					<ul class='tree' role='tree'>
+						<li>
+							<button class='button is-item fullwidth' x-action='click:x-devtools-window#addPointer'>
+								Pointer
+							</button>
+						</li>
+
 						{Object.keys(data).map((key) => {
 							const values = data[key];
 

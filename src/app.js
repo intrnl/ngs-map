@@ -275,6 +275,31 @@ if (DEV) {
 			map.on('mousemove', handleMouseMove);
 			map.on('contextmenu', handleContextMenu);
 		}
+
+		addPointer () {
+			if (this.#inprogress) {
+				return;
+			}
+
+			this.#inprogress = true;
+
+			const map = this.#map;
+			const container = map.getContainer();
+
+			container.style.cursor = 'crosshair';
+
+			const handleContextMenu = (ev) => {
+				ev.originalEvent.preventDefault();
+
+				container.style.cursor = '';
+
+				map.off('contextmenu', handleContextMenu);
+
+				this.#inprogress = false;
+			};
+
+			map.on('contextmenu', handleContextMenu);
+		}
 	}
 
 	customElements.define('x-devtools-window', DevToolsWindowController);
