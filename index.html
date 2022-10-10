@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>PSO2 NGS Map</title>
+		<link rel='stylesheet' href='/_assets/app.css' />
+		<script type='module' src='/_assets/app.js'></script>
+	</head>
+	<body>
+		<x-app>
+			<div class='x-map-container'>
+				<div x-target='x-app.mapContainer'></div>
+			</div>
+
+			<div class='x-zoom-controls'>
+				<button class='button' title='Zoom in' x-target='x-app.zoomInButton' x-action='click:x-app#zoomIn'>+</button>
+				<button class='button' title='Zoom out' x-target='x-app.zoomOutButton' x-action='click:x-app#zoomOut'>-</button>
+				<button class='button' title='Show map legend' x-action='click:x-app#openLegendWindow'>M</button>
+			</div>
+
+			<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
+
+			<x-legend-window class='window' style='display: none; right: 48px; top: 12px;' x-target='x-app.legendWindow'>
+				<div class='window-titlebar' x-action='pointerdown:x-legend-window'>
+					<span x-target='x-legend-window.title'></span>
+					<div class='titlebar-actions'>
+						<button class='titlebar-button is-close' title='Close window' x-action='click:x-legend-window#closeWindow'>
+							<img class='icon is-outlined titlebar-icon-close' />
+						</button>
+					</div>
+				</div>
+				<div class='window-content' x-target='x-legend-window.content'></div>
+			</x-legend-window>
+
+			<x-quest-info-window class='window' style='display: none; left: 12px; top: 12px;' x-target='x-app.questInfoWindow'>
+				<div class='window-titlebar' x-action='pointerdown:x-quest-info-window'>
+					<span x-target='x-quest-info-window.title'></span>
+					<div class='titlebar-actions'>
+						<button class='titlebar-button is-close' title='Close window' x-action='click:x-quest-info-window#closeWindow'>
+							<img class='icon is-outlined titlebar-icon-close' />
+						</button>
+					</div>
+				</div>
+				<div class='window-content'>
+					<p class='text is-large x--quest-name'>
+						<img class='icon' height='14' width='24' x-target='x-quest-info-window.maxPlayersIcon' />
+						<span x-target='x-quest-info-window.questName'></span>
+					</p>
+					<p class='text x--quest-description' x-target='x-quest-info-window.questDescription'></p>
+					<select class='select fullwidth x--rank-select' x-target='x-quest-info-window.rankSelect' x-action='input:x-quest-info-window#updateRank'></select>
+					<table class='table fullwidth x--quest-info'>
+						<tr x-target='x-quest-info-window.enemyLevel'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.enemyLevelTitle'></th>
+							<td x-target='x-quest-info-window.enemyLevelContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.recommendedPower'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.recommendedPowerTitle'></th>
+							<td x-target='x-quest-info-window.recommendedPowerContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.mainMission'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.mainMissionTitle'></th>
+							<td x-target='x-quest-info-window.mainMissionContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.sideMissions'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.sideMissionsTitle'></th>
+							<td x-target='x-quest-info-window.sideMissionsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.failConditions'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.failConditionsTitle'></th>
+							<td x-target='x-quest-info-window.failConditionsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.firstClearRewards'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.firstClearRewardsTitle'></th>
+							<td x-target='x-quest-info-window.firstClearRewardsContent'></td>
+						</tr>
+						<tr x-target='x-quest-info-window.rewards'>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.rewardsTitle'></th>
+							<td x-target='x-quest-info-window.rewardsContent'></td>
+						</tr>
+					</table>
+				</div>
+			</x-quest-info-window>
+		</x-app>
+	</body>
+</html>
