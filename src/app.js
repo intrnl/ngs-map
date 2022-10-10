@@ -5,9 +5,9 @@ import * as L from 'leaflet';
 
 import { markers, groups } from './markers.js';
 
+import 'leaflet/dist/leaflet.css';
 import './styles/base.css';
 import './styles/app.css';
-import 'leaflet/dist/leaflet.css';
 
 import './tree.js';
 import WindowController from './window.js';
