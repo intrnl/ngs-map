@@ -2,4 +2,4 @@
 
 An interactive world map of Phantasy Star Online 2: New Genesis. 
 
-![Screenshot](https://codeberg.org/attachments/e409fd5d-02a2-4f97-a0c3-10f30427dc6a)
+![Screenshot](https://codeberg.org/attachments/88d12197-dbc0-4e50-b74f-cb8df977ff9c)
