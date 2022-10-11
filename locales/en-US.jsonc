@@ -26,13 +26,17 @@
 		"seafoods": "Seafoods"
 	},
 	"markers": {
+		// Landmarks
 		"battledias": "Battledia",
 		"cocoons": "Cocoon",
 		"mags": "Region Mag",
 		"ryukers": "Ryuker Device",
 		"towers": "Tower",
 		"trinitas": "Trinitas",
-		"urgents": "Urgent Quest"
+		"urgents": "Urgent Quest",
+
+		// Central Kvaris Seafood
+		"kvaris_notable_squid": "Notable Kvaris Squid"
 	},
 	"missions": {
 		"finish_point": "Reach the finish point",
