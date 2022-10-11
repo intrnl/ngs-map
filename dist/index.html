@@ -23,7 +23,7 @@
 
 			<x-legend-window class='window' style='display: none; right: 48px; top: 12px;' x-target='x-app.legendWindow'>
 				<div class='window-titlebar' x-action='pointerdown:x-legend-window'>
-					<span x-target='x-legend-window.title'></span>
+					<span x-i18n='ui.map_legend.title'></span>
 					<div class='titlebar-actions'>
 						<button class='titlebar-button is-close' title='Close window' x-action='click:x-legend-window#closeWindow'>
 							<img class='icon is-outlined titlebar-icon-close' />
@@ -35,7 +35,7 @@
 
 			<x-quest-info-window class='window' style='display: none; left: 12px; top: 12px;' x-target='x-app.questInfoWindow'>
 				<div class='window-titlebar' x-action='pointerdown:x-quest-info-window'>
-					<span x-target='x-quest-info-window.title'></span>
+					<span x-i18n='ui.quest_info.title'></span>
 					<div class='titlebar-actions'>
 						<button class='titlebar-button is-close' title='Close window' x-action='click:x-quest-info-window#closeWindow'>
 							<img class='icon is-outlined titlebar-icon-close' />
@@ -51,31 +51,31 @@
 					<select class='select fullwidth x--rank-select' x-target='x-quest-info-window.rankSelect' x-action='input:x-quest-info-window#updateRank'></select>
 					<table class='table fullwidth x--quest-info'>
 						<tr x-target='x-quest-info-window.enemyLevel'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.enemyLevelTitle'></th>
+							<th scope='row' class='text is-accent' x-target='x-quest-info-window.enemyLevelTitle' x-i18n='ui.quest_info.enemy_level.title'></th>
 							<td x-target='x-quest-info-window.enemyLevelContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.recommendedPower'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.recommendedPowerTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.recommended_power.title'></th>
 							<td x-target='x-quest-info-window.recommendedPowerContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.mainMission'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.mainMissionTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.main_mission'></th>
 							<td x-target='x-quest-info-window.mainMissionContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.sideMissions'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.sideMissionsTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.side_missions'></th>
 							<td x-target='x-quest-info-window.sideMissionsContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.failConditions'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.failConditionsTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.fail_conditions'></th>
 							<td x-target='x-quest-info-window.failConditionsContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.firstClearRewards'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.firstClearRewardsTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.first_clear_rewards'></th>
 							<td x-target='x-quest-info-window.firstClearRewardsContent'></td>
 						</tr>
 						<tr x-target='x-quest-info-window.rewards'>
-							<th scope='row' class='text is-accent' x-target='x-quest-info-window.rewardsTitle'></th>
+							<th scope='row' class='text is-accent' x-i18n='ui.quest_info.rewards'></th>
 							<td x-target='x-quest-info-window.rewardsContent'></td>
 						</tr>
 					</table>

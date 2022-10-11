@@ -1,5 +1,6 @@
 import './lib/x-action.js';
 import { query } from './lib/x-controller.js';
+import { initializeI18n } from './lib/x-i18n.js';
 
 import * as L from 'leaflet';
 
@@ -29,6 +30,7 @@ const DEFAULT_MARKERS = groups.landmarks.slice();
 let ENABLED_MARKERS = new Set(CONFIG.markers || DEFAULT_MARKERS);
 
 await loadLocale(LOCALE);
+initializeI18n();
 
 class AppController extends HTMLElement {
 	/** @type {HTMLDivElement} */

@@ -24,9 +24,6 @@ function formatRomanNumeral (num) {
 }
 
 class QuestInfoWindowController extends WindowController {
-	/** @type {HTMLSpanElement} */
-	get #title () { return query(this, 'title'); }
-
 	/** @type {HTMLSelectElement} */
 	get #rankSelect () { return query(this, 'rankSelect'); }
 
@@ -47,8 +44,6 @@ class QuestInfoWindowController extends WindowController {
 	/** @type {HTMLTableRowElement} */
 	get #recommendedPower () { return query(this, 'recommendedPower'); }
 	/** @type {HTMLTableCellElement} */
-	get #recommendedPowerTitle () { return query(this, 'recommendedPowerTitle'); }
-	/** @type {HTMLTableCellElement} */
 	get #recommendedPowerContent () { return query(this, 'recommendedPowerContent'); }
 
 	/** @type {HTMLTableRowElement} */
@@ -61,43 +56,26 @@ class QuestInfoWindowController extends WindowController {
 	/** @type {HTMLTableRowElement} */
 	get #sideMissions () { return query(this, 'sideMissions'); }
 	/** @type {HTMLTableCellElement} */
-	get #sideMissionsTitle () { return query(this, 'sideMissionsTitle'); }
-	/** @type {HTMLTableCellElement} */
 	get #sideMissionsContent () { return query(this, 'sideMissionsContent'); }
 
 	/** @type {HTMLTableRowElement} */
 	get #failConditions () { return query(this, 'failConditions'); }
-	/** @type {HTMLTableCellElement} */
-	get #failConditionsTitle () { return query(this, 'failConditionsTitle'); }
 	/** @type {HTMLTableCellElement} */
 	get #failConditionsContent () { return query(this, 'failConditionsContent'); }
 
 	/** @type {HTMLTableRowElement} */
 	get #firstClearRewards () { return query(this, 'firstClearRewards'); }
 	/** @type {HTMLTableCellElement} */
-	get #firstClearRewardsTitle () { return query(this, 'firstClearRewardsTitle'); }
-	/** @type {HTMLTableCellElement} */
 	get #firstClearRewardsContent () { return query(this, 'firstClearRewardsContent'); }
 
 	/** @type {HTMLTableRowElement} */
 	get #rewards () { return query(this, 'rewards'); }
-	/** @type {HTMLTableCellElement} */
-	get #rewardsTitle () { return query(this, 'rewardsTitle'); }
 	/** @type {HTMLTableCellElement} */
 	get #rewardsContent () { return query(this, 'rewardsContent'); }
 
 	#currentData = null;
 
 	initialize () {
-		this.#title.textContent = t(`ui.quest_info.title`);
-		this.#enemyLevelTitle.textContent = t(`ui.quest_info.enemy_level.title`);
-		this.#recommendedPowerTitle.textContent = t(`ui.quest_info.recommended_power.title`);
-		this.#mainMissionTitle.textContent = t(`ui.quest_info.main_mission`);
-		this.#sideMissionsTitle.textContent = t(`ui.quest_info.side_missions`);
-		this.#failConditionsTitle.textContent = t(`ui.quest_info.fail_conditions`);
-		this.#firstClearRewardsTitle.textContent = t(`ui.quest_info.first_clear_rewards`);
-		this.#rewardsTitle.textContent = t(`ui.quest_info.rewards`);
-
 		// calculate the width necessary for the table header so that we can make
 		// the table layout fixed, it's done here because each locale would take up
 		// different amount of space.
