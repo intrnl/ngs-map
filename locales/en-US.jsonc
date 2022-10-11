@@ -43,8 +43,9 @@
 		"kvaris_notable_persimmon": "Notable Kvaris Persimmon",
 
 		// Kvaris Seafoods
-		"kvaris_squid": "Crisp Kvaris Squid",
-		"kvaris_notable_squid": "Notable Kvaris Squid"
+		"kvaris_notable_squid": "Notable Kvaris Squid",
+		"kvaris_octopus": "Light Kvaris Octopus",
+		"kvaris_squid": "Crisp Kvaris Squid"
 	},
 	"missions": {
 		"finish_point": "Reach the finish point",
