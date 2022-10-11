@@ -22,6 +22,15 @@
 			"title": "Map Legend",
 			"reset_option": "Reset visible markers"
 		},
+		"settings": {
+			"title": "Settings",
+			"language_option": "Language",
+			"settings_change_msg": "Some settings has been changed, you need to reload the page for it to take effect.",
+			"settings_change_btn": "Reload"
+		},
+		"languages": {
+			"en-US": "English (GL)"
+		},
 		"landmarks": "Landmarks",
 		"minerals": "Minerals",
 		"vegetables": "Vegetable",

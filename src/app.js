@@ -14,6 +14,7 @@ import './elements/x-tree.js';
 import WindowController from './elements/x-window.js';
 import LegendWindowController from './elements/x-legend-window.js';
 import QuestInfoWindowController from './elements/x-quest-info-window.js';
+import SettingsWindowController from './elements/x-settings-window.js';
 import { renderDevToolsWindow } from './template.jsx';
 import { loadLocale } from './locale.js';
 
@@ -47,6 +48,8 @@ class AppController extends HTMLElement {
 	get #legendWindow () { return query(this, 'legendWindow'); }
 	/** @type {QuestInfoWindowController} */
 	get #questInfoWindow () { return query(this, 'questInfoWindow'); }
+	/** @type {SettingsWindowController} */
+	get #settingsWindow () { return query(this, 'settingsWindow'); }
 
 	/** @type {?import('leaflet').Map} */
 	#map = null;
@@ -195,6 +198,10 @@ class AppController extends HTMLElement {
 
 	openLegendWindow () {
 		this.#legendWindow.toggleWindow();
+	}
+
+	openSettingsWindow () {
+		this.#settingsWindow.toggleWindow();
 	}
 
 	handleMarkerClick (ev) {

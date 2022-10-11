@@ -5,7 +5,7 @@ x-app {
 	overflow: hidden;
 }
 
-x-window, x-legend-window, x-quest-info-window {
+x-window, x-legend-window, x-quest-info-window, x-settings-window {
 	position: absolute;
 	z-index: 2;
 }
@@ -86,6 +86,19 @@ x-quest-info-window .x--quest-info {
 x-quest-info-window .x--quest-info th {
 	width: var(--header-width);
 	white-space: nowrap;
+}
+
+x-settings-window {
+	width: 380px;
+}
+x-settings-window .x--settings-reload {
+	display: grid;
+	gap: 5px;
+	justify-items: start;
+	margin-bottom: 10px;
+}
+x-settings-window .x--settings-about {
+	margin-top: 10px;
 }
 
 .x-dot-marker {

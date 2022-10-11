@@ -17,6 +17,7 @@
 				<button class='button' title='Zoom in' x-target='x-app.zoomInButton' x-action='click:x-app#zoomIn'>+</button>
 				<button class='button' title='Zoom out' x-target='x-app.zoomOutButton' x-action='click:x-app#zoomOut'>-</button>
 				<button class='button' title='Show map legend' x-action='click:x-app#openLegendWindow'>M</button>
+				<button class='button' title='Open settings' x-action='click:x-app#openSettingsWindow'>S</button>
 			</div>
 
 			<div class='window window-content x-latlng-window' x-target='x-app.latlngWindow'></div>
@@ -81,6 +82,37 @@
 					</table>
 				</div>
 			</x-quest-info-window>
+
+			<x-settings-window class='window' style='display: none; left: 12px; top: 12px;' x-target='x-app.settingsWindow'>
+				<div class='window-titlebar' x-action='pointerdown:x-settings-window'>
+					<span x-i18n='ui.settings.title'></span>
+					<div class='titlebar-actions'>
+						<button class='titlebar-button is-close' title='Close window' x-action='click:x-settings-window#closeWindow'>
+							<img class='icon is-outlined titlebar-icon-close' />
+						</button>
+					</div>
+				</div>
+				<div class='window-content'>
+					<div class='box fullwidth x--settings-reload' x-target='x-settings-window.settingsChangeBanner'>
+						<p class='text is-paragraph' x-i18n='ui.settings.settings_change_msg'></p>
+						<button class='button' x-i18n='ui.settings.settings_change_btn' x-action='click:x-settings-window#reloadPage'></button>
+					</div>
+					<div class='list'>
+						<label class='control'>
+							<span class='control-label text is-accent' x-i18n='ui.settings.language_option'></span>
+							<select class='select'>
+								<option value='en-US' x-i18n='ui.languages.en-US'></option>
+							</select>
+						</label>
+					</div>
+					<div class='box fullwidth x--settings-about'>
+						<p class='text is-paragraph'>
+							<span>PSO2 NGS Map</span> <span class='text is-disabled' x-target='x-settings-window.commitHash'></span> <br />
+							<a target='_blank' href='https://codeberg.org/intrnl/ngs-map' class='text is-accent'>Source Code</a>
+						</p>
+					</div>
+				</div>
+			</x-settings-window>
 		</x-app>
 	</body>
 </html>
