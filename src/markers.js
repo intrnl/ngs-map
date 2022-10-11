@@ -1,6 +1,6 @@
 import * as L from 'leaflet';
 
-const UNIQUE_COLORS = ['#000000', '#a0522d', '#006400', '#778899', '#4b0082', '#ff0000', '#ffa500', '#ffff00', '#00ff00', '#00ffff', '#0000ff', '#ff00ff', '#1e90ff', '#98fb98', '#ffe4b5', '#ff69b4'];
+const UNIQUE_COLORS = ['#2f4f4f', '#006400', '#bdb76b', '#000080', '#ff0000', '#ffa500', '#ffff00', '#00ff00', '#00fa9a', '#00ffff', '#0000ff', '#f08080', '#ff00ff', '#6495ed', '#ff1493', '#e6e6fa'];
 
 const Landmark = L.Icon.extend({ options: { iconSize: [40, 40], iconAnchor: [20, 20] } });
 
