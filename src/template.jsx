@@ -34,7 +34,7 @@ export function renderMapLegend (enabled) {
 										<li>
 											<label
 												class='checkbox-control x-legend-item'
-												style={isEnabled ? `--dot-color: ${markers[value].$color};` : ''}
+												style={isEnabled ? `--dot-color: ${markers[value].$color || ''};` : ''}
 											>
 												<input
 													type='checkbox'

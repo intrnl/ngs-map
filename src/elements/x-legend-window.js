@@ -2,6 +2,7 @@ import WindowController from './x-window.js';
 import { query } from '../lib/x-controller.js';
 
 import { renderMapLegend } from '../template.jsx';
+import { markers } from '../markers.js';
 
 
 class LegendWindowController extends WindowController {
@@ -14,8 +15,15 @@ class LegendWindowController extends WindowController {
 	}
 
 	reinitialize (enabled) {
-		this.#content.innerHTML = '';
-		this.initialize(enabled);
+		for (const input of this.querySelectorAll('input')) {
+			const key = input.value;
+
+			const checked = enabled.has(key);
+			const marker = markers[key];
+
+			input.checked = checked;
+			input.parentElement.style.setProperty('--dot-color', marker.$color || '');
+		}
 	}
 }
 
