@@ -7,11 +7,18 @@
 		"dev": "NODE_ENV=development node ./scripts/dev.js",
 		"build": "wireit",
 		"build:app": "wireit",
+		"process": "wireit",
 		"process:map": "wireit",
 		"process:locale": "wireit",
 		"publish": "wireit"
 	},
 	"wireit": {
+		"process": {
+			"dependencies": [
+				"process:map",
+				"process:locale"
+			]
+		},
 		"build": {
 			"dependencies": [
 				"build:app",
