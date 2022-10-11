@@ -13,15 +13,23 @@ export const markers = {
 	trinitas: createMarker('trinitas', '_data/trinitas.json', new Landmark({ iconUrl: 'assets/landmarks/trinitas.webp' })),
 	urgents: createMarker('urgents', '_data/urgents.json', new Landmark({ iconUrl: 'assets/landmarks/urgent.webp' })),
 
-	// Central Kvaris Seafood
+	// Kvaris Fruits
+	kvaris_guava: createCollectable('kvaris_guava', '_data/fruits/kvaris_guava.json'),
+
+	// Kvaris Seafood
 	kvaris_notable_squid: createCollectable('kvaris_notable_squid', '_data/seafoods/kvaris_notable_squid.json'),
 	kvaris_squid: createCollectable('kvaris_squid', '_data/seafoods/kvaris_squid.json'),
 };
 
 export const groups = {
 	landmarks: ['ryukers', 'mags', 'battledias', 'cocoons', 'towers', 'trinitas', 'urgents'],
+
+	fruits: [
+		// Kvaris
+		'kvaris_guava',
+	],
 	seafoods: [
-		// Central Kvaris
+		// Kvaris
 		'kvaris_notable_squid',
 		'kvaris_squid',
 	],

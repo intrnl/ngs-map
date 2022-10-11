@@ -243,11 +243,17 @@ if (DEV) {
 				container.style.cursor = '';
 
 				map.off('contextmenu', handleContextMenu);
+				map.off('click', handleClick);
 
 				this.#inprogress = false;
 			};
 
+			const handleClick = (ev) => {
+				ev.originalEvent.stopPropagation();
+			}
+
 			map.on('contextmenu', handleContextMenu);
+			map.on('click', handleClick);
 		}
 	}
 
