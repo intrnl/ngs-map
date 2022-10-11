@@ -1,7 +1,7 @@
-import WindowController from './window.js';
-import { query } from './lib/x-controller.js';
+import WindowController from './x-window.js';
+import { query } from '../lib/x-controller.js';
 
-import { t } from './locale.js';
+import { t } from '../locale.js';
 
 
 function formatRomanNumeral (num) {

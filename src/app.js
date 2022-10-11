@@ -9,10 +9,10 @@ import 'leaflet/dist/leaflet.css';
 import './styles/base.css';
 import './styles/app.css';
 
-import './tree.js';
-import WindowController from './window.js';
-import LegendWindowController from './window-legend.js';
-import QuestInfoWindowController from './window-quest-info.js';
+import './elements/x-tree.js';
+import WindowController from './elements/x-window.js';
+import LegendWindowController from './elements/x-legend-window.js';
+import QuestInfoWindowController from './elements/x-quest-info-window.js';
 import { renderDevToolsWindow } from './template.jsx';
 import { loadLocale } from './locale.js';
 

@@ -1,8 +1,8 @@
-import WindowController from './window.js';
-import { query } from './lib/x-controller.js';
+import WindowController from './x-window.js';
+import { query } from '../lib/x-controller.js';
 
-import { t } from './locale.js';
-import { renderMapLegend } from './template.jsx';
+import { t } from '../locale.js';
+import { renderMapLegend } from '../template.jsx';
 
 
 class LegendWindowController extends WindowController {
