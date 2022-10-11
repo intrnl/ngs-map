@@ -147,6 +147,7 @@ class AppController extends HTMLElement {
 			ENABLED_MARKERS.push(key);
 		}
 
+		this.#saveConfig();
 		this.#legendWindow.reinitialize(ENABLED_MARKERS);
 	}
 
