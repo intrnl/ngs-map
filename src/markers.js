@@ -20,6 +20,7 @@ export const markers = {
 	// Kvaris Seafood
 	kvaris_notable_squid: createCollectable('kvaris_notable_squid', '_data/seafoods/kvaris_notable_squid.json'),
 	kvaris_octopus: createCollectable('kvaris_octopus', '_data/seafoods/kvaris_octopus.json'),
+	kvaris_snail: createCollectable('kvaris_snail', '_data/seafoods/kvaris_snail.json'),
 	kvaris_squid: createCollectable('kvaris_squid', '_data/seafoods/kvaris_squid.json'),
 };
 
@@ -35,6 +36,7 @@ export const groups = {
 		// Kvaris
 		'kvaris_notable_squid',
 		'kvaris_octopus',
+		'kvaris_snail',
 		'kvaris_squid',
 	],
 };
