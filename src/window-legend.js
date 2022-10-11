@@ -13,8 +13,13 @@ class LegendWindowController extends WindowController {
 
 
 	initialize (enabled) {
-		this.#title.textContent = t(`ui.map_legend`);
+		this.#title.textContent = t(`ui.map_legend.title`);
 		this.#content.appendChild(renderMapLegend(enabled));
+	}
+
+	reinitialize (enabled) {
+		this.#content.innerHTML = '';
+		this.initialize(enabled);
 	}
 }
 

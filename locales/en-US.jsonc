@@ -18,7 +18,10 @@
 			"rewards": "Rewards",
 			"rank_select_option": "Rank {rank} (Enemy Lv. {level})"
 		},
-		"map_legend": "Map Legend",
+		"map_legend": {
+			"title": "Map Legend",
+			"reset_option": "Reset visible markers"
+		},
 		"landmarks": "Landmarks",
 		"minerals": "Minerals",
 		"vegetables": "Vegetable",

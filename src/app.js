@@ -25,7 +25,8 @@ const MAP_EAST = 2048;
 const CONFIG = JSON.parse(localStorage.getItem('config') || '{}');
 
 const LOCALE = CONFIG.locale || 'en-US';
-const ENABLED_MARKERS = CONFIG.markers || groups.landmarks.slice();
+const DEFAULT_MARKERS = groups.landmarks.slice();
+const ENABLED_MARKERS = CONFIG.markers || DEFAULT_MARKERS;
 
 await loadLocale(LOCALE);
 
@@ -127,6 +128,26 @@ class AppController extends HTMLElement {
 
 	zoomOut () {
 		this.#map.zoomOut();
+	}
+
+	resetLegend () {
+		const map = this.#map;
+
+		for (const key of ENABLED_MARKERS) {
+			const group = markers[key];
+			group.removeFrom(map);
+		}
+
+		ENABLED_MARKERS.length = 0;
+
+		for (const key of DEFAULT_MARKERS) {
+			const group = markers[key];
+			group.addTo(map);
+
+			ENABLED_MARKERS.push(key);
+		}
+
+		this.#legendWindow.reinitialize(ENABLED_MARKERS);
 	}
 
 	handleLegendChange (ev) {

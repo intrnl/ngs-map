@@ -9,6 +9,12 @@ export function renderMapLegend (enabled) {
 	return (
 		<x-tree>
 			<ul class='tree' role='tree'>
+				<li>
+					<button class='button is-item fullwidth' x-action='click:x-app#resetLegend'>
+						{t(`ui.map_legend.reset_option`)}
+					</button>
+				</li>
+
 				{Object.keys(groups).map((key) => {
 					const values = groups[key];
 
