@@ -12,9 +12,9 @@ class LegendWindowController extends WindowController {
 	get #content () { return query(this, 'content'); }
 
 
-	initialize (data, enabled) {
+	initialize (enabled) {
 		this.#title.textContent = t(`ui.map_legend`);
-		this.#content.appendChild(renderMapLegend(data, enabled));
+		this.#content.appendChild(renderMapLegend(enabled));
 	}
 }
 

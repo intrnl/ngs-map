@@ -99,11 +99,11 @@ class AppController extends HTMLElement {
 		});
 
 		// Initialize windows
-		this.#legendWindow.initialize(groups, ENABLED_MARKERS);
+		this.#legendWindow.initialize(ENABLED_MARKERS);
 		this.#questInfoWindow.initialize();
 
 		if (DEV) {
-			const devtoolsWindow = renderDevToolsWindow(groups);
+			const devtoolsWindow = renderDevToolsWindow();
 
 			this.appendChild(devtoolsWindow);
 			devtoolsWindow.initialize(this.#map);
@@ -142,9 +142,18 @@ class AppController extends HTMLElement {
 		}
 
 		if (checked) {
-			group.addTo(map);
+			try {
+				group.addTo(map);
+				ENABLED_MARKERS.push(value);
 
-			ENABLED_MARKERS.push(value);
+				target.parentElement.style.setProperty('--dot-color', group.$color);
+			}
+			catch (error) {
+				alert(error.message);
+
+				group.removeFrom(map);
+				target.checked = false;
+			}
 		}
 		else {
 			group.removeFrom(map);
@@ -153,6 +162,8 @@ class AppController extends HTMLElement {
 			if (idx !== -1) {
 				ENABLED_MARKERS.splice(idx, 1);
 			}
+
+			target.parentElement.style.removeProperty('--dot-color');
 		}
 
 		this.#saveConfig();

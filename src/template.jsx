@@ -2,14 +2,15 @@
 /** @jsxFrag null */
 
 import { t } from './locale.js';
+import { groups, markers } from './markers.js';
 
 
-export function renderMapLegend (data, enabled) {
+export function renderMapLegend (enabled) {
 	return (
 		<x-tree>
 			<ul class='tree' role='tree'>
-				{Object.keys(data).map((key) => {
-					const values = data[key];
+				{Object.keys(groups).map((key) => {
+					const values = groups[key];
 
 					return (
 						<li role='treeitem' aria-expanded='false'>
@@ -20,20 +21,27 @@ export function renderMapLegend (data, enabled) {
 								{t(`ui.${key}`)}
 							</button>
 							<ul>
-								{values.map((value) => (
-									<li>
-										<label class='checkbox-control'>
-											<input
-												type='checkbox'
-												name='landmarks'
-												value={value}
-												checked={enabled.includes(value)}
-												x-action='input:x-app#handleLegendChange'
-											/>
-											<span>{t(`markers.${value}`)}</span>
-										</label>
-									</li>
-								))}
+								{values.map((value) => {
+									const isEnabled = enabled.includes(value);
+
+									return (
+										<li>
+											<label
+												class='checkbox-control x-legend-item'
+												style={isEnabled ? `--dot-color: ${markers[value].$color};` : ''}
+											>
+												<input
+													type='checkbox'
+													name='landmarks'
+													value={value}
+													checked={isEnabled}
+													x-action='input:x-app#handleLegendChange'
+												/>
+												<span>{t(`markers.${value}`)}</span>
+											</label>
+										</li>
+									)
+								})}
 							</ul>
 						</li>
 					);
@@ -43,7 +51,7 @@ export function renderMapLegend (data, enabled) {
 	);
 }
 
-export function renderDevToolsWindow (data) {
+export function renderDevToolsWindow () {
 	return (
 		<x-devtools-window class='window' style='width: 280px; position: absolute; bottom: 12px; left: 12px'>
 			<div class='window-titlebar' x-action='pointerdown:x-devtools-window'>
