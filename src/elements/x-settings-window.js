@@ -10,7 +10,7 @@ class SettingsWindowController extends WindowController {
 
 	connectedCallback () {
 		this.#settingsChangeBanner.style.display = 'none';
-		this.#commitHash.textContent = 'DEV';
+		this.#commitHash.textContent = COMMIT_HASH;
 	}
 
 	reloadPage () {
