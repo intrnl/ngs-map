@@ -62,6 +62,7 @@ x-legend-window {
 	width: 8px;
 	border-radius: 50%;
 	margin-left: auto;
+	margin-right: 2px;
 }
 
 x-quest-info-window {
