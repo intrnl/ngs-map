@@ -40,12 +40,12 @@
 
 		// Kvaris Fruits
 		"kvaris_guava": "Crisp Kvaris Guava",
-		"kvaris_notable_persimmon": "Notable Kvaris Persimmon",
+		"kvaris_persimmon_notable": "Notable Kvaris Persimmon",
 
 		// Kvaris Seafoods
-		"kvaris_notable_squid": "Notable Kvaris Squid",
 		"kvaris_octopus": "Light Kvaris Octopus",
 		"kvaris_snail": "Rich Kvaris Snail",
+		"kvaris_squid_notable": "Notable Kvaris Squid",
 		"kvaris_squid": "Crisp Kvaris Squid"
 	},
 	"missions": {

@@ -15,12 +15,12 @@ export const markers = {
 
 	// Kvaris Fruits
 	kvaris_guava: createCollectable('kvaris_guava', '_data/fruits/kvaris_guava.json'),
-	kvaris_notable_persimmon: createCollectable('kvaris_notable_persimmon', '_data/fruits/kvaris_notable_persimmon.json'),
+	kvaris_persimmon_notable: createCollectable('kvaris_persimmon_notable', '_data/fruits/kvaris_persimmon_notable.json'),
 
 	// Kvaris Seafood
-	kvaris_notable_squid: createCollectable('kvaris_notable_squid', '_data/seafoods/kvaris_notable_squid.json'),
 	kvaris_octopus: createCollectable('kvaris_octopus', '_data/seafoods/kvaris_octopus.json'),
 	kvaris_snail: createCollectable('kvaris_snail', '_data/seafoods/kvaris_snail.json'),
+	kvaris_squid_notable: createCollectable('kvaris_squid_notable', '_data/seafoods/kvaris_squid_notable.json'),
 	kvaris_squid: createCollectable('kvaris_squid', '_data/seafoods/kvaris_squid.json'),
 };
 
@@ -30,13 +30,13 @@ export const groups = {
 	fruits: [
 		// Kvaris
 		'kvaris_guava',
-		'kvaris_notable_persimmon',
+		'kvaris_persimmon_notable',
 	],
 	seafoods: [
 		// Kvaris
-		'kvaris_notable_squid',
 		'kvaris_octopus',
 		'kvaris_snail',
+		'kvaris_squid_notable',
 		'kvaris_squid',
 	],
 };
