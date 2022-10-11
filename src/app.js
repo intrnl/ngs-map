@@ -26,7 +26,7 @@ const CONFIG = JSON.parse(localStorage.getItem('config') || '{}');
 
 const LOCALE = CONFIG.locale || 'en-US';
 const DEFAULT_MARKERS = groups.landmarks.slice();
-const ENABLED_MARKERS = CONFIG.markers || DEFAULT_MARKERS;
+let ENABLED_MARKERS = new Set(CONFIG.markers || DEFAULT_MARKERS);
 
 await loadLocale(LOCALE);
 
@@ -88,7 +88,13 @@ class AppController extends HTMLElement {
 
 		for (const key of ENABLED_MARKERS) {
 			const group = markers[key];
-			group.addTo(map);
+
+			if (group) {
+				group.addTo(map);
+			}
+			else {
+				ENABLED_MARKERS.delete(key);
+			}
 		}
 
 		this.#map = map;
@@ -138,13 +144,11 @@ class AppController extends HTMLElement {
 			group.removeFrom(map);
 		}
 
-		ENABLED_MARKERS.length = 0;
+		ENABLED_MARKERS = new Set(DEFAULT_MARKERS);
 
-		for (const key of DEFAULT_MARKERS) {
+		for (const key of ENABLED_MARKERS) {
 			const group = markers[key];
 			group.addTo(map);
-
-			ENABLED_MARKERS.push(key);
 		}
 
 		this.#saveConfig();
@@ -166,7 +170,7 @@ class AppController extends HTMLElement {
 		if (checked) {
 			try {
 				group.addTo(map);
-				ENABLED_MARKERS.push(value);
+				ENABLED_MARKERS.add(value);
 
 				target.parentElement.style.setProperty('--dot-color', group.$color);
 			}
@@ -178,12 +182,8 @@ class AppController extends HTMLElement {
 			}
 		}
 		else {
+			ENABLED_MARKERS.delete(value);
 			group.removeFrom(map);
-
-			const idx = ENABLED_MARKERS.indexOf(value);
-			if (idx !== -1) {
-				ENABLED_MARKERS.splice(idx, 1);
-			}
 
 			target.parentElement.style.removeProperty('--dot-color');
 		}
@@ -229,7 +229,7 @@ class AppController extends HTMLElement {
 	#saveConfig () {
 		const config = {
 			locale: LOCALE,
-			markers: ENABLED_MARKERS,
+			markers: [...ENABLED_MARKERS],
 		};
 
 		localStorage.setItem('config', JSON.stringify(config));

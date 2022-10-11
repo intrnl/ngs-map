@@ -28,7 +28,7 @@ export function renderMapLegend (enabled) {
 							</button>
 							<ul>
 								{values.map((value) => {
-									const isEnabled = enabled.includes(value);
+									const isEnabled = enabled.has(value);
 
 									return (
 										<li>
