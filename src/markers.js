@@ -15,6 +15,7 @@ export const markers = {
 
 	// Central Kvaris Seafood
 	kvaris_notable_squid: createCollectable('kvaris_notable_squid', '_data/seafoods/kvaris_notable_squid.json'),
+	kvaris_squid: createCollectable('kvaris_squid', '_data/seafoods/kvaris_squid.json'),
 };
 
 export const groups = {
@@ -22,6 +23,7 @@ export const groups = {
 	seafoods: [
 		// Central Kvaris
 		'kvaris_notable_squid',
+		'kvaris_squid',
 	],
 };
 
