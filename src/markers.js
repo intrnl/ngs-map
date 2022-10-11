@@ -15,6 +15,7 @@ export const markers = {
 
 	// Kvaris Fruits
 	kvaris_guava: createCollectable('kvaris_guava', '_data/fruits/kvaris_guava.json'),
+	kvaris_notable_persimmon: createCollectable('kvaris_notable_persimmon', '_data/fruits/kvaris_notable_persimmon.json'),
 
 	// Kvaris Seafood
 	kvaris_notable_squid: createCollectable('kvaris_notable_squid', '_data/seafoods/kvaris_notable_squid.json'),
@@ -27,6 +28,7 @@ export const groups = {
 	fruits: [
 		// Kvaris
 		'kvaris_guava',
+		'kvaris_notable_persimmon',
 	],
 	seafoods: [
 		// Kvaris
