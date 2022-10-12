@@ -239,8 +239,8 @@
 	},
 	{
 		"id": "mining_rig_kvaris",
-		"lat": -729,
-		"lng": 881.5,
+		"lat": -794,
+		"lng": 662,
 		"max_players": 8,
 		"initial_rewards": [
 			["rewards.meseta", 5000]
