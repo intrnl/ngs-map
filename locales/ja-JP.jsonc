@@ -1,32 +1,32 @@
 {
 	"ui": {
 		"quest_info": {
-			"title": "Quest Info",
-			"max_players_info": "This quest can be played with up to {value, plural, one {# player} other {# players}}",
+			"title": "クエスト情報",
+			"max_players_info": "このクエストは最大{value}人のプレイヤーでプレイできます",
 			"enemy_level": {
-				"title": "Enemy Level",
-				"content": "Lv. {level}"
+				"title": "出現エネミーLv.",
+				"content": "Lv.{level}"
 			},
 			"recommended_power": {
-				"title": "Recommended Stats",
-				"content": "{power} Battle Power or above"
+				"title": "推奨能力値",
+				"content": "戦闘力{power}以上"
 			},
-			"main_mission": "Main Mission",
-			"side_missions": "Side Missions",
-			"fail_conditions": "Fail Conditions",
-			"first_clear_rewards": "First Clear Rewards",
-			"rewards": "Rewards",
-			"rank_select_option": "Rank {rank} (Enemy Lv. {level})"
+			"main_mission": "メインミッション",
+			"side_missions": "サイドミッション",
+			"fail_conditions": "失敗条件",
+			"first_clear_rewards": "初回クリア報酬",
+			"rewards": "報酬",
+			"rank_select_option": "【Rank.{rank}】 エネミーLv.{level}"
 		},
 		"map_legend": {
-			"title": "Map Legend",
-			"reset_option": "Reset visible markers"
+			"title": "地図の凡例",
+			"reset_option": "可視マーカーをリセット"
 		},
 		"settings": {
-			"title": "Settings",
-			"language_option": "Language",
-			"settings_change_msg": "Some settings has been changed, you need to reload the page for it to take effect.",
-			"settings_change_btn": "Reload"
+			"title": "セッティング",
+			"language_option": "言語",
+			"settings_change_msg": "一部の設定が変更されました。有効にするには、ページをリロードする必要があります。",
+			"settings_change_btn": "リロード"
 		},
 		"languages": {
 			"en-US": "English (GL)",
@@ -41,10 +41,10 @@
 	"markers": {
 		// Landmarks
 		"battledias": "Battledia",
-		"cocoons": "Cocoon",
+		"cocoons": "コクーン",
 		"mags": "Region Mag",
 		"ryukers": "Ryuker Device",
-		"towers": "Tower",
+		"towers": "タワー",
 		"trinitas": "Trinitas",
 		"urgents": "Urgent Quest",
 
@@ -59,34 +59,34 @@
 		"kvaris_squid": "Crisp Kvaris Squid"
 	},
 	"missions": {
-		"finish_point": "Reach the finish point",
+		"finish_point": "フィニッシュポイントに到達する",
 		"finish_goal": "Reach the goal",
-		"defeat": "Defeat the {1}",
+		"defeat": "{1}を倒す",
 		"defeat_many": "Defeat {1} enemies",
 		"defeat_many_target": "Defeat {1} target enemies ({2})",
-		"defeat_all": "Defeat all enemies",
-		"all_side": "Complete all Side Missions and clear",
-		"cubes": "Obtain {1} Point Cubes",
-		"time_lt": "Clear before {1, duration}",
-		"incapacitated_lt": "Clear without being incapacitated {1} times",
-		"damage_lt": "Clear having taken damage fewer than {1} times",
+		"defeat_all": "全てのエネミーを倒す",
+		"all_side": "サイドミッションをすべて達成してクリア",
+		"cubes": "ポイントキューブを{1}個取得してクリア",
+		"time_lt": "{1, duration} 未満でクリア",
+		"incapacitated_lt": "戦闘不能回数{1}回未満でクリア",
+		"damage_lt": "ダメージ回数{1}回未満でクリア",
 		"heal_lt": "Clear having used Restasigne fewer than {1} times",
 		"inflict_gte": "Inflict over {1} dmg over {2} times",
-		"fallen_lt": "Clear without falling {1} times",
+		"fallen_lt": "落下回数{1}未満でクリア",
 		"glide_lt": "Clear while having used Glide fewer than {1} times",
 		"drome_gte": "Maintain your hacked Drome's level to {1} to clear",
 		"suppressed_lt": "Clear having suppressed under {1} of the enemies"
 	},
 	"failures": {
-		"time": "Time exceeds {1, duration}",
-		"incapacitated": "Incapacitated {1} times",
+		"time": "{1, duration}以上経過する",
+		"incapacitated": "{1}回戦闘不能になる",
 		"fall": "Fall {1} times"
 	},
 	"rewards": {
 		"exp": "EXP",
 		"meseta": "N-Meseta",
 		"seasonal": "Seasonal Point",
-		"skill": "Skill Point"
+		"skill": "スキルポイント"
 	},
 	"items": {
 		"armor_behlgren": "Behlgren Armor",
@@ -176,7 +176,7 @@
 		"weapon_sechetyl_series": "Sechetyl Series Weapon",
 		"weapon_straga_series": "Straga Series Weapon",
 		"fashion_items": "Fashion items",
-		"photon_scale": "Photon Scales",
+		"photon_scale": "フォトンスケイル",
 		"special_scratch_ticket": "Special Scratch Ticket"
 	},
 	"enemies": {
@@ -185,10 +185,10 @@
 		"chiacurio": "Chiacurio",
 		"daityl_sword": "Daityl Sword",
 		"destragras": "Destragras",
-		"fortos_laser": "Fortos Laser",
+		"fortos_laser": "フォートス・レーザー",
 		"malachroid": "Malachroid",
 		"pangolan": "Pangolan",
-		"pettas_sword": "Pettas Sword"
+		"pettas_sword": "ペダス・ソード"
 	},
 	"battledias": {
 		// Aelio
@@ -218,42 +218,42 @@
 	"cocoons": {
 		// Aelio
 		"first_step": {
-			"name": "First Step",
-			"description": "This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action."
+			"name": "ファーストステップ",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。指示に従い、新たなアクションを習得しつつ、目標地点に到達せよ。"
 		},
 		"enhanced_enemy": {
-			"name": "Enhanced Enemy",
-			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the enhanced Pettas Sword using your battle skills."
+			"name": "エンハンスドエネミー",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、強化された“ペダス・ソード”を撃破せよ。"
 		},
 		"swift_jump": {
-			"name": "Swift Jump",
-			"description": "This is Trainia, where ARKS defenders can test their abilities. Reach the goal using \"Jump\" and \"Double Jump\"."
+			"name": "スウィフトジャンプ",
+			"description": "ここは、アークス各人の跳躍能力を試すトレイニアである。“ジャンプ”、“2段ジャンプ”を用いて、目標地点に到達せよ。"
 		},
 		"wild_rush": {
-			"name": "Wild Rush",
-			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat all enemies using your battle skills."
+			"name": "ワイルドラッシュ",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。"
 		},
 		"test_flight": {
-			"name": "Test Flight",
-			"description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination."
+			"name": "テストフライト",
+			"description": "ここは、アークス各人の飛翔能力を試すトレイニアである。“フォトングライド”を用いて、目標地点に到達せよ。"
 		},
 		"roaring_rush": {
-			"name": "Roaring Rush",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gororox."
+			"name": "ローリングラッシュ",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。"
 		},
 		"fleeting_fight": {
-			"name": "Fleeting Fight",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Bujin."
+			"name": "セツナノイッセン",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“ブジン”を撃破せよ。"
 		},
 		"runway": {
-			"name": "Runway",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+			"name": "ローンウェイ",
+			"description": "ここは、アークス各人の走破能力を試すトレイニアである。“フォトンダッシュ”を用いて、目標地点に到達せよ。"
 		},
 
 		// Retem
 		"vanishing_path": {
-			"name": "Vanishing Path",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies while keeping an eye on Vanishing Blocks."
+			"name": "バニシングウェイ",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。”バニッシュブロック”に注意を払いつつ、全てのエネミーを撃破せよ。"
 		},
 		"narrow_cage": {
 			"name": "Narrow Cage",
@@ -264,8 +264,8 @@
 			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies with support from Dromes."
 		},
 		"dyna_assault": {
-			"name": "Dyna Assault",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat the Lizentos."
+			"name": "ダイナアサルト",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。戦闘技術を駆使して、”リゼントス”を撃破せよ。"
 		},
 		"parkour_master": {
 			"name": "Parkour Master",
@@ -308,16 +308,16 @@
 	"towers": {
 		// Aelio
 		"alters_rush": {
-			"name": "ALTERS Rush",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Avoid combat with enemies whenever possible and make use of your battle skills to defeat the Chiacurio in the final area."
+			"name": "アルターズラッシュ",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。可能な限りエネミーとの戦闘を避け、戦闘技術を駆使して、最深部で待ち受ける“チアキュリオ”を撃破せよ。"
 		},
 		"great_wall": {
-			"name": "Great Wall",
-			"description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills."
+			"name": "グレートウォール",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ち受ける“ダイダル・ソード”を撃破せよ。"
 		},
 		"aero_runner": {
-			"name": "Aero Runner",
-			"description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination."
+			"name": "エアロランナー",
+			"description": "ここは、アークス各人の飛翔能力を試すトレイニアである。“フォトングライド”を用いて、目標地点に到達せよ。"
 		},
 
 		// Retem
@@ -335,62 +335,62 @@
 	"urgents": {
 		// Aelio
 		"pettas_vera": {
-			"name": "Command DOLLS Suppresion Op",
-			"description": "A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Veras, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "統制型ドールズ討伐戦",
+			"description": "北エアリオのアルト・ラニ高原で、強力な時空振動が確認された。過去のデータから、統制型ドールズ”ペダス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"nex_vera": {
-			"name": "Nex Vera Suppression Op",
-			"description": "A powerful space-time flux has been detected in Resol Forest. Based on past data, we expect Nex Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "ネクス・ヴェラ討伐戦",
+			"description": "レゾルの森で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ”ネクス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"mining_rig_aelio": {
-			"name": "Mining Rig Defense: Aelio",
-			"description": "We've received an emergency support request from our active mining unit in Aelio Plains. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig."
+			"name": "資源採掘リグ防衛戦：エアリオ",
+			"description": "エアリオ平原で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。"
 		},
 		"dark_falz": {
-			"name": "Dark Falz Interception",
-			"description": "Our data points to the imminent appearance of Dark Falz in the Central City area. All ARKS defenders report to the rerdezvous immediately and repel the enemy advance until the Central Cannon is operational."
+			"name": "ダークファルス迎撃戦",
+			"description": "セントラルシティ周辺で、“ダークファルス”の出現予兆が確認された。アークス各員は、当該ポイントに急行し、セントラルキャノンの迎撃準備が完了するまで、エネミーの侵攻を阻止せよ。"
 		},
 
 		// Retem
 		"renus_vera": {
-			"name": "Renus Vera Suppression Op",
-			"description": "A powerful space-time flux has been detected in the northern part of Central Retem. Based on past data, we expect Renus Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "レヌス・ヴェラ討伐戦",
+			"description": "中央リテムの北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“レヌス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"dustyl_vera": {
-			"name": "Dustyl Vera Suppression Op",
-			"description": "A powerful space-time flux has been detected in Murabba Canyon in North Retem. Based on past data, we expect Dustyl Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "スナイダル・ヴェラ討伐戦",
+			"description": "北リテムのモラーバ峡谷で、強力な時空振動が確認された。過去のデータから、統制型ドールズ“スナイダル・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"mining_rig_retem": {
-			"name": "Mining Rig Defense: Retem",
-			"description": "We've received an emergency support request from our active mining unit in Aldimond Desert. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig."
+			"name": "資源採掘リグ防衛戦：リテム",
+			"description": "アルディマンド砂漠で活動中の資源回収部隊より、緊急支援要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予測される。アークス各員は、該当ポイントに急行し、資源採掘リグを防衛せよ。"
 		},
 
 		// Kvaris
 		"crocodylis_vera": {
-			"name": "Crocodylis Vera Suppression Op",
-			"description": "A powerful space-time flux has been detected in the northern part of Danann Snow Field. Based on past data, we expect Crocodylis Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "クロコダラス・ヴェラ討伐戦",
+			"description": "ダナン雪原の北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ”クロコダラス・ヴェラ”の現出が見込まれる。アークス各員は、該当ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"ams_vera": {
-			"name": "Ams Vera Suppression Op",
-			"description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy."
+			"name": "アムス・ヴェラ討伐戦",
+			"description": "ラトヴァ山で強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“アムス・ヴェラ”の現出が見込まれる。アークス各員は、該当ポイントに急行し、エネミーを撃破せよ。"
 		},
 		"mining_rig_kvaris": {
-			"name": "Mining Rig Defense: Kvaris",
-			"description": "We've received an emergency support request from our active mining unit on Danann Snow Field. Numerous enemy readings in the area suggests a major assault is likely. We need all ARKS defenders to hurry to the site and defend the mining rigs."
+			"name": "資源採掘リグ防衛戦：クヴァリス",
+			"description": "ダナン雪原で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予測される。アークス各員は、該当ポイントに急行し、資源採掘リグを防衛せよ。"
 		}
 	},
 	"trinitas": {
 		"geometric_labyrinth": {
-			"name": "Geometric Labyrinth",
-			"description": "This is Trinitas, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to reach the final area. Enemies' levels will change depending on the player's level."
+			"name": "ジオメトリックラビリンス",
+			"description": "ここは、アークス各人の総合力を試す高等訓練システム“トリニテス”である。持ちうる能力をすべて活用して、最深部を目指せ。\n※出現エネミーのレベルはプレイヤーのレベルにより変動"
 		},
 		"cannonball_rumble": {
-			"name": "Cannonball Rumble",
-			"description": "This is Trainia Advance, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to defeat the enemies and destroy the targets."
+			"name": "キャノンボールランブル",
+			"description": "ここは、アークス各人の総合力を試す高等訓練システム“トレイニアアドバンス”である。持ちうる能力をすべて活用して、エネミーを撃破し、ターゲットを破壊せよ。"
 		},
 		"cannonball_strike": {
-			"name": "Cannonball Strike",
-			"description": "This is Trainia Advance, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to defeat the enemies and destroy the targets."
+			"name": "キャノンボールストライク",
+			"description": "ここは、アークス各人の総合力を試す高等訓練システム“トレイニアアドバンス”である。持ちうる能力をすべて駆使して、エネミーを撃破し、ターゲットを破壊せよ。"
 		}
 	}
 }
