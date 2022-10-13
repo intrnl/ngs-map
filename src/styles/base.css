@@ -4,6 +4,11 @@
 	ascent-override: 100%;
 }
 
+@font-face {
+	font-family: 'dfpgothicp-w5';
+	src: url('../assets/fonts/DFGothicP-W5-WINP-RKSJ-H.woff2') format('woff2');
+}
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -26,7 +31,7 @@ body {
 }
 
 html[lang='ja-JP'] body {
-	font-family: sans-serif;
+	font-family: 'dfpgothicp-w5', sans-serif;
 }
 
 .window {
