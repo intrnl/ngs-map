@@ -1,0 +1,2 @@
+function m(r){if(typeof r!="number"&&(r=Number(r)),!isFinite(r))return String(r);var i="";r<0?(i="-",r=Math.abs(r)):r=Number(r);var n=r%60,t=[Math.round(n)===n?n:n.toFixed(3)];r<60?t.unshift(0):(r=Math.round((r-Number(t[0]))/60),t.unshift(r%60),r>=60&&(r=Math.round((r-Number(t[0]))/60),t.unshift(r)));var o=t.shift();return i+o+":"+t.map(function(e){return e<10?"0"+String(e):String(e)}).join(":")}export{m as a};
+//# sourceMappingURL=chunk-VI23SD3N.js.map
