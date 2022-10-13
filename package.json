@@ -30,6 +30,7 @@
 			"command": "NODE_ENV=production node ./scripts/build.js",
 			"clean": "if-file-deleted",
 			"files": [
+				"scripts/build.js",
 				"src/**",
 				"jsconfig.json",
 				"esbuild.config.js"
@@ -45,6 +46,7 @@
 			"command": "node ./scripts/process-map.js",
 			"clean": "if-file-deleted",
 			"files": [
+				"scripts/process-map.js",
 				"data/**/*.jsonc"
 			],
 			"output": [
@@ -58,6 +60,7 @@
 			"command": "node ./scripts/process-locale.js",
 			"clean": "if-file-deleted",
 			"files": [
+				"scripts/process-locale.js",
 				"locales/**/*.jsonc"
 			],
 			"output": [
