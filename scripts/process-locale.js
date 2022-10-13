@@ -24,6 +24,7 @@ await esbuild.build({
 	outdir: 'dist/_locales/',
 	format: 'esm',
 	bundle: true,
+	splitting: true,
 	minify: true,
 	sourcemap: true,
 	plugins: [
