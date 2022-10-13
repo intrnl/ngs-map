@@ -25,6 +25,10 @@ body {
 	margin: 0;
 }
 
+html[lang='ja-JP'] body {
+	font-family: sans-serif;
+}
+
 .window {
 	color: #fff;
 	backdrop-filter: blur(5px);
