@@ -60,27 +60,27 @@
 	},
 	"missions": {
 		"finish_point": "フィニッシュポイントに到達する",
-		"finish_goal": "Reach the goal",
+		"finish_goal": "フィニッシュポイントに到達する",
 		"defeat": "{1}を倒す",
-		"defeat_many": "Defeat {1} enemies",
-		"defeat_many_target": "Defeat {1} target enemies ({2})",
+		"defeat_many": "エネミーを{1}体倒す",
+		"defeat_many_target": "{2}を{1}体倒す",
 		"defeat_all": "全てのエネミーを倒す",
 		"all_side": "サイドミッションをすべて達成してクリア",
 		"cubes": "ポイントキューブを{1}個取得してクリア",
 		"time_lt": "{1, duration} 未満でクリア",
 		"incapacitated_lt": "戦闘不能回数{1}回未満でクリア",
 		"damage_lt": "ダメージ回数{1}回未満でクリア",
-		"heal_lt": "Clear having used Restasigne fewer than {1} times",
-		"inflict_gte": "Inflict over {1} dmg over {2} times",
+		"heal_lt": "レスタサインの使用回数{1}回未満でクリア",
+		"inflict_gte": "{1}以上のダメージを{2}回以上与えてクリア",
 		"fallen_lt": "落下回数{1}未満でクリア",
-		"glide_lt": "Clear while having used Glide fewer than {1} times",
-		"drome_gte": "Maintain your hacked Drome's level to {1} to clear",
-		"suppressed_lt": "Clear having suppressed under {1} of the enemies"
+		"glide_lt": "グライドの使用{1}回未満でクリア",
+		"drome_gte": "ドロームの追従レベルがLv.{1}の状態を維持してクリア",
+		"suppressed_lt": "エネミー討伐数{1}体未満でクリア"
 	},
 	"failures": {
 		"time": "{1, duration}以上経過する",
 		"incapacitated": "{1}回戦闘不能になる",
-		"fall": "Fall {1} times"
+		"fall": "{1}回落下する"
 	},
 	"rewards": {
 		"exp": "EXP",
@@ -180,39 +180,39 @@
 		"special_scratch_ticket": "Special Scratch Ticket"
 	},
 	"enemies": {
-		"ams_krone": "Ams Krone",
-		"bujin": "Bujin",
-		"chiacurio": "Chiacurio",
-		"daityl_sword": "Daityl Sword",
-		"destragras": "Destragras",
+		"ams_krone": "アムス・クローネ",
+		"bujin": "ブジン",
+		"chiacurio": "チアキュリオ",
+		"daityl_sword": "ダイダル・ソード",
+		"destragras": "デストラグラス",
 		"fortos_laser": "フォートス・レーザー",
-		"malachroid": "Malachroid",
-		"pangolan": "Pangolan",
+		"malachroid": "マーカライド",
+		"pangolan": "パンゴラン",
 		"pettas_sword": "ペダス・ソード"
 	},
 	"battledias": {
 		// Aelio
 		"aelio_troopers": {
-			"name": "Aelio Troopers"
+			"name": "エアリオトルーパーズ"
 		},
 		"aelio_devastators": {
-			"name": "Aelio Devastators"
+			"name": "エアリオデバステーターズ"
 		},
 
 		// Retem
 		"retem_troopers": {
-			"name": "Retem Troopers"
+			"name": "リテムトルーパーズ"
 		},
 		"retem_devastators": {
-			"name": "Retem Devastators"
+			"name": "リテムデバステーターズ"
 		},
 
 		// Kvaris
 		"kvaris_troopers": {
-			"name": "Kvaris Troopers"
+			"name": "クヴァリストルーパーズ"
 		},
 		"kvaris_devastators": {
-			"name": "Kvaris Devastators"
+			"name": "クヴァリスデバステーターズ"
 		}
 	},
 	"cocoons": {
@@ -256,53 +256,53 @@
 			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。”バニッシュブロック”に注意を払いつつ、全てのエネミーを撃破せよ。"
 		},
 		"narrow_cage": {
-			"name": "Narrow Cage",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat all of the enemies."
+			"name": "ナローケージ",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。戦闘技術を駆使して、全てのエネミーを撃破せよ。"
 		},
 		"buddy_attack": {
-			"name": "Buddy Attack",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies with support from Dromes."
+			"name": "バディアタック",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。”ドローム”の支援を受けつつ、全てのエネミーを撃破せよ。"
 		},
 		"dyna_assault": {
 			"name": "ダイナアサルト",
 			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。戦闘技術を駆使して、”リゼントス”を撃破せよ。"
 		},
 		"parkour_master": {
-			"name": "Parkour Master",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Reach the goal using Jumps, Double Jumps, and Wall Kicks."
+			"name": "パルクールマスター",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。”ジャンプ”、”2段ジャンプ”、”ウォールキック”を用いて、目標地点に到達せよ。"
 		},
 		"runway_2": {
-			"name": "Runway II",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+			"name": "ローンウェイⅡ",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。”フォトンダッシュ”を用いて、目標地点に到達せよ。"
 		},
 
 		// Kvaris
 		/// South Kvaris
 		"crazy_tail": {
-			"name": "Crazy Tail",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Pangolan."
+			"name": "クレイジーテイル",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。戦闘技術を駆使して、“パンゴラン”を撃破せよ。"
 		},
 		"slope_style": {
-			"name": "Slope Style",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use floating boards to reach the target destination."
+			"name": "スロープスタイル",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。“フローティングボード”を用いて、目標地点に到達せよ。"
 		},
 		/// West Kvaris
 		"clockwork_prison": {
-			"name": "Clockwork Prison",
-			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Malachroid."
+			"name": "クロックワークジェイル",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。戦闘技術を駆使して、全てのエネミーを撃破せよ。"
 		},
 		"horrible_flapping": {
-			"name": "Horrible Flapping",
-			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat all of the enemies."
+			"name": "ホリブルフラッピング",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。戦闘技術を駆使して、“マーカライド”を撃破せよ。"
 		},
 		/// Central Kvaris
 		"wild_avalanche": {
-			"name": "Wild Avalanche",
-			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Ice Banser."
+			"name": "ワイルドアバランチ",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。戦闘技術を駆使して、“アイスバンサー”、“アイスバンシー”を撃破せよ。"
 		},
 		"vanishing_path_2": {
-			"name": "Vanishing Path II",
-			"description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination."
+			"name": "バニシングウェイⅡ",
+			"description": "ここは、アークス各人の基本能力を試すトレイニアである。“フォトンダッシュ”を用いて、目標地点に到達せよ。"
 		}
 	},
 	"towers": {
@@ -322,14 +322,14 @@
 
 		// Retem
 		"dolls_burrow": {
-			"name": "DOLLS Burrow",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Defeat the Destragras in the final area using your battle skills."
+			"name": "ドールズバロウ",
+			"description": "ここは、アークス各人の戦闘力を試すトレイニアである。戦闘技術を駆使し、最深部で待ち受ける”デストラグラス”を撃破せよ。"
 		},
 
 		// Kvaris
 		"deepwell": {
-			"name": "Deepwell",
-			"description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Ams Krone in the final area."
+			"name": "ディープウェル",
+			"description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“アムス・クローネ”を撃破せよ。"
 		}
 	},
 	"urgents": {
