@@ -26,7 +26,7 @@ const MAP_EAST = 2048;
 
 const CONFIG = JSON.parse(localStorage.getItem('config') || '{}');
 
-const LOCALE = CONFIG.locale || 'en-US';
+let LOCALE = CONFIG.locale || 'en-US';
 const DEFAULT_MARKERS = groups.landmarks.slice();
 let ENABLED_MARKERS = new Set(CONFIG.markers || DEFAULT_MARKERS);
 
@@ -113,6 +113,7 @@ class AppController extends HTMLElement {
 		// Initialize windows
 		this.#legendWindow.initialize(ENABLED_MARKERS);
 		this.#questInfoWindow.initialize();
+		this.#settingsWindow.initialize(LOCALE);
 
 		if (DEV) {
 			const devtoolsWindow = renderDevToolsWindow();
@@ -233,6 +234,17 @@ class AppController extends HTMLElement {
 		controller.openWindow();
 
 		this.#activeInfoWindow = controller;
+	}
+
+	handleLanguageChange (ev) {
+		const next = ev.target.value;
+
+		if (next !== LOCALE) {
+			LOCALE = next;
+
+			this.#saveConfig();
+			this.#settingsWindow.showBanner();
+		}
 	}
 
 	#saveConfig () {

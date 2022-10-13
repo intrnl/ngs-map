@@ -8,9 +8,18 @@ class SettingsWindowController extends WindowController {
 	/** @type {HTMLSpanElement} */
 	get #commitHash () { return query(this, 'commitHash'); }
 
-	connectedCallback () {
+	/** @type {HTMLSelectElement} */
+	get #languageOption () { return query(this, 'languageOption'); }
+
+	initialize (locale) {
 		this.#settingsChangeBanner.style.display = 'none';
 		this.#commitHash.textContent = COMMIT_HASH;
+
+		this.#languageOption.value = locale;
+	}
+
+	showBanner () {
+		this.#settingsChangeBanner.style.display = '';
 	}
 
 	reloadPage () {
