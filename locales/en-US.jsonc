@@ -289,11 +289,11 @@
 		/// West Kvaris
 		"clockwork_prison": {
 			"name": "Clockwork Prison",
-			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Malachroid."
+			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat all of the enemies."
 		},
 		"horrible_flapping": {
 			"name": "Horrible Flapping",
-			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat all of the enemies."
+			"description": "This is Trainia, where ARKS defenders can test their combat capabilities. Make use of your battle skills to defeat the Malachroid."
 		},
 		/// Central Kvaris
 		"wild_avalanche": {
