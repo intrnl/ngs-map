@@ -27,6 +27,7 @@ await esbuild.build({
 	splitting: true,
 	minify: true,
 	sourcemap: true,
+	charset: 'utf8',
 	plugins: [
 		{
 			name: 'messageformat',
