@@ -114,7 +114,6 @@ class AppController extends HTMLElement {
 
 		// Initialize windows
 		this.#legendWindow.initialize(ENABLED_MARKERS);
-		this.#questInfoWindow.initialize();
 		this.#settingsWindow.initialize(LOCALE);
 
 		if (DEV) {

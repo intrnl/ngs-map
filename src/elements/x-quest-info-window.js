@@ -75,21 +75,6 @@ class QuestInfoWindowController extends WindowController {
 
 	#currentData = null;
 
-	initialize () {
-		// calculate the width necessary for the table header so that we can make
-		// the table layout fixed, it's done here because each locale would take up
-		// different amount of space.
-		this.openWindow();
-		this.#enemyLevelContent.textContent = 'x '.repeat(100);
-
-		const { width } = this.#enemyLevelTitle.getBoundingClientRect();
-
-		this.style.setProperty('--table-layout', 'fixed');
-		this.style.setProperty('--header-width', `${width + 8}px`);
-
-		this.closeWindow();
-	}
-
 	updateRank () {
 		const value = parseInt(this.#rankSelect.value);
 		const data = this.#currentData;

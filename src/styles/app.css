@@ -82,11 +82,16 @@ x-quest-info-window .x--quest-description {
 	margin-bottom: 10px;
 }
 x-quest-info-window .x--quest-info {
-	table-layout: var(--table-layout);
+	width: inherit;
+	table-layout: fixed;
 }
 x-quest-info-window .x--quest-info th {
-	width: var(--header-width);
+	width: 0%;
 	white-space: nowrap;
+	padding-right: 15px;
+}
+x-quest-info-window .x--quest-info td {
+	width: 100%;
 }
 
 x-settings-window {
