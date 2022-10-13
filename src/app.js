@@ -33,6 +33,8 @@ let ENABLED_MARKERS = new Set(CONFIG.markers || DEFAULT_MARKERS);
 await loadLocale(LOCALE);
 initializeI18n();
 
+document.documentElement.setAttribute('lang', LOCALE);
+
 class AppController extends HTMLElement {
 	/** @type {HTMLDivElement} */
 	get #mapContainer () { return query(this, 'mapContainer'); }
