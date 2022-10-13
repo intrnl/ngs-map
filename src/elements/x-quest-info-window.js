@@ -127,8 +127,14 @@ class QuestInfoWindowController extends WindowController {
 		this.#maxPlayersIcon.src = `assets/ui/players_${data.max_players}.webp`;
 		this.#maxPlayersIcon.title = t(`ui.quest_info.max_players_info`, { value: data.max_players });
 		this.#questName.textContent = t(`${type}.${data.id}.name`);
-		this.#questDescription.textContent = t(`${type}.${data.id}.description`);
 
+		if (type !== 'battledias') {
+			this.#questDescription.style.display = '';
+			this.#questDescription.textContent = t(`${type}.${data.id}.description`);
+		}
+		else {
+			this.#questDescription.style.display = 'none';
+		}
 
 		if (data.ranks) {
 			const select = this.#rankSelect;
