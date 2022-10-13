@@ -78,6 +78,7 @@ x-quest-info-window .x--quest-name {
 	margin-bottom: 10px;
 }
 x-quest-info-window .x--quest-description {
+	white-space: pre-wrap;
 	margin-bottom: 10px;
 }
 x-quest-info-window .x--quest-info {
