@@ -38,7 +38,7 @@ await esbuild.build({
 					const source = await fs.readFile(filename, 'utf8');
 					const json = json5.parse(source);
 
-					const locale = path.basename(filename, '.jsonc');
+					const locale = path.basename(filename, '.jsonc').replace(/-x-.+/, '');
 					const mf = new MessageFormat(locale);
 					const code = compileMF(mf, json);
 
