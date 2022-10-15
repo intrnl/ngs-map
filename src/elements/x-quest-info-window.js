@@ -85,11 +85,28 @@ class QuestInfoWindowController extends WindowController {
 			this.#enemyLevel.style.display = 'none';
 			this.#recommendedPower.style.display = 'none';
 			this.#rewards.style.display = 'none';
+			this.#firstClearRewards.style.display = 'none';
 			return;
 		}
 
 		this.#enemyLevelContent.textContent = t(`ui.quest_info.enemy_level.content`, { level: rank.enemy_level });
 		this.#recommendedPowerContent.textContent = t(`ui.quest_info.recommended_power.content`, { power: rank.recommended_power });
+
+		if (rank.initial_rewards) {
+			const rewards = this.#buildRewards(rank.initial_rewards);
+
+			this.#firstClearRewards.style.display = '';
+			this.#firstClearRewardsContent.textContent = rewards;
+		}
+		else if (data.initial_rewards) {
+			const rewards = this.#buildRewards(data.initial_rewards);
+
+			this.#firstClearRewards.style.display = '';
+			this.#firstClearRewardsContent.textContent = rewards;
+		}
+		else {
+			this.#firstClearRewards.style.display = 'none';
+		}
 
 		if (rank.rewards) {
 			const rewards = this.#buildRewards(rank.rewards);
@@ -204,16 +221,6 @@ class QuestInfoWindowController extends WindowController {
 		}
 		else {
 			this.#failConditions.style.display = 'none';
-		}
-
-		if (data.initial_rewards) {
-			const rewards = this.#buildRewards(data.initial_rewards);
-
-			this.#firstClearRewards.style.display = '';
-			this.#firstClearRewardsContent.textContent = rewards;
-		}
-		else {
-			this.#firstClearRewards.style.display = 'none';
 		}
 	}
 
