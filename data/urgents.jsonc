@@ -130,7 +130,7 @@
 				"rewards": [
 					["rewards.meseta", 10000],
 					["items.photon_scale", 8],
-					["items.augment_technique", 3, 4]
+					["items.augment_renus_soul", 3, 4]
 				]
 			}
 		]
