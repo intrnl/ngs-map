@@ -111,6 +111,9 @@
 			{
 				"enemy_level": 32,
 				"recommended_power": 1682,
+				"initial_rewards": [
+					["rewards.meseta", 10000]
+				],
 				"rewards": [
 					["rewards.meseta", 10000],
 					["items.photon_scale", 8]
@@ -119,6 +122,9 @@
 			{
 				"enemy_level": 45,
 				"recommended_power": 2049,
+				"initial_rewards": [
+					["rewards.meseta", 5000]
+				],
 				"rewards": [
 					["rewards.meseta", 10000],
 					["items.photon_scale", 8]
@@ -127,6 +133,9 @@
 			{
 				"enemy_level": 65,
 				"recommended_power": 2878,
+				"initial_rewards": [
+					["rewards.meseta", 10000]
+				],
 				"rewards": [
 					["rewards.meseta", 10000],
 					["items.photon_scale", 8],
