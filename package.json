@@ -79,6 +79,7 @@
 	},
 	"devDependencies": {
 		"@messageformat/core": "^3.0.1",
+		"@minify-html/node": "^0.10.2",
 		"esbuild": "^0.15.10",
 		"json5": "^2.2.1",
 		"wireit": "^0.7.2"

@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@messageformat/core': ^3.0.1
   '@messageformat/runtime': ^3.0.1
+  '@minify-html/node': ^0.10.2
   esbuild: ^0.15.10
   json5: ^2.2.1
   leaflet: ^1.9.1
@@ -14,6 +15,7 @@ dependencies:
 
 devDependencies:
   '@messageformat/core': 3.0.1
+  '@minify-html/node': 0.10.2
   esbuild: 0.15.10
   json5: 2.2.1
   wireit: 0.7.2
@@ -68,6 +70,15 @@ packages:
     dependencies:
       make-plural: 7.1.0
 
+  /@minify-html/node/0.10.2:
+    resolution: {integrity: sha512-nKeDOgyI/3oMvKQvNciwLmKyET7kQvQUc0R0mj9hRofjDjSfQHVTxkCDV+CFsFXS9NtWiEfkthE/ew+S6GK1Eg==}
+    engines: {node: '>= 8.6.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      cargo-cp-artifact: 0.1.6
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -107,6 +118,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
+    dev: true
+
+  /cargo-cp-artifact/0.1.6:
+    resolution: {integrity: sha512-CQw0doK/aaF7j041666XzuilHxqMxaKkn+I5vmBsd8SAwS0cO5CqVEVp0xJwOKstyqWZ6WK4Ww3O6p26x/Goyg==}
+    hasBin: true
     dev: true
 
   /chokidar/3.5.3:
