@@ -89,97 +89,23 @@
 		"skill": "Skill Point"
 	},
 	"items": {
-		"armor_behlgren": "Behlgren Armor",
-		"armor_geant": "Geant Armor",
-		"armor_greas": "Greas Armor",
 		"armor_primm_gold": "Gold Primm Armor",
 		"armor_primm_silver": "Silver Primm Armor",
-		"armor_qual_arga": "Qual de Armor: Arga",
-		"armor_qual_belta": "Qual de Armor: Belta",
-		"armor_qual_sheza": "Qual de Armor: Sheza",
-		"armor_sestato_arga": "Sestato Armor: Arga",
-		"armor_sestato_belta": "Sestato Armor: Belta",
-		"armor_sestato_sheza": "Sestato Armor: Sheza",
-		"armor_vidalun": "Vidalun Armor",
-		"armor_vijf_arga": "Vijf Armor: Arga",
-		"armor_vijf_belta": "Vijf Armor: Belta",
-		"armor_vijf_sheza": "Vijf Armor: Sheza",
-		"armor_viosel": "Viosel Armor",
-		"arms_refiner": "Arms Refiner",
 		"augment_ael_domina": "C/Ael Domina",
 		"augment_ams_soul": "C/Ams Soul",
 		"augment_crocys_soul": "C/Crocys Soul",
 		"augment_decold_standard": "C/Decold Standard",
-		"augment_dolz_soul": "C/Dolz Soul",
 		"augment_dustyl_soul": "C/Dustyl Soul",
-		"augment_gigas_might": "C/Gigas Might",
-		"augment_gigas_precision": "C/Gigas Precision",
-		"augment_gigas_technique": "C/Gigas Technique",
 		"augment_mastery": "C/Mastery",
-		"augment_might": "C/Might",
 		"augment_nex_soul": "C/Nex Soul",
 		"augment_precision": "C/Precision",
 		"augment_renus_soul": "C/Renus Soul",
-		"augment_ragras_soul": "C/Ragras Soul",
 		"augment_ret_domina": "C/Ret Domina",
-		"augment_super_might": "Super Might",
-		"augment_super_precision": "Super Precision",
-		"augment_super_spimel": "Super Spimel",
-		"augment_super_spira": "Super Spira",
-		"augment_super_spitech": "Super Spitech",
-		"augment_super_stamel": "Super Stamel",
-		"augment_super_stara": "Super Stara",
-		"augment_super_statech": "Super Statech",
-		"augment_super_technique": "Super Technique",
 		"augment_technique": "C/Technique",
-		"augment_tria_deftromel": "Tria Deftromel",
-		"augment_tria_deftrora": "Tria Deftrora",
-		"augment_tria_deftrotech": "Tria Deftrotech",
-		"augment_tria_guaromel": "Tria Guaromel",
-		"augment_tria_guarora": "Tria Guarora",
-		"augment_tria_guarotech": "Tria Guarotech",
-		"augment_tria_spiora": "Tria Spiora",
-		"augment_tria_spiromel": "Tria Spiromel",
-		"augment_tria_spirotech": "Tria Spirotech",
-		"augment_tria_staromel": "Tria Staromel",
-		"augment_tria_starora": "Tria Starora",
-		"augment_tria_starotech": "Tria Starotech",
 		"augment_vardi_soul": "C/Vardi Soul",
-		"camo_straga_almati": "* Straga Almati",
-		"excube_hu": "N-HU-EX-Cube",
-		"excube_fi": "N-FI-EX-Cube",
-		"excube_ra": "N-RA-EX-Cube",
-		"excube_gu": "N-GU-EX-Cube",
-		"excube_fo": "N-FO-EX-Cube",
-		"excube_te": "N-TE-EX-Cube",
-		"excube_br": "N-BR-EX-Cube",
-		"excube_bo": "N-BO-EX-Cube",
-		"excube_wa": "N-WA-EX-Cube",
-		"mtn_dash_fairy_b": "MTN: Dash - Fairy/B",
-		"strugment_a": "Strugment A",
-		"strugment_b": "Strugment B",
-		"strugment_c": "Strugment C",
-		"weapon_kuku_boots": "Kukuhroziat Boots",
-		"weapon_kuku_bow": "Kukuhroziat Bow",
-		"weapon_kuku_daggers": "Kukuhroziat Daggers",
-		"weapon_kuku_katana": "Kukuhroziat Katana",
-		"weapon_kuku_knuckles": "Kukuhroziat Knuckles",
-		"weapon_kuku_launcher": "Kukuhroziat Launcher",
-		"weapon_kuku_series": "Kukuhroziat Series Weapon",
-		"weapon_kuku_spear": "Kukuhroziat Spear",
-		"weapon_kuku_tmg": "Kukuhroziat Machine Gun",
-		"weapon_kuku_wand": "Kukuhroziat Wand",
-		"weapon_kuku_wire": "Kukuhroziat Wire",
 		"weapon_primm_gold": "Gold Primm Sword",
 		"weapon_primm_silver": "Silver Primm Sword",
-		"weapon_relik_series": "Relik Series Weapon",
-		"weapon_rokz_series": "Rokz Series Weapon",
-		"weapon_rugged_series": "Rugged Series Weapon",
-		"weapon_sechetyl_series": "Sechetyl Series Weapon",
-		"weapon_straga_series": "Straga Series Weapon",
-		"fashion_items": "Fashion items",
-		"photon_scale": "Photon Scales",
-		"special_scratch_ticket": "Special Scratch Ticket"
+		"photon_scale": "Photon Scales"
 	},
 	"enemies": {
 		"ams_krone": "Ams Krone",
@@ -195,26 +121,32 @@
 	"battledias": {
 		// Aelio
 		"aelio_troopers": {
-			"name": "Aelio Troopers"
+			"name": "Aelio Troopers",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
 		},
 		"aelio_devastators": {
-			"name": "Aelio Devastators"
+			"name": "Aelio Devastators",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gigantix one after the other."
 		},
 
 		// Retem
 		"retem_troopers": {
-			"name": "Retem Troopers"
+			"name": "Retem Troopers",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
 		},
 		"retem_devastators": {
-			"name": "Retem Devastators"
+			"name": "Retem Devastators",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gigantix one after the other."
 		},
 
 		// Kvaris
 		"kvaris_troopers": {
-			"name": "Kvaris Troopers"
+			"name": "Kvaris Troopers",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
 		},
 		"kvaris_devastators": {
-			"name": "Kvaris Devastators"
+			"name": "Kvaris Devastators",
+			"description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gigantix one after the other."
 		}
 	},
 	"cocoons": {
