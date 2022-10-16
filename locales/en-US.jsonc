@@ -29,8 +29,7 @@
 			"settings_change_btn": "Reload"
 		},
 		"languages": {
-			"en-US": "English (GL)",
-			"en-US-x-arkslayer": "English (Arks-Layer)",
+			"en-US": "English",
 			"ja-JP": "Japanese"
 		},
 		"landmarks": "Landmarks",
