@@ -221,8 +221,17 @@
 				"enemy_level": 57,
 				"recommended_power": 2506,
 				"rewards": [
+					["rewards.meseta", 10000],
 					["items.augment_crocys_soul", 3, 3],
 					["items.photon_scale", 8]
+				]
+			},
+			{
+				"enemy_level": 65,
+				"recommended_power": 2878,
+				"rewards": [
+					["rewards.meseta", 10000],
+					["items.augment_crocys_soul", 3, 4]
 				]
 			}
 		]
