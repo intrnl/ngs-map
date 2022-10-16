@@ -126,6 +126,10 @@
 			{
 				"enemy_level": 64,
 				"recommended_power": 2744
+			},
+			{
+				"enemy_level": 69,
+				"recommended_power": 2972
 			}
 		]
 	}
