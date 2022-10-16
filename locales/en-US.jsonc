@@ -85,7 +85,6 @@
 	"rewards": {
 		"exp": "EXP",
 		"meseta": "N-Meseta",
-		"seasonal": "Seasonal Point",
 		"skill": "Skill Point"
 	},
 	"items": {
