@@ -29,34 +29,34 @@
 			"settings_change_btn": "リロード"
 		},
 		"languages": {
-			"en-US": "English",
-			"ja-JP": "Japanese"
+			"en-US": "英語",
+			"ja-JP": "日本語"
 		},
-		"landmarks": "Landmarks",
-		"minerals": "Minerals",
-		"vegetables": "Vegetable",
-		"fruits": "Fruits",
-		"seafoods": "Seafoods"
+		"landmarks": "ランドマーク",
+		"minerals": "鉱石",
+		"vegetables": "野菜",
+		"fruits": "果物",
+		"seafoods": "魚介"
 	},
 	"markers": {
 		// Landmarks
-		"battledias": "Battledia",
+		"battledias": "バトルディア",
 		"cocoons": "コクーン",
-		"mags": "Region Mag",
-		"ryukers": "Ryuker Device",
+		"mags": "リージョンマグ",
+		"ryukers": "リューカーデバイス",
 		"towers": "タワー",
-		"trinitas": "Trinitas",
-		"urgents": "Urgent Quest",
+		"trinitas": "トリニテス",
+		"urgents": "緊急クエスト",
 
 		// Kvaris Fruits
-		"kvaris_guava": "Crisp Kvaris Guava",
-		"kvaris_persimmon_notable": "Notable Kvaris Persimmon",
+		"kvaris_guava": "シャッキ・クヴァルグァバー",
+		"kvaris_persimmon_notable": "ノータ・クヴァルガッキー",
 
 		// Kvaris Seafoods
-		"kvaris_octopus": "Light Kvaris Octopus",
-		"kvaris_snail": "Rich Kvaris Snail",
-		"kvaris_squid_notable": "Notable Kvaris Squid",
-		"kvaris_squid": "Crisp Kvaris Squid"
+		"kvaris_octopus": "サッパ・クヴァルオクトヴァ",
+		"kvaris_snail": "マッタ・クヴァルマギカイ",
+		"kvaris_squid_notable": "ノータ・クヴァルスクイド",
+		"kvaris_squid": "シャッキ・クヴァルスクイド"
 	},
 	"missions": {
 		"finish_point": "フィニッシュポイントに到達する",
