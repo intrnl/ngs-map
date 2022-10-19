@@ -94,6 +94,14 @@
 					["rewards.meseta", 20000],
 					["items.photon_scale", 12]
 				]
+			},
+			{
+				"enemy_level": 65,
+				"recommended_power": 2878,
+				"rewards": [
+					["rewards.meseta", 20000],
+					["items.augment_eradi_soul", 3, 4]
+				]
 			}
 		]
 	},
